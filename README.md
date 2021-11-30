@@ -1,7 +1,9 @@
 # Fedlex assets
-This is a complementary repository to the [droid-f/fedlex](https://github.com/droid-f/fedlex) metadata repository. Here are collected and the HTML manifestations of the works presented in the Federal lax portal. 
+This is a complementary repository to the [Fedlex metadata](https://github.com/droid-f/fedlex) repository. Here are collected and stored the ``HTML`` manifestations of the works presented in the federal law portal Fedlex. At this time the Federal Chancellery produces ``HTML`` manifestation for _Classified Compilation_ products[^1] only. 
 
-Data is provided _as is_, objects are updated and committed to this repository several times each day. Files are stored according to their URI's path. At this time, images and additional assets referenced in the HTML files are not included. 
+[^1]: Raccolta Sistematica, Recueil systématique, Systematische Rechtssammlung.
+
+Data is provided _as is_, objects are updated and committed to this repository several times each day. Files are stored according to their URI's path. At this time, images and additional assets referenced in the HTML files are not included. Note that changes to a consolidated version are presented with a new name with the suffix ``-1``, ``-2``, etc. As a consequence there is no real use of git, this could change in future.
 
 ## Feedbacks
 Feedbacks are welcome. For suggestions, missing or incorrect data open an issue.
