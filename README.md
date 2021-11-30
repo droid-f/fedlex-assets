@@ -4,8 +4,9 @@ This is a complementary repository to the [Fedlex metadata](https://github.com/d
 [^1]: Raccolta Sistematica, Recueil systématique, Systematische Rechtssammlung.
 
 - Data is provided _as is_, objects are updated and committed to this repository several times each day. Files are stored according to their ``URI``'s path. 
-- At this time, images and additional assets referenced in the ``HTML`` files are not included. 
-- Note that changes to a consolidated version are presented with a new name with the suffix ``-1``, ``-2``, etc. As a consequence, there is no real use of git. This could change in future.
+- Images and additional assets referenced in the ``HTML`` files are not included. 
+
+Note that changes to a consolidated version are presented with a new name with the suffix ``-1``, ``-2``, etc. As a consequence, there is no real use of git. This could change in future.
 
 ## Feedbacks
 Feedbacks are welcome. For suggestions, missing or incorrect data open an issue.
