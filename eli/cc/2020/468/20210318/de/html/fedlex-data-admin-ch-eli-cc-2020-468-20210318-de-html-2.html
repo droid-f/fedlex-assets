@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="application/xml; charset=UTF-8">
+<title>input-de</title>
+</head>
+<body><div id="lawcontent">
+<div id="preface">
+<!--818.101.25 --><p class="srnummer ">818.101.25 </p>
+<h1 class="erlasstitel botschafttitel ">Verordnung <br>über das Proximity-Tracing-System für das Coronavirus Sars-CoV-2</h1>
+<h2 class="erlasskurztitel ">(VPTS)</h2>
+<p class="erlassdatum ">vom 24. Juni 2020 (Stand am 18. März 2021)</p>
+</div>
+<div id="preamble">
+<p class="man-template-autor ">Der Schweizerische Bundesrat, </p>
+<p class="ingress ">gestützt auf Artikel 60<i>a</i> Absatz 7 des Epidemiengesetzes vom 28. September 2012<sup><a href="#fn-d7e23" id="fnbck-d7e23">1</a></sup> (EpG),</p>
+<p class="man-template-verb ">verordnet:</p>
+<div class="footnotes"><p id="fn-d7e23"><sup><a href="#fnbck-d7e23">1</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2015/297" target="_blank">SR <b>818.101</b></a></p></div>
+</div>
+<main id="maintext"><article id="art_1"><a name="a1"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_1"><b>Art. 1</b> Gegenstand</a>
+</h6>
+<div class="collapseable"><p class="absatz ">Diese Verordnung regelt die Einzelheiten der Organisation, des Betriebs und der Datenbearbeitung des Proximity-Tracing-Systems für das Coronavirus Sars-CoV-2 nach Artikel 60<i>a</i> EpG (PT-System).</p></div></article><article id="art_2"><a name="a2"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_2"><b>Art. 2</b> Aufbau</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Das PT-System umfasst folgende Komponenten:</p>
+<dl>
+<dt>a. </dt>
+<dd>ein System zur Verwaltung von Annäherungsdaten (VA-System), bestehend aus einer Software, die von den teilnehmenden Personen auf ihren Mobiltelefonen installiert wird (SwissCovid-App), und einem Backend (VA-Backend);</dd>
+<dt>b. </dt>
+<dd>ein System zur Verwaltung von Codes zur Freischaltung der Benachrichtigungen (Codeverwaltungssystem), bestehend aus einem webbasierten Frontend und einem Backend.</dd>
+<dt>
+<sup>2</sup> Das VA-Backend und das Codeverwaltungssystem werden als zentrale Server vom Bundesamt für Gesundheit (BAG) betrieben.</dt>
+<dd class="clearfix"></dd>
+</dl>
+</div></article><article id="art_3"><a name="a3"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_3"><b>Art. 3</b> Freiwilligkeit</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Die Installation und der Einsatz der SwissCovid-App sind freiwillig.</p>
+<p class="absatz "><sup>2</sup> Die Benachrichtigung der teilnehmenden Personen, die potenziell dem Coronavirus ausgesetzt waren, erfolgt nur mit der ausdrücklichen Einwilligung der infizierten Person.</p>
+</div></article><article id="art_4"><a name="a4"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_4"><b>Art. 4</b> Verantwortliches Bundesorgan</a>
+</h6>
+<div class="collapseable"><p class="absatz ">Das BAG ist für alle Komponenten des PT-Systems das datenschutzrechtlich verantwortliche Bundesorgan.</p></div></article><article id="art_5"><a name="a5"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_5"><b>Art. 5</b> Funktionsweise im Grundbetrieb</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Das VA-Backend stellt im Grundbetrieb den SwissCovid-Apps seinen Inhalt im Abrufverfahren zur Verfügung. Dieser besteht aus einer Liste mit folgenden Daten:</p>
+<dl>
+<dt>a. </dt>
+<dd>den privaten Schlüsseln der infizierten teilnehmenden Personen, die in dem Zeitraum aktuell waren, in dem andere teilnehmende Personen potenziell dem Coronavirus ausgesetzt waren (relevanter Zeitraum);</dd>
+<dt>b. </dt>
+<dd>dem Datum jedes Schlüssels.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Die SwissCovid-App erfüllt unter Verwendung einer Schnittstelle zum Betriebssystem des Mobiltelefons folgende Funktionen:</p>
+<dl>
+<dt>a. </dt>
+<dd>Sie generiert mindestens jeden Tag einen neuen privaten Schlüssel, der keine Rückschlüsse auf die SwissCovid-App, das Mobiltelefon und die teilnehmende Person ermöglicht.</dd>
+<dt>b. </dt>
+<dd>Sie tauscht einen mindestens halbstündlich wechselnden Identifizierungscode mit allen kompatiblen Apps innerhalb der Reichweite von Bluetooth aus; der Identifizierungscode wird aus dem aktuellen privaten Schlüssel abgeleitet, kann aber nicht auf diesen Schlüssel zurückgeführt werden und ermöglicht keine Rückschlüsse auf die SwissCovid-App, das Mobiltelefon und die teilnehmende Person.</dd>
+<dt>c. </dt>
+<dd>Die SwissCovid-App speichert die empfangenen Identifizierungscodes, die Signalstärke, das Datum und die geschätzte Dauer der Annäherung<i>.</i>
+</dd>
+<dt>d. </dt>
+<dd>Sie ruft vom VA-Backend periodisch die Liste der privaten Schlüssel der infizierten teilnehmenden Personen ab und prüft, ob ihre lokal gespeicherten Identifizierungscodes mit einem privaten Schlüssel der Liste generiert wurden.</dd>
+<dt>e.<sup><a href="#fn-d7e122" id="fnbck-d7e122">2</a></sup> </dt>
+<dd>Stellt sie fest, dass mindestens ein lokal gespeicherter Identifizierungscode mit einem privaten Schlüssel der Liste generiert wurde, und sind die Annäherungsbedingungen nach dem Anhang Ziffer 1 erfüllt, so gibt die App die Benachrichtigung aus; der Abstand der Annäherung wird anhand der Stärke der empfangenen Signale geschätzt.</dd>
+</dl>
+<p class="absatz "><sup>3</sup> Die über die Schnittstelle genutzten Funktionen der Betriebssysteme müssen die Vorgaben von Artikel 60<i>a</i> EpG und dieser Verordnung erfüllen; davon ausgenommen ist die Regelung betreffend den Quellcode nach Artikel 60<i>a</i> Absatz 5 Buchstabe e EpG. Das BAG vergewissert sich, dass diese Vorgaben eingehalten werden, insbesondere indem es entsprechende Zusicherungen einholt.</p>
+<p class="absatz "><sup>4</sup> ...<sup><a href="#fn-d7e144" id="fnbck-d7e144">3</a></sup></p>
+<div class="footnotes">
+<p id="fn-d7e122"><sup><a href="#fnbck-d7e122">2</a></sup><sup></sup> Fassung gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e144"><sup><a href="#fnbck-d7e144">3</a></sup><sup></sup> Aufgehoben durch Ziff. I der V vom 18. Nov. 2020, mit Wirkung seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+</div>
+</div></article><article id="art_6"><a name="a6"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_6"><b>Art. 6</b> Funktionsweise nach einer Infektion</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Ist eine Infektion nachgewiesen, so kann eine berechtigte Stelle mit der Einwilligung der infizierten Person beim Codeverwaltungssystem einen einmaligen und zeitlich begrenzt gültigen Freischaltcode anfordern; dabei übermittelt sie dem Codeverwaltungssystem das Datum des Auftretens der ersten Symptome oder, falls die infizierte Person keine Symptome zeigt, das Testdatum.<sup><a href="#fn-d7e163" id="fnbck-d7e163">4</a></sup></p>
+<p class="absatz "><sup>2</sup> Die berechtigte Stelle gibt den Freischaltcode der infizierten Person bekannt.<sup><a href="#fn-d7e176" id="fnbck-d7e176">5</a></sup> Diese kann den Freischaltcode in ihre SwissCovid-App eingeben.</p>
+<p class="absatz "><sup>3</sup> Das Codeverwaltungs-Backend bestätigt gegenüber der SwissCovid-App die Gültigkeit des eingegebenen Codes. Vom erfassten Datum zieht es die Anzahl Tage nach dem Anhang Ziffer 2 ab.<sup><a href="#fn-d7e190" id="fnbck-d7e190">6</a></sup> Das resultierende Datum gilt als Beginn des relevanten Zeitraums. Das Codeverwaltungs-Backend übermittelt dieses Datum der SwissCovid-App der infizierten Person.</p>
+<p class="absatz "><sup>4</sup> Die SwissCovid-App der infizierten Person übermittelt dem VA-Backend die privaten Schlüssel, die im relevanten Zeitraum aktuell waren, mit dem jeweiligen Datum.</p>
+<p class="absatz "><sup>5</sup> Das VA-Backend setzt die erhaltenen privaten Schlüssel mit ihrem jeweiligen Datum auf seine Liste.</p>
+<p class="absatz "><sup>6</sup> Die SwissCovid-App erzeugt nach der Übermittlung der privaten Schlüssel einen neuen privaten Schlüssel. Von diesem kann nicht auf frühere private Schlüssel zurückgeschlossen werden.</p>
+<div class="footnotes">
+<p id="fn-d7e163"><sup><a href="#fnbck-d7e163">4</a></sup><sup></sup> Fassung gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e176"><sup><a href="#fnbck-d7e176">5</a></sup><sup></sup> Fassung gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e190"><sup><a href="#fnbck-d7e190">6</a></sup><sup></sup> Fassung des zweiten Satzes gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit  19. Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+</div>
+</div></article><article id="art_7"><a name="a7"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_7"><b>Art. 7</b> Inhalt der Benachrichtigung</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Die Benachrichtigung umfasst:</p>
+<dl>
+<dt>a. </dt>
+<dd>die Information, dass die teilnehmende Person potenziell dem Coronavirus ausgesetzt war;</dd>
+<dt>b.<sup><a href="#fn-d7e226" id="fnbck-d7e226">7</a></sup> </dt>
+<dd>die Angabe, an welchen Tagen dies der Fall war;</dd>
+<dt>c. </dt>
+<dd>den Hinweis, dass das BAG eine Infoline zur kostenlosen Beratung betreibt;</dd>
+<dt>d. </dt>
+<dd>Verhaltensempfehlungen des BAG.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Das PT-System erteilt den teilnehmenden Personen keine Anweisungen.</p>
+<div class="footnotes"><p id="fn-d7e226"><sup><a href="#fnbck-d7e226">7</a></sup><sup></sup> Fassung gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_8"><a name="a8"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_8"><b>Art. 8</b><i></i> <i></i>Inhalt des Codeverwaltungssystems</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Das Codeverwaltungssystem enthält folgende Daten:</p>
+<dl>
+<dt>a. </dt>
+<dd>die Freischaltcodes;</dd>
+<dt>b. </dt>
+<dd>das Datum, an dem die ersten Symptome aufgetreten sind, oder, falls die infizierte Person keine Symptome zeigt, das Testdatum;</dd>
+<dt>c. </dt>
+<dd>den Zeitpunkt der Vernichtung der Daten nach den Buchstaben a und b.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Diese Daten lassen keine Rückschlüsse auf die teilnehmenden Personen zu.</p>
+</div></article><article id="art_8_a"><a name="a8a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_8_a"><b>Art. 8</b><i>a</i></a><sup><a href="#fn-d7e276" id="fnbck-d7e276">8</a></sup><a href="#art_8_a"> Art des Zugriffs auf das Codeverwaltungssystem</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Der Zugriff auf das Codeverwaltungssystem kann erfolgen über:</p>
+<dl>
+<dt>a. </dt>
+<dd>eine Fachperson der berechtigten Stelle über das Frontend; oder</dd>
+<dt>b. </dt>
+<dd>eine Schnittstelle zwischen dem Codeverwaltungssystem und einem System der berechtigten Stelle.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e276"><sup><a href="#fnbck-d7e276">8</a></sup><sup></sup> Eingefügt durch Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_9"><a name="a9"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_9"><b>Art. 9</b><i></i> <i></i>Zugriff auf das Codeverwaltungssystem über das Frontend</a><sup><a href="#fn-d7e305" id="fnbck-d7e305">9</a></sup>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Den Freischaltcode können folgende Personen, die für die jeweilige berechtigte Stelle handeln, über das Frontend anfordern:<sup><a href="#fn-d7e320" id="fnbck-d7e320">10</a></sup></p>
+<dl>
+<dt>a. </dt>
+<dd>Kantonsärztinnen und Kantonsärzte;</dd>
+<dt>b. </dt>
+<dd>der Oberfeldarzt der Armee;</dd>
+<dt>c. </dt>
+<dd>andere Mitarbeiterinnen und Mitarbeiter der kantonsärztlichen Dienste oder des militärärztlichen Dienstes der Armee;</dd>
+<dt>d. </dt>
+<dd>die von den kantonsärztlichen Diensten oder vom militärärztlichen Dienst der Armee beauftragten Dritten;</dd>
+<dt>e.<sup><a href="#fn-d7e346" id="fnbck-d7e346">11</a></sup> </dt>
+<dd>Mitarbeiterinnen und Mitarbeiter von Arztpraxen;</dd>
+<dt>f.<sup><a href="#fn-d7e361" id="fnbck-d7e361">12</a></sup> </dt>
+<dd>Mitarbeiterinnen und Mitarbeiter von Laboratorien mit einer Bewilligung nach Artikel 16 EpG;</dd>
+<dt>g.<sup><a href="#fn-d7e376" id="fnbck-d7e376">13</a></sup> </dt>
+<dd>Mitarbeiterinnen und Mitarbeiter von Einrichtungen nach Artikel 24 Absatz 1 Buchstabe b der Covid-19-Verordnung 3 vom 19. Juni 2020<sup><a href="#fn-d7e389" id="fnbck-d7e389">14</a></sup>;</dd>
+<dt>h.<sup><a href="#fn-d7e401" id="fnbck-d7e401">15</a></sup> </dt>
+<dd>Mitarbeiterinnen und Mitarbeiter der Infoline nach Artikel 7 Absatz 1 Buchstabe c.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Die Anmeldung im Codeverwaltungssystem erfolgt über das zentrale Zugriffs- und Berechtigungssystem der Bundesverwaltung für Webapplikationen. Die Bestimmungen der Verordnung vom 19. Oktober 2016<sup><a href="#fn-d7e416" id="fnbck-d7e416">16</a></sup> über Identitätsverwaltungs-Systeme und Verzeichnisdienste des Bundes sind anwendbar.</p>
+<p class="absatz "><sup>3</sup> Das BAG erteilt und verwaltet die Zugriffsrechte für das Codeverwaltungssystem. Es kann die Kantonsärztinnen und Kantonsärzte sowie den Oberfeldarzt der Armee oder einzelne ihrer Hilfspersonen dazu berechtigen, die Zugriffsrechte an Hilfspersonen zu vergeben.</p>
+<div class="footnotes">
+<p id="fn-d7e305"><sup><a href="#fnbck-d7e305">9</a></sup><sup></sup> Fassung gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e320"><sup><a href="#fnbck-d7e320">10</a></sup><sup></sup> Fassung gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e346"><sup><a href="#fnbck-d7e346">11</a></sup><sup></sup> Fassung gemäss Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e361"><sup><a href="#fnbck-d7e361">12</a></sup><sup></sup> Eingefügt durch Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e376"><sup><a href="#fnbck-d7e376">13</a></sup><sup></sup> Eingefügt durch Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e389"><sup><a href="#fnbck-d7e389">14</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2020/438" target="_blank">SR <b>818.101.24</b></a></p>
+<p id="fn-d7e401"><sup><a href="#fnbck-d7e401">15</a></sup><sup></sup> Eingefügt durch Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e416"><sup><a href="#fnbck-d7e416">16</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2016/610" target="_blank">SR <b>172.010.59</b></a></p>
+</div>
+</div></article><article id="art_9_a"><a name="a9a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_9_a"><b>Art. 9</b><i>a</i></a><sup><a href="#fn-d7e432" id="fnbck-d7e432">17</a></sup><a href="#art_9_a"><i></i> <i></i>Zugriff auf das Codeverwaltungssystem über die Schnittstelle</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Das BAG ermöglicht den berechtigten Stellen nach Artikel 9 Absatz 1, ihr System über die Schnittstelle an das Codeverwaltungssystem anzuschliessen, sofern das betreffende System ein angemessenes Sicherheitsniveau aufweist.</p>
+<div class="footnotes"><p id="fn-d7e432"><sup><a href="#fnbck-d7e432">17</a></sup><sup></sup> Eingefügt durch Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_10"><a name="a10"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_10"><b>Art. 10</b> Leistungen Dritter</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Das BAG kann Dritte beauftragen, den SwissCovid-Apps die Liste der für die Benachrichtigungen erforderlichen Daten im Abrufverfahren zur Verfügung zu stellen.</p>
+<p class="absatz "><sup>2</sup> Es kann die Vergabe der Zugriffsberechtigungen auf das Codeverwaltungssystem an Dritte übertragen. Der beauftragte Dritte muss Gewähr für eine zuverlässige und rechtlich korrekte Überprüfung der Berechtigung der Fachpersonen bieten.</p>
+<p class="absatz "><sup>3</sup> Die Dritten müssen vertraglich verpflichtet sein, die Vorgaben nach Artikel 60<i>a</i> EpG und dieser Verordnung einzuhalten; davon ausgenommen ist die Regelung betreffend den Quellcode nach Artikel 60<i>a</i> Absatz 5 Buchstabe e EpG. Das BAG kontrolliert die Einhaltung der Vorgaben.</p>
+</div></article><article id="art_11"><a name="a11"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_11"><b>Art. 11</b> Protokoll über Zugriffe</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Auf die Speicherung und die Auswertung der Protokolle über die Zugriffe auf das VA-Backend und das Codeverwaltungssystem sowie die Liste nach Artikel 10 Absatz 1 sind die Artikel 57<i>i</i>–57<i>q</i> des Regierungs- und Verwaltungsorganisationsgesetzes vom 21. März 1997<sup><a href="#fn-d7e483" id="fnbck-d7e483">18</a></sup> und die Verordnung vom 22. Februar 2012<sup><a href="#fn-d7e492" id="fnbck-d7e492">19</a></sup> über die Bearbeitung von Personendaten, die bei der Nutzung der elektronischen Infrastruktur des Bundes anfallen, anwendbar.</p>
+<p class="absatz "><sup>2</sup> Über diese Protokolle und die Aufzeichnung von Annäherungen hinaus zeichnet das PT-System keine Protokolle von Aktivitäten des Frontends des Codeverwaltungssystems und der SwissCovid-Apps auf.</p>
+<div class="footnotes">
+<p id="fn-d7e483"><sup><a href="#fnbck-d7e483">18</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/1997/2022_2022_2022" target="_blank">SR <b>172.010</b></a></p>
+<p id="fn-d7e492"><sup><a href="#fnbck-d7e492">19</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2012/160" target="_blank">SR <b>172.010.442</b></a></p>
+</div>
+</div></article><article id="art_12"><a name="a12"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_12"><b>Art. 12</b> Bekanntgabe zu Statistikzwecken</a>
+</h6>
+<div class="collapseable"><p class="absatz ">Das BAG stellt dem Bundesamt für Statistik (BFS) periodisch den aktuellen Bestand der in den beiden Backends vorhandenen Daten in vollständig anonymisierter Form für statistische Auswertungen zur Verfügung.</p></div></article><article id="art_13"><a name="a13"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_13"><b>Art. 13</b> Vernichtung der Daten</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Die Daten des VA-Systems werden sowohl auf den Mobiltelefonen als auch im VA-Backend 14 Tage nach ihrer Erfassung vernichtet.</p>
+<p class="absatz "><sup>2</sup> Die Daten des Codeverwaltungssystems werden 24 Stunden nach ihrer Erfassung vernichtet.</p>
+<p class="absatz "><sup>3</sup> Die Protokolldaten von nach Artikel 10 Absatz 1 beauftragten Dritten werden 7 Tage nach ihrer Erfassung vernichtet.</p>
+<p class="absatz "><sup>4</sup> Im Übrigen richtet sich die Vernichtung der Protokolldaten nach Artikel 4 Absatz 1 Buchstabe b der Verordnung vom 22. Februar 2012<sup><a href="#fn-d7e530" id="fnbck-d7e530">20</a></sup> über die Bearbeitung von Personendaten, die bei der Nutzung der elektronischen Infrastruktur des Bundes anfallen.</p>
+<p class="absatz "><sup>5</sup> Die dem BFS zur Verfügung gestellten Daten werden ebenfalls gemäss diesem Artikel vernichtet.</p>
+<div class="footnotes"><p id="fn-d7e530"><sup><a href="#fnbck-d7e530">20</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2012/160" target="_blank">SR <b>172.010.442</b></a></p></div>
+</div></article><article id="art_14"><a name="a14"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_14"><b>Art. 14</b> Überprüfung des Quellcodes</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Das BAG veröffentlicht die Daten, die dazu dienen, zu überprüfen, ob die maschinenlesbaren Programme aller Komponenten des PT-Systems aus dem veröffentlichten Quellcode erstellt worden sind.</p>
+<p class="absatz "><sup>2</sup> Es nimmt die Überprüfung auch selber vor.</p>
+</div></article><article id="art_15"><a name="a15"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_15"><b>Art. 15</b> Deaktivierung der SwissCovid-App und Berichterstattung</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Beim Ausserkrafttreten dieser Verordnung deaktiviert das BAG die SwissCovid-App und fordert die teilnehmenden Personen auf, die SwissCovid-App auf dem Mobiltelefon zu deinstallieren.</p>
+<p class="absatz "><sup>2</sup> Bis spätestens sechs Monate nach dem Ausserkrafttreten erstattet das BAG dem Bundesrat Bericht.</p>
+</div></article><article id="art_15_a"><a name="a15a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_15_a"><b>Art. 15</b><i>a</i></a><sup><a href="#fn-d7e570" id="fnbck-d7e570">21</a></sup><a href="#art_15_a"><i></i> <i></i>Verbindung des PT-Systems mit entsprechenden ausländischen Systemen </a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Das PT-System darf nur mit einem ausländischen System verbunden werden (Art. 62<i>a</i> EpG), wenn dieses die Voraussetzungen nach Artikel 60<i>a</i> Absatz 5 Buchstaben a–d EpG erfüllt.</p>
+<p class="absatz "><sup>2</sup> Bei der Verbindung werden das VA-Backend und das ausländische System an ein Verbindungssystem zur gegenseitigen Übermittlung der privaten Schlüssel der infizierten teilnehmenden Personen angeschlossen.</p>
+<p class="absatz "><sup>3</sup> Das Verbindungssystem untersteht den folgenden Regeln:</p>
+<dl>
+<dt>a. </dt>
+<dd>Es wird vom BAG oder von der zuständigen ausländischen Stelle betrieben.</dd>
+<dt>b. </dt>
+<dd>Für den Quellcode und die technischen Spezifikationen der vom BAG betriebenen Verbindungssysteme gelten Artikel 60<i>a</i> Absatz 5 Buchstabe e EpG und Artikel 14 dieser Verordnung.</dd>
+<dt>c. </dt>
+<dd>Die Bearbeitungszwecke richten sich nach Artikel 60<i>a</i> Absatz 2 EpG. </dd>
+<dt>d. </dt>
+<dd>Die Daten des Systems können dem BFS und der zuständigen ausländischen Stelle zu Statistikzwecken in vollständig anonymisierter Form bekanntgegeben werden. </dd>
+<dt>e. </dt>
+<dd>Sie werden vernichtet, sobald sie für die Benachrichtigung der teilnehmenden Personen nicht mehr erforderlich sind, spätestens aber 14 Tage nach ihrer Übermittlung an das System.</dd>
+</dl>
+<p class="absatz "><sup>4</sup> Ist das PT-System mit einem ausländischen System verbunden, so gilt zusätzlich zur Funktionsweise des PT-Systems nach den Artikeln 5 und 6 Folgendes:</p>
+<dl>
+<dt>a. </dt>
+<dd>Im Grundbetrieb ruft das VA-Backend die privaten Schlüssel der infizierten teilnehmenden Personen des ausländischen Systems sowie das Datum dieser Schlüssel aus dem Verbindungssystem ab und setzt sie auf seine Liste.</dd>
+<dt>b. </dt>
+<dd>Nach einer Infektion übermittelt das VA-Backend die privaten Schlüssel der infizierten Personen mit dem jeweiligen Datum über das Verbindungssystem an das ausländische System.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e570"><sup><a href="#fnbck-d7e570">21</a></sup><sup></sup> Eingefügt durch Ziff. I der V vom 12. März 2021, in Kraft seit 18. März 2021  (<a href="https://fedlex.data.admin.ch/eli/oc/2021/144" target="_blank">AS <b>2021</b> 144</a>).</p></div>
+</div></article><article id="art_16"><a name="a16"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_16"><b>Art. 16</b> Aufhebung eines anderen Erlasses</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Die Covid-19-Verordnung Pilotversuch Proximity-Tracing vom 13. Mai 2020<sup><a href="#fn-d7e639" id="fnbck-d7e639">22</a></sup> wird aufgehoben.</p>
+<div class="footnotes"><p id="fn-d7e639"><sup><a href="#fnbck-d7e639">22</a></sup><sup></sup> [<a href="https://fedlex.data.admin.ch/eli/oc/2020/324" target="_blank">AS <b>2020</b> 1589</a>]</p></div>
+</div></article><article id="art_16_a"><a name="a16a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_16_a"><b>Art. 16</b><i>a</i></a><sup><a href="#fn-d7e654" id="fnbck-d7e654">23</a></sup><a href="#art_16_a"><i></i> <i></i>Nachführung des Anhangs</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Das Eidgenössische Departement des Innern (EDI) führt den Anhang zu dieser Verordnung entsprechend dem aktuellen Stand der Wissenschaften nach.</p>
+<div class="footnotes"><p id="fn-d7e654"><sup><a href="#fnbck-d7e654">23</a></sup><sup></sup> Eingefügt durch Ziff. I der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_17"><a name="a17"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_17"><b>Art. 17</b> Inkrafttreten und Geltungsdauer</a>
+</h6>
+<div class="collapseable"><p class="absatz ">Diese Verordnung tritt am 25. Juni 2020 um 00.00 Uhr in Kraft und gilt bis zum 30. Juni 2022.</p></div></article></main><div id="annex"><section id="annex_u1"><h1 class="heading" role="heading" aria-level="1">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1">Anhang</a><i><sup><a href="#fn-d7e685" id="fnbck-d7e685">24</a></sup></i>
+</h1>
+<div class="footnotes"><p id="fn-d7e685"><sup><a href="#fnbck-d7e685">24</a></sup><sup></sup> Fassung gemäss Ziff. II der V vom 18. Nov. 2020, in Kraft seit 19. Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+<div class="collapseable">
+<p class="titelanhtext ">(Art. 5 Abs. 2 Bst. e und 6 Abs. 3)</p>
+<section id="annex_u1/lvl_u1"><h2 class="heading" role="heading" aria-level="2">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1">Epidemiologische Annäherungsbedingungen und relevanter Zeitraum</a>
+</h2>
+<div class="collapseable">
+<section id="annex_u1/lvl_u1/lvl_1"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_1">1.  Epidemiologische Annäherungsbedingungen</a>
+</h3>
+<div class="collapseable">
+<p class="absatz ">Die epidemiologischen Annäherungsbedingungen sind erfüllt, wenn die folgenden Voraussetzungen erfüllt sind:</p>
+<dl>
+<dt>a. </dt>
+<dd>Es bestand zu mindestens einem Mobiltelefon einer infizierten teilnehmenden Person eine räumliche Annäherung von 1,5 Metern oder weniger.</dd>
+<dt>b. </dt>
+<dd>Die Summe der Dauer aller Annäherungen nach Buchstabe a innerhalb eines Tages erreicht oder übersteigt 15 Minuten.</dd>
+</dl>
+</div></section><section id="annex_u1/lvl_u1/lvl_2"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_2">2.  Beginn des epidemiologisch relevanten Zeitraums</a>
+</h3>
+<div class="collapseable">
+<p class="absatz ">Anzahl abzuziehender Tage: zwei.</p>
+<p class="abstand1seite "></p>
+</div></section>
+</div></section>
+</div></section></div>
+</div></body>
+</html>

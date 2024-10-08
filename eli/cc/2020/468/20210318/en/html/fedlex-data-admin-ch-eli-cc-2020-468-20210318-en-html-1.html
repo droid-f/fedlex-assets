@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="application/xml; charset=UTF-8">
+<title>input-en</title>
+</head>
+<body><div id="lawcontent">
+<div id="preface">
+<!--818.101.25 --><p class="srnummer ">818.101.25 </p>
+<p class="man-template-tab-krpr-kurs man-font-style-italic ">English is not an official language of the Swiss Confederation. This translation is provided for information purposes only, has no legal force and may not be relied on in legal proceedings.</p>
+<h1 class="erlasstitel botschafttitel ">
+<br>Ordinance <br>on the Proximity Tracing System <br>for the Sars-CoV-2 coronavirus</h1>
+<h2 class="erlasskurztitel ">(PTSO)</h2>
+<p class="erlassdatum ">of 24 June 2020 (Status as of 18 March 2021)</p>
+</div>
+<div id="preamble">
+<p class="man-template-autor ">The Swiss Federal Council, </p>
+<p class="ingress ">on the basis of Article 60<i>a</i> paragraph 7 of the Epidemics Act of 28 September 2012<sup><a href="#fn-d7e28" id="fnbck-d7e28">1</a></sup> (EpidA),</p>
+<p class="man-template-verb ">ordains:</p>
+<div class="footnotes"><p id="fn-d7e28"><sup><a href="#fnbck-d7e28">1</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2015/297" target="_blank">SR <b>818.101</b></a></p></div>
+</div>
+<main id="maintext"><article id="art_1"><a name="a1"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_1"><b>Art. 1</b> Subject matter</a>
+</h6>
+<div class="collapseable"><p class="absatz ">This Ordinance regulates the details of the organisation, operation and data processing of the Proximity Tracing System for the Sars-CoV-2 coronavirus under Article 60<i>a</i> EpidA (PT System).</p></div></article><article id="art_2"><a name="a2"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_2"><b>Art. 2</b> Structure</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The PT System comprises the following components:</p>
+<dl>
+<dt>a. </dt>
+<dd>a proximity data management system (the PDM System), consisting of a software application that users install on their smartphones (the SwissCovid app), and a back end (PDM back end);</dd>
+<dt>b. </dt>
+<dd>a system for managing codes for releasing the notifications (the code management system), consisting of a web-based front end and a back end.</dd>
+<dt>
+<sup>2</sup> The PDM back end and the code management system are operated as a central server by the Federal Office of Public Health (FOPH).</dt>
+<dd class="clearfix"></dd>
+</dl>
+</div></article><article id="art_3"><a name="a3"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_3"><b>Art. 3</b> Voluntary nature</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Installation and use of the SwissCovid app are voluntary.</p>
+<p class="absatz "><sup>2</sup> The express consent of the infected person is required before a notification is sent to app users who have potentially been exposed to the coronavirus.</p>
+</div></article><article id="art_4"><a name="a4"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_4"><b>Art. 4</b> Federal authority responsible</a>
+</h6>
+<div class="collapseable"><p class="absatz ">The FOPH is the federal authority responsible for all components of the PT System under data protection law.</p></div></article><article id="art_5"><a name="a5"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_5"><b>Art. 5</b> Basic operation procedure</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> During basic operations, the PDM back end makes its content available online to the SwissCovid apps. The content comprises a list with the following data:</p>
+<dl>
+<dt>a. </dt>
+<dd>the private keys of infected app users which were effective in the period in which other app users were potentially exposed to the coronavirus (“the relevant period”);</dd>
+<dt>b. </dt>
+<dd>the date of each key.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> The SwissCovid app carries out the following functions via an interface to the mobile phone’s operating system: </p>
+<dl>
+<dt>a. </dt>
+<dd>It generates a new private key at least every day that does not permit the SwissCovid app, the mobile telephone or the user to be traced.</dd>
+<dt>b. </dt>
+<dd>It exchanges a variable identification code at least every half-hour with all compatible apps within Bluetooth range; the identification code is derived from the current private key but may not be traced back to that key and does not permit the SwissCovid app, the mobile telephone or the user to be traced.</dd>
+<dt>c. </dt>
+<dd>It stores the identification codes received, details of the strength of the signal, the date and the estimated duration of the encounter<i>.</i>
+</dd>
+<dt>d. </dt>
+<dd>It periodically retrieves the list of private keys belonging to infected app users from the PDM back end and checks whether any of the identification codes it has stored locally were generated using a private key on the list.</dd>
+<dt>e.<sup><a href="#fn-d7e127" id="fnbck-d7e127">2</a></sup> </dt>
+<dd>If it establishes that any one of the locally stored identification codes was generated using a private key on the list, and if the encounter requirements set out in the Annex number I are met, the app issues a notification; the distance of the encounter is estimated based on the strength of the signal received.</dd>
+</dl>
+<p class="absatz "><sup>3</sup> The operating systems’ functions used via the interface must meet the requirements of Article 60<i>a</i> EpidA and this Ordinance; this does not apply to the rule relating to the source code under Article 60<i>a</i> paragraph 5 letter e EpidA. The FOPH shall ensure that these requirements are met, in particular by obtaining related assurances.</p>
+<p class="absatz "><sup>4</sup> ...<sup><a href="#fn-d7e149" id="fnbck-d7e149">3</a></sup></p>
+<div class="footnotes">
+<p id="fn-d7e127"><sup><a href="#fnbck-d7e127">2</a></sup><sup></sup> Amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e149"><sup><a href="#fnbck-d7e149">3</a></sup><sup></sup> Repealed by No I of the O of 18 Nov. 2020, with effect from 19 Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+</div>
+</div></article><article id="art_6"><a name="a6"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_6"><b>Art. 6</b> Procedure following an infection</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> If a user tests positive for the coronavirus, an authorised agency may with the consent of the infected person request a unique activation code with time-limited validity from the code management system; to do so, the agency sends the code management system the date on which the first symptoms occurred or, if the infected person has not displayed any symptoms, the date of the test.<sup><a href="#fn-d7e168" id="fnbck-d7e168">4</a></sup></p>
+<p class="absatz "><sup>2</sup> The authorised agency gives the activation code to the infected person.<sup><a href="#fn-d7e181" id="fnbck-d7e181">5</a></sup> The infected person may choose to enter the activation code into their SwissCovid app.</p>
+<p class="absatz "><sup>3</sup> The code management back end sends confirmation to the SwissCovid app that the code entered is valid. It deducts the number of days specified in Annex number 2 from the recorded date.<sup><a href="#fn-d7e195" id="fnbck-d7e195">6</a></sup> The resulting date is the start of the relevant period. The code management back end sends this date to the infected person’s SwissCovid app.</p>
+<p class="absatz "><sup>4</sup> The infected person’s SwissCovid app sends the private keys that were effective in the relevant period to the PDM back end, together with their dates.</p>
+<p class="absatz "><sup>5</sup> The PDM back end records the received private keys with their dates on its list.</p>
+<p class="absatz "><sup>6</sup> After the private keys have been sent, the SwissCovid app generates a new private key. This key cannot be used to identify earlier private keys.</p>
+<div class="footnotes">
+<p id="fn-d7e168"><sup><a href="#fnbck-d7e168">4</a></sup><sup></sup> Amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e181"><sup><a href="#fnbck-d7e181">5</a></sup><sup></sup> Amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e195"><sup><a href="#fnbck-d7e195">6</a></sup><sup></sup> Second sentence amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+</div>
+</div></article><article id="art_7"><a name="a7"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_7"><b>Art. 7</b> Content of the notification</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The notification contains:</p>
+<dl>
+<dt>a. </dt>
+<dd>the information that the app user has potentially been exposed to the coronavirus;</dd>
+<dt>b.<sup><a href="#fn-d7e231" id="fnbck-d7e231">7</a></sup> </dt>
+<dd>a note of the days on which exposure may have occurred;</dd>
+<dt>c. </dt>
+<dd>the information that the FOPH operates an infoline that provides advice free of charge;</dd>
+<dt>d. </dt>
+<dd>recommendations from the FOPH on what to do.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> The PT System does not issue any instructions to app users.</p>
+<div class="footnotes"><p id="fn-d7e231"><sup><a href="#fnbck-d7e231">7</a></sup><sup></sup> Amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_8"><a name="a8"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_8"><b>Art. 8</b><i></i> <i></i>Content of the code management system</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The code management system contains the following data:</p>
+<dl>
+<dt>a. </dt>
+<dd>the activation codes;</dd>
+<dt>b. </dt>
+<dd>the date on which the first symptoms occurred, or, if the infected person has not displayed any symptoms, the date of the test;</dd>
+<dt>c. </dt>
+<dd>the time when the data in accordance with letters a and b will be destroyed.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> These data cannot be used to identify app users.</p>
+</div></article><article id="art_8_a"><a name="a8a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_8_a"><b>Art. 8</b><i>a</i></a><sup><a href="#fn-d7e281" id="fnbck-d7e281">8</a></sup><a href="#art_8_a"> Form of access to the code management system</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">The code management system may be accessed via:</p>
+<dl>
+<dt>a. </dt>
+<dd>a specialist from the authorised agency via the front end; or</dd>
+<dt>b. </dt>
+<dd>an interface between the code management system and a system operated by the authorised agency.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e281"><sup><a href="#fnbck-d7e281">8</a></sup><sup></sup> Inserted by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_9"><a name="a9"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_9"><b>Art. 9</b><i></i> <i></i>Access to the code management system via the front end</a><sup><a href="#fn-d7e310" id="fnbck-d7e310">9</a></sup>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The following persons acting for the authorised agency may request the activation code via the front end:<sup><a href="#fn-d7e325" id="fnbck-d7e325">10</a></sup></p>
+<dl>
+<dt>a. </dt>
+<dd>cantonal medical officers;</dd>
+<dt>b. </dt>
+<dd>the Armed Forces Surgeon General;</dd>
+<dt>c. </dt>
+<dd>other staff of the cantonal medical services or of the Armed Forces medical services;</dd>
+<dt>d. </dt>
+<dd>third parties acting on behalf of the cantonal medical services or the Armed Forces medical services;</dd>
+<dt>e.<sup><a href="#fn-d7e351" id="fnbck-d7e351">11</a></sup> </dt>
+<dd>staff at medical practices;</dd>
+<dt>f.<sup><a href="#fn-d7e366" id="fnbck-d7e366">12</a></sup> </dt>
+<dd>staff at laboratories with authorisation under Article 16 EpidA;</dd>
+<dt>g.<sup><a href="#fn-d7e381" id="fnbck-d7e381">13</a></sup> </dt>
+<dd>staff at the facilities specified in Article 24 paragraph 1 letter b of the COVID 19 Ordinance 3 of 19 June 2020<sup><a href="#fn-d7e394" id="fnbck-d7e394">14</a></sup>;</dd>
+<dt>h.<sup><a href="#fn-d7e406" id="fnbck-d7e406">15</a></sup> </dt>
+<dd>staff of the Infoline under Article 7 paragraph 1 letter c.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> The code management system is accessed via the Federal Administration’s Central Access and Permission System for web applications. The provisions of the Ordinance of 19 October 2016<sup><a href="#fn-d7e421" id="fnbck-d7e421">16</a></sup> on Federal Identity Management Systems and Directory Services apply.</p>
+<p class="absatz "><sup>3</sup> The FOPH assigns and manages access rights to the code management system. It may authorise cantonal medical officers and the Armed Forces Surgeon General or a specific member of their auxiliary personnel to grant access rights to auxiliary personnel.</p>
+<div class="footnotes">
+<p id="fn-d7e310"><sup><a href="#fnbck-d7e310">9</a></sup><sup></sup> Amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e325"><sup><a href="#fnbck-d7e325">10</a></sup><sup></sup> Amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e351"><sup><a href="#fnbck-d7e351">11</a></sup><sup></sup> Amended by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e366"><sup><a href="#fnbck-d7e366">12</a></sup><sup></sup> Inserted by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e381"><sup><a href="#fnbck-d7e381">13</a></sup><sup></sup> Inserted by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e394"><sup><a href="#fnbck-d7e394">14</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2020/438" target="_blank">SR <b>818.101.24</b></a></p>
+<p id="fn-d7e406"><sup><a href="#fnbck-d7e406">15</a></sup><sup></sup> Inserted by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p>
+<p id="fn-d7e421"><sup><a href="#fnbck-d7e421">16</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2016/610" target="_blank">SR <b>172.010.59</b></a></p>
+</div>
+</div></article><article id="art_9_a"><a name="a9a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_9_a"><b>Art. 9</b><i>a</i></a><sup><a href="#fn-d7e437" id="fnbck-d7e437">17</a></sup><a href="#art_9_a"><i></i> <i></i>Access to the code management system via the interface</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">The FOPH shall enable the authorised agencies under Article 9 paragraph 1 to connect their systems via the interface to the code management system, provided the systems concerned provide an appropriate level of security.</p>
+<div class="footnotes"><p id="fn-d7e437"><sup><a href="#fnbck-d7e437">17</a></sup><sup></sup> Inserted by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_10"><a name="a10"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_10"><b>Art. 10</b> Services from third parties</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The FOPH may instruct third parties to provide the SwissCovid app with online access to the list of data required for notifications.</p>
+<p class="absatz "><sup>2</sup> It may the assign the task of granting rights of access to the code management system to third parties. The third party concerned must guarantee that the authorisation of specialists is verified reliably and in accordance with the law.</p>
+<p class="absatz "><sup>3</sup> The third parties must be contractually required to comply with the requirements of Article 60<i>a</i> EpidA and of this Ordinance; this does not apply to the regulation relating to the source code under Article 60<i>a</i> paragraph 5 letter e EpidA. The FOPH shall verify compliance with the requirements.</p>
+</div></article><article id="art_11"><a name="a11"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_11"><b>Art. 11</b> Records of access</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Articles 57<i>i</i>–57<i>q</i> of the Government and Administration Organisation Act of 21 March 1997<sup><a href="#fn-d7e488" id="fnbck-d7e488">18</a></sup> and the Ordinance of 22 February 2012<sup><a href="#fn-d7e497" id="fnbck-d7e497">19</a></sup> on the Processing of Personal Data accumulated through the Use of the Confederation’s Electronic Infrastructure apply to the storing and the evaluation of the records of access to the PDM back end, the code management system and the list under Article 10 paragraph 1.</p>
+<p class="absatz "><sup>2</sup> Apart from these records and records of encounters, the PT System does not maintain any record of the activities of the front end of the code management system and the SwissCovid app.</p>
+<div class="footnotes">
+<p id="fn-d7e488"><sup><a href="#fnbck-d7e488">18</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/1997/2022_2022_2022" target="_blank">SR <b>172.010</b></a></p>
+<p id="fn-d7e497"><sup><a href="#fnbck-d7e497">19</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2012/160" target="_blank">SR <b>172.010.442</b></a></p>
+</div>
+</div></article><article id="art_12"><a name="a12"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_12"><b>Art. 12</b> Disclosure for statistical purposes</a>
+</h6>
+<div class="collapseable"><p class="absatz ">The FOPH shall regularly provide the Swiss Federal Statistical Office (FSO) with the latest collection of data in the two back ends in a completely anonymised form for statistical assessment.</p></div></article><article id="art_13"><a name="a13"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_13"><b>Art. 13</b> Destruction of the data</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The data in the PDM System shall be destroyed both on the smartphones and in the PDM back end 14 days after they are recorded.</p>
+<p class="absatz "><sup>2</sup> The data in the code management system shall be destroyed 24 hours after they are recorded.</p>
+<p class="absatz "><sup>3</sup> The record data of third parties assigned tasks under Article 10 paragraph 1 shall be destroyed 7 days after they are recorded.</p>
+<p class="absatz "><sup>4</sup> In addition, the destruction of record data is governed by Article 4 paragraph 1 letter b the Ordinance of 22 February 2012<sup><a href="#fn-d7e535" id="fnbck-d7e535">20</a></sup> on the Processing of Personal Data accumulated through the Use of the Confederations Electronic Infrastructure.</p>
+<p class="absatz "><sup>5</sup> The data made available to the FSO shall also be destroyed in accordance with this Article.</p>
+<div class="footnotes"><p id="fn-d7e535"><sup><a href="#fnbck-d7e535">20</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2012/160" target="_blank">SR <b>172.010.442</b></a></p></div>
+</div></article><article id="art_14"><a name="a14"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_14"><b>Art. 14</b> Verification of the source code</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The FOPH shall publish the data that allows verification of whether the machine readable programmes of all components of the PT System have been produced using the published source code.</p>
+<p class="absatz "><sup>2</sup> It shall also verify this itself.</p>
+</div></article><article id="art_15"><a name="a15"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_15"><b>Art. 15</b> Deactivation of the SwissCovid app and reporting</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> When this Ordinance ceases to apply, the FOPH shall deactivate the SwissCovid app and instruct users of the SwissCovid app to remove the app from their mobile phones.</p>
+<p class="absatz "><sup>2</sup> The FOPH shall submit a report to the Federal Council within six months of this Ordinance ceasing to apply.</p>
+</div></article><article id="art_15_a"><a name="a15a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_15_a"><b>Art. 15</b><i>a</i></a><sup><a href="#fn-d7e575" id="fnbck-d7e575">21</a></sup><a href="#art_15_a"><i></i> <i></i>Connection of the PT System to related foreign systems </a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> The PT System may only be connected to a foreign system (Art. 62<i>a</i> EpidA) if that system meets the requirements of Article 60<i>a</i> paragraph 5 letters a–d EpidA.</p>
+<p class="absatz "><sup>2</sup> When connected, the VA backend and the foreign system are linked to an interconnection system for the mutual transmission of the private keys of infected app users.</p>
+<p class="absatz "><sup>3</sup> The connection system is subject to the following rules:</p>
+<dl>
+<dt>a. </dt>
+<dd>It is operated by the FOPH or the responsible foreign body.</dd>
+<dt>b. </dt>
+<dd>Article 60<i>a</i> paragraph 5 letter e EpidA and Article 14 of this Ordinance apply to the source code and the technical specifications of the connection system that the FOPH operates.</dd>
+<dt>c. </dt>
+<dd>The data processing purposes are governed by Article 60<i>a</i> paragraph 2 EpidA. </dd>
+<dt>d. </dt>
+<dd>The data in the system may be passed on to the FSO and the responsible foreign body in completely anonymised form for statistical purposes. </dd>
+<dt>e. </dt>
+<dd>The data shall be erased as soon as they are no longer required in order to notify app users, but at the latest 14 days after their transmission to the system.</dd>
+</dl>
+<p class="absatz "><sup>4</sup> If the PT System is connected to a foreign system, the following applies in relation to the PT System’s operating procedures in addition to Articles 5 and 6:</p>
+<dl>
+<dt>a. </dt>
+<dd>During basic operations, the VA backend retrieves the private keys of infected users of the foreign system and the date of these keys from the connection system and places them on its list.</dd>
+<dt>b. </dt>
+<dd>Following an infection, the VA backend transmits the private keys of the infected persons with the relevant date to the foreign system via the connection system.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e575"><sup><a href="#fnbck-d7e575">21</a></sup><sup></sup> Inserted by No  I of the O of 12 March 2021, in force since 18 March 2021  (<a href="https://fedlex.data.admin.ch/eli/oc/2021/144" target="_blank">AS <b>2021</b> 144</a>).</p></div>
+</div></article><article id="art_16"><a name="a16"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_16"><b>Art. 16</b> Repeal of other legislation</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">The COVID-19 Ordinance of 13 May 2020<sup><a href="#fn-d7e644" id="fnbck-d7e644">22</a></sup> on the Proximity Tracing Pilot Trial is repealed.</p>
+<div class="footnotes"><p id="fn-d7e644"><sup><a href="#fnbck-d7e644">22</a></sup><sup></sup> [<a href="https://fedlex.data.admin.ch/eli/oc/2020/324" target="_blank">AS <b>2020</b> 1589</a>]</p></div>
+</div></article><article id="art_16_a"><a name="a16a"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_16_a"><b>Art. 16</b><i>a</i></a><sup><a href="#fn-d7e659" id="fnbck-d7e659">23</a></sup><a href="#art_16_a"><i></i> <i></i>Updating the Annex</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">The Federal Department of Home Affairs (FDHA) shall update the Annex to this Ordinance in accordance with the current state of the art.</p>
+<div class="footnotes"><p id="fn-d7e659"><sup><a href="#fnbck-d7e659">23</a></sup><sup></sup> Inserted by No I of the O of 18 Nov. 2020, in force since 19 Nov. 2020 (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+</div></article><article id="art_17"><a name="a17"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_17"><b>Art. 17</b> Commencement and duration</a>
+</h6>
+<div class="collapseable"><p class="absatz ">This Ordinance comes into force on 25 June 2020 at 00.00 and applies until 30 June 2022.</p></div></article></main><div id="annex"><section id="annex_u1"><h1 class="heading" role="heading" aria-level="1">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1">Annex</a><i><sup><a href="#fn-d7e690" id="fnbck-d7e690">24</a></sup></i>
+</h1>
+<div class="footnotes"><p id="fn-d7e690"><sup><a href="#fnbck-d7e690">24</a></sup><sup></sup> Amended by No II of the O of 18 Nov. 2020, in force since 19 Nov. 2020  (<a href="https://fedlex.data.admin.ch/eli/oc/2020/852" target="_blank">AS <b>2020</b> 4733</a>).</p></div>
+<div class="collapseable">
+<p class="titelanhtext ">(Art. 5 para. 2 let. e and 6 para. 3)</p>
+<section id="annex_u1/lvl_u1"><h2 class="heading" role="heading" aria-level="2">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1">Epidemiological conditions for an encounter and relevant period</a>
+</h2>
+<div class="collapseable">
+<section id="annex_u1/lvl_u1/lvl_1"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_1">1.  Epidemiological conditions for an encounter</a>
+</h3>
+<div class="collapseable">
+<p class="absatz ">The epidemiological conditions for an encounter to have taken place are fulfilled if the following requirements are met:</p>
+<dl>
+<dt>a. </dt>
+<dd>There has been physical proximity of 1.5 metres or less to at least one mobile phone that pertains to an infected user.</dd>
+<dt>b. </dt>
+<dd>The sum of the duration of all encounters in terms of letter a within any single day is equal to or in excess of fifteen minutes.</dd>
+</dl>
+</div></section><section id="annex_u1/lvl_u1/lvl_2"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_2">2.  Start of the relevant epidemiological period</a>
+</h3>
+<div class="collapseable"><p class="absatz ">Number of days to be deducted: two.</p></div></section>
+</div></section>
+</div></section></div>
+</div></body>
+</html>
