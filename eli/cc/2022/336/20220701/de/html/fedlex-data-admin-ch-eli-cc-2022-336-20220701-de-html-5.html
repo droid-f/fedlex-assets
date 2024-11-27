@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="application/xml; charset=UTF-8">
+<title>input-de</title>
+</head>
+<body><div id="lawcontent">
+<div id="preface">
+<!--161.116--><p class="srnummer ">161.116</p>
+<h1 class="erlasstitel botschafttitel ">Verordnung der BK <br>über die elektronische Stimmabgabe</h1>
+<h2 class="erlasskurztitel ">(VEleS)</h2>
+<p class="erlassdatum ">vom 25. Mai 2022 (Stand am 1. Juli 2022)</p>
+</div>
+<div id="preamble"><div>
+<p class="man-template-autor " msg:wcstyle02-3="loose pPr/keepLines" msg:wcstyle02-4="loose pPr/widowControl" xmlns:msg="urn:com:c-moria:legi4ch:xslt:message">Die Schweizerische Bundeskanzlei (BK),</p>
+<p class="ingress " msg:wcstyle02-2="loose pPr/widowControl" xmlns:msg="urn:com:c-moria:legi4ch:xslt:message">gestützt auf die Artikel 27<i>e</i> Absatz 1<sup>bis</sup>, 27<i>g</i> Absatz 2, 27<i>i</i> Absatz 3 <br>und 27<i>l</i> Absätze 3 und 4 der Verordnung vom 24. Mai 1978<sup><a href="#fn-d7e34" id="fnbck-d7e34">1</a></sup> <br>über die politischen Rechte (VPR),</p>
+<p class="man-template-verb " msg:wcstyle02-2="loose pPr/widowControl" xmlns:msg="urn:com:c-moria:legi4ch:xslt:message">verordnet:</p>
+<div class="footnotes"><p id="fn-d7e34"><sup><a href="#fnbck-d7e34">1</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/1978/712_712_712" target="_blank">SR <b>161.11</b></a></p></div>
+</div></div>
+<main id="maintext"><article id="art_1"><a name="a1"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_1"><b>Art. 1</b><b></b> <b></b>Gegenstand</a>
+</h6>
+<div class="collapseable"><p class="absatz ">Diese Verordnung regelt die Voraussetzungen für die Erteilung der Zulassung von Versuchen mit der elektronischen Stimmabgabe.</p></div></article><article id="art_2"><a name="a2"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_2"><b>Art. 2</b><b></b> <b></b>Begriffe</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Die folgenden Ausdrücke bedeuten:</p>
+<dl>
+<dt>a. </dt>
+<dd>
+<i>System:</i> Gesamtheit der Software und der Infrastrukturen, die für die Durchführung von elektronischen Urnengängen verwendet werden;</dd>
+<dt>b. </dt>
+<dd>
+<i>Online-System:</i> Teil des Systems, der zur Stimmrechtsprüfung, zur Abgabe der verschlüsselten Stimme und zur Aufbewahrung der verschlüsselten Stimme verwendet wird;</dd>
+<dt>c. <sup> </sup>
+</dt>
+<dd>
+<sup></sup><i>vertrauenswürdiger Systemteil:</i> Teil des Systems, der eine oder mehrere Gruppen von Kontrollkomponenten umfasst; die Vertrauenswürdigkeit dieses Systemteils ergibt sich dadurch, dass Missbräuche auch dann aufgedeckt werden können, wenn nur eine der Kontrollkomponenten einer Gruppe korrekt funktioniert;</dd>
+<dt>d.<sup> </sup>
+</dt>
+<dd>
+<sup></sup><i>Kontrollkomponenten:</i> unabhängige Komponenten des Systems, die unterschiedlich ausgestaltet sind, von unterschiedlichen Personen betrieben werden und durch besondere Massnahmen gesichert sind;</dd>
+<dt>e. </dt>
+<dd>
+<i>Systembetreiber:</i> Behörden oder Privatunternehmen, die auf Weisung des Kantons bei einem Urnengang das Online-System betreiben und dieses warten;</dd>
+<dt>f. </dt>
+<dd>
+<i>Betrieb:</i> alle Handlungen mit technischem, administrativem oder rechtlichem Bezug sowie die entsprechenden Führungstätigkeiten eines Kantons, eines Systembetreibers oder einer Druckerei, die für die Durchführung von elektronischen Urnengängen erforderlich sind, einschliesslich der Wartung;</dd>
+<dt>g.<i> </i>
+</dt>
+<dd>
+<i>Betriebsstellen:</i> die für den Betrieb zuständigen Organisationen oder Organisationseinheiten, wie eine Staatskanzlei, ein Systembetreiber oder eine Druckerei;</dd>
+<dt>h. </dt>
+<dd>
+<i>Prüferinnen und Prüfer:</i> Personen, die im Auftrag des Kantons den korrekten Ablauf des Urnengangs prüfen;</dd>
+<dt>i. </dt>
+<dd>
+<i>Infrastruktur:</i> Hardware, Software von Drittkomponenten nach Artikel 11 Absatz 2 Buchstabe a, Netzwerkelemente, Räumlichkeiten, Services und Betriebsmittel jeglicher Art bei allen Betriebsstellen, die zum sicheren Betrieb der elektronischen Stimmabgabe erforderlich sind;</dd>
+<dt>j. </dt>
+<dd>
+<i>Software:</i> gesamte Implementierung ausgehend vom kryptografischen Protokoll für die vollständige Verifizierbarkeit, die durch die Softwareentwicklerin oder den Softwareentwickler für die elektronische Stimmabgabe vorgenommen wurde;</dd>
+<dt>k. </dt>
+<dd>
+<i>kryptografisches Protokoll:</i> Protokoll mit kryptografischen Sicherheitsfunktionen zur Erreichung der Anforderungen im Anhang Ziffer 2; das kryptografische Protokoll ist in der Modellebene angesiedelt und enthält somit keine direkten Anweisungen für die Implementierung, sondern abstrakte Sicherheitsfunktionen;</dd>
+<dt>l. </dt>
+<dd>
+<i>Benutzerplattform:</i> multifunktionales, programmierbares Gerät, das mit dem Internet verbunden ist und zur Stimmabgabe verwendet wird, wie ein handelsüblicher Computer, ein Smartphone oder ein Tablet;</dd>
+<dt>m. </dt>
+<dd>
+<i>registrierte Stimme:</i> Stimme, die vom vertrauenswürdigen Systemteil als endgültig abgegebene Stimme zur Kenntnis genommen worden ist;</dd>
+<dt>n. </dt>
+<dd>
+<i>Teilstimme:</i><dl>
+<dt>1. </dt>
+<dd>bei Abstimmungen: Stimme für eine Vorlage, einen Gegenvorschlag <br>oder eine Stichfrage,</dd>
+<dt>2. </dt>
+<dd>bei Wahlen: die Wahl einer Liste oder einer kandidierenden Person;</dd>
+</dl>
+</dd>
+<dt>o. </dt>
+<dd>
+<i>systemkonform abgegebene Stimme: </i>Stimme:<dl>
+<dt>1. </dt>
+<dd>die einer vorgesehenen Art entspricht, einen Stimm- oder Wahlzettel auszufüllen,</dd>
+<dt>2. </dt>
+<dd>die eine Absenderin oder ein Absender endgültig abgegeben hat,</dd>
+<dt>3. </dt>
+<dd>deren verwendeten clientseitigen Authentisierungsmerkmale beziehungsweise deren daraus resultierenden Authentisierungsnachrichten den serverseitigen Authentisierungsmerkmalen entsprechen, die in der Vorbereitungsphase des Urnengangs festgelegt und einer stimmberechtigten Person zugewiesen wurden, und</dd>
+<dt>4. </dt>
+<dd>die unter Verwendung von Authentisierungsmerkmalen abgegeben wird, die nicht bereits für eine andere abgegebene Stimme verwendet wurden, die der vertrauenswürdige Systemteil des Online-Systems bereits registriert hat;</dd>
+</dl>
+</dd>
+<dt>p. </dt>
+<dd>c<i>lientseitiges Authentisierungsmerkmal:</i> für die einzelnen stimmberechtigten Personen individuell bereitgestellte Information, wie ein PIN, die diese Personen – allenfalls zusammen mit weiteren clientseitigen Authentisierungsmerkmalen – brauchen, um eine Stimme abgeben zu können;</dd>
+<dt>q. </dt>
+<dd>
+<i>serverseitiges Authentisierungsmerkmal:</i> Information, die es – allenfalls zusammen mit weiteren serverseitigen Authentisierungsmerkmalen – braucht, um mithilfe von Authentisierungsnachrichten die Absenderin oder den Absender einer Stimme als stimmberechtigte Person zu authentisieren;</dd>
+<dt>r. </dt>
+<dd>
+<i>Authentisierungsnachrichten:</i> Informationen, die eine Benutzerplattform nach der Eingabe des clientseitigen Authentisierungsmerkmals an das Online-System übermittelt, damit dieses die Absenderin oder den Absender einer Stimme als stimmberechtigte Person authentisiert;</dd>
+<dt>s. </dt>
+<dd>
+<i>Zertifikat:</i> Dokument, das bestätigt, dass ein Prüfobjekt mit einem Referenzrahmen oder einem Standard konform ist;</dd>
+<dt>t. </dt>
+<dd>
+<i>elektronisches Zertifikat:</i> Datensatz, der bestimmte Merkmale von Personen oder Objekten bestätigt, und dessen Authentizität und Integrität durch kryptografische Verfahren geprüft werden können; das elektronische Zertifikat wird hauptsächlich zur Identifizierung und Authentifizierung der Inhaberin oder des Inhabers und zur Verschlüsselung von Nachrichten verwendet;</dd>
+<dt>u. </dt>
+<dd>
+<i>kritische Handlungen und Operationen:</i> Vorgänge, bei denen kritische Daten bearbeitet werden;</dd>
+<dt>v. </dt>
+<dd>
+<i>kritische Daten:</i> Daten, deren Integrität oder Vertraulichkeit für die Erfüllung der Anforderungen an das kryptografische Protokoll massgeblich ist.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Im Übrigen gelten die Begriffe im Anhang Ziffer 1.</p>
+</div></article><article id="art_3"><a name="a3"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_3"><b>Art. 3</b> Grundvoraussetzungen für die Zulassung der elektronischen Stimmabgabe pro Urnengang</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Die Zulassung der elektronischen Stimmabgabe erfolgt pro Urnengang; sie wird erteilt, wenn folgende Voraussetzungen erfüllt sind:</p>
+<dl>
+<dt>a. </dt>
+<dd>Das System ist so ausgestaltet und wird so betrieben, dass eine verifizierbare, sichere und vertrauenswürdige elektronische Stimmabgabe gewährleistet ist.</dd>
+<dt>b. </dt>
+<dd>Das System ist für die stimmberechtigten Personen einfach zu handhaben; die besonderen Bedürfnisse möglichst aller stimmberechtigten Personen sind berücksichtigt.</dd>
+<dt>c. </dt>
+<dd>Das System und die betrieblichen Abläufe sind so ausgestaltet und dokumentiert, dass die technischen und organisatorischen Abläufe im Detail überprüft und nachvollzogen werden können.</dd>
+<dt>d. </dt>
+<dd>Der Öffentlichkeit werden adressatengerechte Informationen zur Funktionsweise des Systems und zu den betrieblichen Abläufen zugänglich gemacht und Anreize zur Mitwirkung von fachkundigen Personen aus der Öffentlichkeit sind vorhanden.</dd>
+</dl>
+</div></article><article id="art_4"><a name="a4"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_4"><b>Art. 4</b> Risikobeurteilung</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Der Kanton führt eine Risikobeurteilung durch, mit der er nachweist und begründet, dass die Sicherheitsrisiken in seinem Verantwortungsbereich hinreichend gering sind. Dabei sind auch das Vertrauen und die Akzeptanz der Öffentlichkeit in die elektronische Stimmabgabe zu berücksichtigen.</p>
+<p class="absatz "><sup>2</sup> Er prüft, ob er Risiken im Aufgabenbereich seiner Dienstleister selber beurteilen kann und inwiefern separate Risikobeurteilungen durch diese nötig sind. Gegebenenfalls fordert er diese separaten Risikobeurteilungen ein.</p>
+<p class="absatz "><sup>3</sup> Die Risikobeurteilungen beziehen sich auf folgende Sicherheitsziele:</p>
+<dl>
+<dt>a. </dt>
+<dd>Korrektheit des Ergebnisses;</dd>
+<dt>b. </dt>
+<dd>Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen;</dd>
+<dt>c. </dt>
+<dd>Erreichbarkeit und Funktionsfähigkeit des Stimmkanals;</dd>
+<dt>d. </dt>
+<dd>Schutz der persönlichen Informationen über die stimmberechtigten Personen;</dd>
+<dt>e. </dt>
+<dd>Schutz der für die stimmberechtigten Personen bestimmten Informationen vor Manipulationen;</dd>
+<dt>f. </dt>
+<dd>keine missbräuchliche Verwendung von Beweisen zum Stimmverhalten.</dd>
+</dl>
+<p class="absatz "><sup>4</sup> Jedes Risiko wird mit Bezug auf die folgenden Eigenschaften anhand der Dokumentation zum System und zu dessen Betrieb identifiziert und klar beschrieben:</p>
+<dl>
+<dt>a.  </dt>
+<dd>Sicherheitsziele;</dd>
+<dt>b. </dt>
+<dd>allfällige mit den Sicherheitszielen verbundenen Datensätze;</dd>
+<dt>c. </dt>
+<dd>Bedrohungen;</dd>
+<dt>d. </dt>
+<dd>Schwachstellen.</dd>
+</dl>
+</div></article><article id="art_5"><a name="a5"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_5"><b>Art. 5</b> Anforderungen an die vollständige Verifizierbarkeit</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Es ist sichergestellt, dass jede Manipulation, die zu einer Verfälschung des Ergebnisses führt, unter Wahrung des Stimmgeheimnisses erkannt werden kann (vollständige Verifizierbarkeit). Dies gilt als gegeben, wenn die Anforderungen an die individuelle und an die universelle Verifizierbarkeit erfüllt sind.</p>
+<p class="absatz "><sup>2</sup> Es bestehen die folgenden Anforderungen an die individuelle Verifizierbarkeit:</p>
+<dl>
+<dt>a. </dt>
+<dd>Der stimmenden Person wird die Möglichkeit gegeben zu erkennen, ob ihre Stimme, wie sie sie in die Benutzerplattform eingegeben hat,<b> </b>auf der Benutzerplattform oder auf dem Übertragungsweg manipuliert oder abgefangen worden ist; dazu erhält die stimmende Person einen Beweis, dass der vertrauenswürdige Systemteil (Art. 8) die Stimme so, wie sie die stimmende Person in die Benutzerplattform eingegeben hat, als systemkonform abgegeben registriert hat; der Beweis bestätigt für jede Teilstimme die korrekte Registrierung.</dd>
+<dt>b. </dt>
+<dd>Eine stimmberechtigte Person, die ihre Stimme nicht elektronisch abgegeben hat, kann nach der Schliessung des elektronischen Stimmkanals innert der gesetzlichen Beschwerdefristen einen Beweis anfordern, dass der vertrauenswürdige Systemteil keine Stimme registriert hat, die unter Verwendung des clientseitigen Authentisierungsmerkmals der stimmberechtigten Person abgegeben wurde.</dd>
+</dl>
+<p class="absatz "><sup>3</sup> Es bestehen die folgenden Anforderungen an die universelle Verifizierbarkeit:</p>
+<dl>
+<dt>a. </dt>
+<dd>Zur universellen Verifizierung erhalten die Prüferinnen und Prüfer einen Beweis der korrekten Ergebnisermittlung; der Beweis bestätigt, dass das ermittelte Ergebnis folgende Stimmen berücksichtigt:<dl>
+<dt>1. </dt>
+<dd>alle systemkonform abgegebenen Stimmen, die durch den vertrauenswürdigen Systemteil registriert wurden;</dd>
+<dt>2. </dt>
+<dd>ausschliesslich systemkonform abgegebene Stimmen;</dd>
+<dt>3. </dt>
+<dd>alle Teilstimmen gemäss des im Rahmen der individuellen Verifizierung generierten Beweises.</dd>
+</dl>
+</dd>
+<dt>b. </dt>
+<dd>Die Prüferinnen und Prüfer werten den Beweis in einem beobachtbaren Prozess aus; dazu müssen sie technische Hilfsmittel verwenden, die vom Rest des Systems unabhängig und isoliert sind.</dd>
+</dl>
+</div></article><article id="art_6"><a name="a6"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_6"><b>Art. 6</b> Stichhaltigkeit der Beweise</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Für die Stichhaltigkeit der Beweise nach Artikel 5 massgebend ist die Vertrauenswürdigkeit:</p>
+<dl>
+<dt>a. </dt>
+<dd>des vertrauenswürdigen Systemteils für Beweise nach Artikel 5 Absätze 2 und 3;</dd>
+<dt>b. </dt>
+<dd>des Verfahrens bei der Generierung und beim Druck des Stimmmaterials für Beweise nach Artikel 5 Absatz 2; und</dd>
+<dt>c. </dt>
+<dd>des technischen Hilfsmittels, das von den Prüferinnen und Prüfern zur Überprüfung eingesetzt wird, für Beweise nach Artikel 5 Absatz 3.</dd>
+</dl>
+</div></article><article id="art_7"><a name="a7"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_7"><b>Art. 7</b> Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Für die Wahrung des Stimmgeheimnisses und den Ausschluss von vorzeitigen Teilergebnissen innerhalb der Infrastruktur massgebend ist die Vertrauenswürdigkeit:</p>
+<dl>
+<dt>a. </dt>
+<dd>des vertrauenswürdigen Systemteils;</dd>
+<dt>b. </dt>
+<dd>des Verfahrens bei der Generierung und beim Druck des Stimmmaterials.</dd>
+</dl>
+</div></article><article id="art_8"><a name="a8"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_8"><b>Art. 8</b> Anforderungen an den vertrauenswürdigen Systemteil</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Der vertrauenswürdige Systemteil umfasst eine oder mehrere Gruppen von Kontrollkomponenten.</p>
+<p class="absatz "><sup>2</sup> <inl>Beweise sind auch dann stichhaltig (Art. 6) und das Stimmgeheimnis ist auch dann gewahrt (Art. 7)</inl>, wenn pro Gruppe nur eine der Kontrollkomponenten korrekt funktioniert.</p>
+<p class="absatz "><sup>3</sup> Die Vertrauenswürdigkeit des vertrauenswürdigen Systemteils wird über die unterschiedliche Ausgestaltung der Kontrollkomponenten sowie die Unabhängigkeit von deren Betrieb und deren Überwachung sichergestellt.</p>
+</div></article><article id="art_9"><a name="a9"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_9"><b>Art. 9</b> Zusätzliche Massnahmen zur Risikominimierung</a>
+</h6>
+<div class="collapseable"><p class="absatz ">Sind die Risiken trotz der ergriffenen Massnahmen nicht hinreichend gering, so müssen zusätzliche Massnahmen zur Risikominimierung ergriffen werden. Dies gilt insbesondere auch dann, wenn sämtliche Anforderungen des Anhangs bereits umgesetzt sind.</p></div></article><article id="art_10"><a name="a10"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_10"><b>Art. 10</b> Anforderungen an die Überprüfung</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Unabhängige Stellen prüfen im Auftrag der Bundeskanzlei:</p>
+<dl>
+<dt>a. </dt>
+<dd>das kryptografische Protokoll (Anhang Ziff. 26.1);</dd>
+<dt>b. </dt>
+<dd>die Software des Systems (Anhang Ziff. 26.2);</dd>
+<dt>c. </dt>
+<dd>die Sicherheit von Infrastruktur und Betrieb (Anhang Ziff. 26.3);</dd>
+<dt>d. </dt>
+<dd>den Schutz gegen Versuche, in die Infrastruktur einzudringen (Anhang Ziff. 26.4).</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Der Kanton stellt sicher, dass der Systembetreiber über ein Informationssicherheitsmanagement-System (ISMS) verfügt und dieses von unabhängigen Stellen geprüft wird (Anhang Ziff. 26.5). Das ISMS umfasst mindestens die Prozesse und die Infrastruktur des Systembetreibers, die für die Erreichung der Sicherheitsziele relevant sind.</p>
+<p class="absatz "><sup>3</sup> Der Kanton stellt sicher, dass die Bundeskanzlei und die von ihr beauftragten unabhängigen Stellen für die Durchführung der Prüfungen nach Absatz 1 Zugang zum System und den notwendigen Unterlagen erhalten.</p>
+<p class="absatz "><sup>4</sup> Die nach den Absätzen 1 und 2 für die Prüfungen zuständigen Behörden publizieren die Belege und die Zertifikate. Zusätzlich sind weitere Unterlagen zu publizieren, sofern sie für die Nachvollziehbarkeit relevant sind. Nicht publiziert werden müssen Dokumente oder Teile von Dokumenten, für die eine begründete Ausnahme insbesondere gestützt auf das Öffentlichkeits- oder das Datenschutzrecht vorliegt.</p>
+</div></article><article id="art_11"><a name="a11"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_11"><b>Art. 11</b> Offenlegung des Quellcodes und der Dokumentation zum System und dessen Betrieb</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Der Kanton sorgt dafür, dass folgende Unterlagen offengelegt werden:</p>
+<dl>
+<dt>a. </dt>
+<dd>der Quellcode der Software des Systems einschliesslich der Dateien mit relevanten Parametern;</dd>
+<dt>b. </dt>
+<dd>ein Nachweis, dass die maschinenlesbaren Programme aus dem publizierten Quellcode der Software erstellt worden sind;</dd>
+<dt>c. </dt>
+<dd>die Dokumentation der Software;</dd>
+<dt>d. </dt>
+<dd>die Dokumentation des Entwicklungsprozesses;</dd>
+<dt>e. </dt>
+<dd>Anleitungen und ergänzende Dokumentationen, die fachkundige Personen benötigen, um das System ausgehend vom Quellcode in der eigenen Infrastruktur kompilieren, in Betrieb nehmen und analysieren zu können;</dd>
+<dt>f. </dt>
+<dd>die technischen Spezifikationen der wichtigen Komponenten des Systems;</dd>
+<dt>g. </dt>
+<dd>die Dokumentation der Prozesse für den Betrieb, die Wartung und die Sicherung des Systems;</dd>
+<dt>h. </dt>
+<dd>Informationen und Beschreibungen zu bekannten Mängeln.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Nicht offengelegt werden müssen:</p>
+<dl>
+<dt>a. </dt>
+<dd>der Quellcode von Drittkomponenten wie Betriebssystemen, Datenbanken, Web- und Applikationsservern, Rechteverwaltungssystemen, Firewalls oder Routern, sofern diese weit verbreitet sind und laufend aktualisiert werden;</dd>
+<dt>b. </dt>
+<dd>der Quellcode von Behördenportalen, die mit dem System verbunden sind;</dd>
+<dt>c. </dt>
+<dd>Dokumente oder Teile von Dokumenten, für die eine begründete Ausnahme von einer Publikation insbesondere gestützt auf das Öffentlichkeits- oder das Datenschutzrecht vorliegt.</dd>
+</dl>
+</div></article><article id="art_12"><a name="a12"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_12"><b>Art. 12</b> Modalitäten der Offenlegung</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Die nach Artikel 11 offenzulegenden Unterlagen müssen so aufbereitet und dokumentiert sein, dass sich das Lesen und Analysieren möglichst einfach gestaltet.</p>
+<p class="absatz "><sup>2</sup> Um eine Überprüfung durch die Öffentlichkeit zu ermöglichen, müssen die Unterlagen:</p>
+<dl>
+<dt>a. </dt>
+<dd>einfach, unentgeltlich und ohne Registrierung über das Internet beziehbar sein; und</dd>
+<dt>b. </dt>
+<dd>rechtzeitig vor dem geplanten Einsatz des Systems verfügbar sein.</dd>
+</dl>
+<p class="absatz "><sup>3</sup> Jede Person darf den Quellcode zu ideellen Zwecken untersuchen, verändern, kompilieren und ausführen sowie Studien dazu verfassen. Sie darf Studien und Erkenntnisse zu Mängeln publizieren. Sie darf sich insbesondere für die Fehlersuche mit weiteren Personen austauschen und dabei aus den offengelegten Informationen zitieren.</p>
+<p class="absatz "><sup>4</sup> Die Inhaberin oder der Inhaber des Quellcodes kann:</p>
+<dl>
+<dt>a. </dt>
+<dd>die Nutzung des Quellcodes zu anderen Zwecken erlauben;</dd>
+<dt>b. </dt>
+<dd>für die Einreichung von Hinweisen zur Verbesserung des Systems spezifische Bedingungen festlegen; dabei kann sie oder er dazu auffordern, Mängel umgehend zu melden und für Publikationen zu vermuteten Mängeln eine bestimmte Frist einzuhalten.</dd>
+</dl>
+<p class="absatz "><sup>5</sup> Stellt sie oder er Nutzungsbedingungen für den Quellcode und die Dokumentation oder Bedingungen nach Absatz 4 Buchstabe b auf, so darf sie oder er Verstösse dagegen nur dann zivil- oder strafrechtlich verfolgen, wenn eine Person den Quellcode oder Teile davon kommerziell verwendet oder produktiv einsetzt. In den Nutzungsbedingungen und den Bedingungen ist darauf hinzuweisen.</p>
+</div></article><article id="art_13"><a name="a13"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_13"><b>Art. 13</b> Einbezug der Öffentlichkeit</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Der Kanton bezeichnet eine Stelle, bei der interessierte Personen Hinweise zur Verbesserung des Systems einreichen können, darunter:</p>
+<dl>
+<dt>a. </dt>
+<dd>Hinweise zu Mängeln in den offengelegten Unterlagen nach Artikel 11;</dd>
+<dt>b. </dt>
+<dd>Hinweise auf der Grundlage von Versuchen zum Eindringen in das Online-System im Rahmen von öffentlichen Tests.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Die Stelle nach Absatz 1 wertet die Hinweise aus und informiert die hinweisgebende Person über ihre Einschätzung und allfällige Massnahmen, die gestützt auf den Hinweis getroffen werden. Diese Informationen werden publiziert.</p>
+<p class="absatz "><sup>3</sup> Der Kanton sorgt dafür, dass Hinweise, die einen Bezug zur Sicherheit haben und die zu Verbesserungen des Systems beitragen, angemessen finanziell vergütet werden.</p>
+</div></article><article id="art_14"><a name="a14"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_14"><b>Art. 14</b><b></b> <b></b>Verantwortung und Zuständigkeiten für den korrekten Ablauf des Urnengangs mit der elektronischen Stimmabgabe</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Der Kanton trägt die Gesamtverantwortung für den korrekten Ablauf des Urnengangs mit der elektronischen Stimmabgabe.</p>
+<p class="absatz "><sup>2</sup> Er muss wichtige Aufgaben selbst ausführen. Er kann die Entwicklung der eingesetzten Software, Aufgaben des Betriebs und die Kommunikation zu Fragen der Funktionsweise an externe Organisationen delegieren.</p>
+<p class="absatz "><sup>3</sup> Er bestimmt eine auf kantonaler Ebene verantwortliche Stelle, die die Gesamtverantwortung trägt und insbesondere die folgenden Aufgaben wahrnimmt:</p>
+<dl>
+<dt>a. </dt>
+<dd>Festlegung einer übergeordneten Informationssicherheitsrichtlinie;</dd>
+<dt>b. </dt>
+<dd>Festlegung einer Informationsklassifizierungs- und Verarbeitungsrichtlinie für die identifizierten Informationsbestände;</dd>
+<dt>c. </dt>
+<dd>Festlegung einer Risikomanagementrichtlinie;</dd>
+<dt>d. </dt>
+<dd>Definition und Umsetzung von Massnahmen zur Einhaltung der Richtlinien nach den Buchstaben a–c;</dd>
+<dt>e. </dt>
+<dd>Beauftragung eines Systembetreibers und Festlegung der Anforderungen an dessen Überwachung und Überprüfung;</dd>
+<dt>f. </dt>
+<dd>Festlegung von Fristen für die Durchführung von kritischen Handlungen und Operationen;</dd>
+<dt>g. </dt>
+<dd>Überwachung und Überprüfung der Arbeiten des Systembetreibers;</dd>
+<dt>h. </dt>
+<dd>Begleitung und Instruktion der Prüferinnen und Prüfer;</dd>
+<dt>i. </dt>
+<dd>Beurteilung und Kommunikation der Korrektheit des Ergebnisses des Urnengangs gestützt auf die Beweise nach Artikel 5 und weitere Indikatoren.</dd>
+</dl>
+<p class="absatz "><sup>4</sup> Bei einem Urnengang tragen die Betriebsstellen für die Bereitstellung und die Handhabung der technischen Aspekte der elektronischen Stimmabgabe die Verantwortung gegenüber dem Kanton.</p>
+<p class="absatz "><sup>5</sup> Die nach kantonalem Recht zuständigen Prüferinnen und Prüfer übernehmen die Verantwortung für den Betrieb ihrer technischen Hilfsmittel.</p>
+</div></article><article id="art_15"><a name="a15"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_15"><b>Art. 15</b> Unterlagen zu den Gesuchen</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Den Gesuchen nach Artikel 27<i>e</i> VPR sind Informationen zum geplanten Einsatz der elektronischen Stimmabgabe und Unterlagen darüber, wie die rechtlichen Anforderungen erfüllt werden, beizulegen. Dazu gehören insbesondere:</p>
+<dl>
+<dt>a. </dt>
+<dd>aktuelle Risikobeurteilungen nach Artikel 4 einschliesslich der Grundlagen, die für die Nachvollziehbarkeit notwendig sind;</dd>
+<dt>b.  </dt>
+<dd>Zertifikate und deren Anhänge, die im Rahmen von Prüfungen nach Artikel 10 Absatz 2 erstellt wurden und Informationen zu deren Offenlegung nach Artikel 10 Absatz 4;</dd>
+<dt>c. </dt>
+<dd>Informationen zur Offenlegung der Unterlagen nach Artikel 11 und zu Hinweisen aus der Öffentlichkeit nach Artikel 13;</dd>
+<dt>d. </dt>
+<dd>Protokolle von Tests, die der Kanton durchgeführt hat, und Hinweise auf bestehende Mängel im System;</dd>
+<dt>e. </dt>
+<dd>die Begründung und allfällige Massnahmen für Ausnahmen nach Artikel 16 Absatz 2.</dd>
+</dl>
+<p class="absatz "><sup>2</sup> Auf Unterlagen nach Absatz 1, die die Bundeskanzlei bereits erhalten hat und die noch gültig sind, kann verwiesen werden.</p>
+</div></article><article id="art_16"><a name="a16"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_16"><b>Art. 16</b> Weitere Bestimmungen</a>
+</h6>
+<div class="collapseable">
+<p class="absatz "><sup>1</sup> Die detaillierten technischen und administrativen Anforderungen an die elektronische Stimmabgabe sind im Anhang geregelt.</p>
+<p class="absatz "><sup>2</sup> Die Bundeskanzlei kann in Ausnahmefällen einen Kanton von der Erfüllung einzelner Anforderungen befreien, sofern:</p>
+<dl>
+<dt>a. </dt>
+<dd>die nicht erfüllten Anforderungen im Gesuch bezeichnet sind;</dd>
+<dt>b. </dt>
+<dd>eine nachvollziehbare Begründung für den Ausnahmefall vorliegt; und</dd>
+<dt>c. </dt>
+<dd>der Kanton allfällige alternative Massnahmen beschreibt und mit Bezug auf die Risikobeurteilung begründet, weshalb er die Risiken als hinreichend gering einschätzt.</dd>
+</dl>
+</div></article><article id="art_17"><a name="a17"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_17"><b>Art. 17 </b><b></b> <b></b>Aufhebung eines anderen Erlasses</a>
+</h6>
+<div class="collapseable">
+<p class="absatz ">Die Verordnung der BK vom 13. Dezember 2013<sup><a href="#fn-d7e639" id="fnbck-d7e639">2</a></sup> über die elektronische Stimmabgabe wird aufgehoben.</p>
+<div class="footnotes"><p id="fn-d7e639"><sup><a href="#fnbck-d7e639">2</a></sup><sup></sup> [<a href="https://fedlex.data.admin.ch/eli/oc/2013/859" target="_blank">AS <b>2013</b> 5371</a>; <b></b><a href="https://fedlex.data.admin.ch/eli/oc/2018/321" target="_blank"><b>2018</b> 2279</a>]</p></div>
+</div></article><article id="art_18"><a name="a18"></a><h6 class="heading " role="heading">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#art_18"><b>Art. 18</b> Inkrafttreten</a>
+</h6>
+<div class="collapseable"><p class="absatz ">Diese Verordnung tritt am 1. Juli 2022 in Kraft.</p></div></article></main><div id="annex"><section id="annex_u1"><h1 class="heading" role="heading" aria-level="1">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1">Anhang</a>
+</h1>
+<div class="collapseable">
+<p class="titelanhtext ">(Art. 2 Abs. 1 Bst. k und 2, 9, 10 Abs. 1 und 2 sowie 16 Abs. 1)</p>
+<section id="annex_u1/lvl_u1"><h2 class="heading" role="heading" aria-level="2">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1">Technische und administrative Anforderungen <br>an die elektronische Stimmabgabe</a>
+</h2>
+<div class="collapseable">
+<section id="annex_u1/lvl_u1/lvl_1"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_1">1. Begriffsbestimmungen</a>
+</h3>
+<div class="collapseable">
+<p class="absatz ">Zusätzlich zu Artikel 2 bedeuten die folgenden Ausdrücke:</p>
+<dl class="man-template-absatz-struktur-1">
+<dt>1.1<i> </i>
+</dt>
+<dd>
+<i>Wahrung </i>des<i> Stimmgeheimnisses:</i> Situation, wenn keiner Person oder Komponente folgende Daten vorliegen:<dl>
+<dt>1.1.1 </dt>
+<dd>abgegebene Stimmen oder Daten, die auf den Inhalt abgegebener Stimmen schliessen lassen,</dd>
+<dt>1.1.2 </dt>
+<dd>Daten, die es erlauben, die stimmenden Personen zu identifizieren (Daten über die stimmberechtigten Personen), und</dd>
+<dt>1.1.3 </dt>
+<dd>Daten, die es erlauben, die Daten über die stimmberechtigten Personen den abgegebenen Stimmen zuzuordnen;</dd>
+</dl>
+</dd>
+<dt>1.2 </dt>
+<dd>
+<i>Ausschluss </i><i>von vorzeitigen</i><i> Teilergebnissen:</i> Situation, wenn keiner Person oder Komponente die abgegebenen Stimmen oder Daten, die auf die abgegebenen Stimmen schliessen lassen, vorzeitig vorliegen;</dd>
+<dt>1.3 </dt>
+<dd>
+<i>Verifizierungsreferenz:</i> eine mit dem Stimmmaterial zugestellte Grundlage, damit die stimmberechtigten Personen nach Artikel 5 Absatz 2 in Verbindung mit Ziffer 2.5 des Anhangs prüfen können, ob ihre Stimme korrekt abgegeben wurde (z. B. eine Liste, auf der für jede Antwortmöglichkeit ein Code aufgeführt ist);</dd>
+<dt>1.4 </dt>
+<dd>
+<i>externer Angreifer:</i> Person oder Gruppe von Personen, die nicht mit der Entwicklung und dem Betrieb des Systems vertraut ist, die über durchschnittliche Ressourcen und Fachkenntnisse verfügt und von der ein Angriff ausgeht; ihre Beweggründe können Aktivismus oder finanziellen Gewinn umfassen;</dd>
+<dt>1.5 </dt>
+<dd>
+<i>interner Angreifer:</i> Person oder Gruppe von Personen, die an der Entwicklung oder am Betrieb des Systems beteiligt ist und von der ein Angriff ausgeht; ihre Beweggründe können Aktivismus, finanziellen Gewinn oder die Absicht, ihrem Arbeitgeber zu schaden, umfassen;</dd>
+<dt>1.6<i> </i>
+</dt>
+<dd>
+<i>feindliche Organisation: </i>Gruppe von Personen, die über umfangreiche Ressourcen und überdurchschnittliche Fachkenntnisse verfügt und von der ein Angriff ausgeht; sie kann dabei auch von einem Staat unterstützt werden; ihre Beweggründe können das Erlangen von Daten zu Profiling-Zwecken, die Störung eines Urnengangs oder die Beeinflussung der Ergebnisse des Urnengangs sein;</dd>
+<dt>1.7 </dt>
+<dd>
+<i>Angreifer: </i>eine Person, Gruppe von Personen oder Organisation nach den Ziffern 1.4–1.6;</dd>
+<dt>1.8 </dt>
+<dd>
+<i>elektronische Urne: </i>ein Speicherbereich, in dem die abgegebenen Stimmen bis zur Entschlüsselung und Auszählung gespeichert werden können;</dd>
+<dt>1.9 </dt>
+<dd>
+<i>Systemprotokoll</i>: Protokoll, das von den Bestandteilen der Infrastruktur erstellt wird, um den Betrieb des Systems zu überwachen und Vorfälle zu untersuchen.</dd>
+</dl>
+</div></section><section id="annex_u1/lvl_u1/lvl_2"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_2">2 Anforderungen an das kryptografische Protokoll für die vollständige Verifizierbarkeit (Art. 5)</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>2.1 </dt>
+<dd>Systemteilnehmende</dd>
+</dl>
+<p class="absatz ">Das kryptografische Protokoll regelt die Aufgaben der folgenden abstrakten Systemteilnehmenden:</p>
+<dl class="man-template-absatz-struktur-1">
+<dt>– </dt>
+<dd>stimmberechtigte / stimmende Person</dd>
+<dt>– </dt>
+<dd>Benutzerplattform</dd>
+<dt>– </dt>
+<dd>Setup-Komponente</dd>
+<dt>– </dt>
+<dd>nicht vertrauenswürdiges System (beliebige Komponenten unter Ausschluss der übrigen in dieser Ziffer aufgelisteten Komponenten; NV-System)</dd>
+<dt>– </dt>
+<dd>Druckkomponente</dd>
+<dt>– </dt>
+<dd>eine oder mehrere Gruppen von Kontrollkomponenten</dd>
+<dt>– </dt>
+<dd>Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>technisches Hilfsmittel der Prüferinnen und Prüfer</dd>
+<dt>2.2 </dt>
+<dd>Kommunikationskanäle</dd>
+</dl>
+<p class="absatz ">Das kryptografische Protokoll kann die folgenden Kommunikationskanäle zum Austausch von Nachrichten zwischen den Systemteilnehmenden vorsehen:</p>
+<dl class="man-template-absatz-struktur-1">
+<dt>– </dt>
+<dd>stimmberechtigte / stimmende Person ↔ Benutzerplattform</dd>
+<dt>– </dt>
+<dd>Benutzerplattform ↔ NV-System</dd>
+<dt>– </dt>
+<dd>Setup-Komponente ↔ NV-System</dd>
+<dt>– </dt>
+<dd>Kontrollkomponente ↔ NV-System</dd>
+<dt>– </dt>
+<dd>NV-System → Druckkomponente</dd>
+<dt>– </dt>
+<dd>NV-System → technisches Hilfsmittel der Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>Druckkomponente → stimmberechtigte / stimmende Person</dd>
+<dt>– </dt>
+<dd>Setup-Komponente → technisches Hilfsmittel der Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>Prüferinnen und Prüfer ↔ technisches Hilfsmittel der Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>bidirektionale Kanäle für die Kommunikation zwischen den Kontrollkomponenten</dd>
+<dt>2.3 </dt>
+<dd>Angreifer</dd>
+<dt>2.3.1 </dt>
+<dd>Das kryptografische Protokoll muss vor einem Angreifer Schutz bieten, der versucht, missbräuchlich auf die Stimmen und das Ergebnis einzuwirken, das Stimmgeheimnis zu brechen oder Teilergebnisse vorzeitig zu erheben (Ziff. 2.5–2.8).</dd>
+<dt>2.3.2 </dt>
+<dd>Es muss die Annahme getroffen werden, dass ein Angreifer über folgende Fähigkeiten verfügt:<dl>
+<dt>– </dt>
+<dd>Er kann sämtliche nicht vertrauenswürdigen Systemteilnehmenden (vgl. Ziff. 2.4) unter seine Kontrolle bringen, so dass sie alle geheimen Daten mit ihm teilen und uneingeschränkt nach seinen Anweisungen handeln.</dd>
+<dt>– </dt>
+<dd>Er kann sämtliche Nachrichten, die auf nicht vertrauenswürdigen Kanälen ausgetauscht werden, mitlesen und unterdrücken sowie selbst beliebige Nachrichten einspeisen.</dd>
+</dl>
+</dd>
+<dt>2.4 </dt>
+<dd>Vertrauenswürdige und nicht vertrauenswürdige Systemteilnehmende und Kommunikationskanäle</dd>
+<dt>2.4.1 </dt>
+<dd>Systemteilnehmende und Kommunikationskanäle gelten entweder als «vertrauenswürdig» oder als «nicht vertrauenswürdig». Die zulässigen Vertrauensannahmen für die einzelnen Systemteilnehmenden sind in Ziffer 2.9 geregelt.</dd>
+<dt>2.4.2 </dt>
+<dd>Vertrauenswürdige Systemteilnehmende und Kommunikationskanäle werden als gegen Angreifer geschützt betrachtet. Für das kryptografische Protokoll darf namentlich von folgenden Annahmen ausgegangen werden:<dl>
+<dt>– </dt>
+<dd>Vertrauenswürdige Systemteilnehmende halten vertrauliche Daten unter Verschluss und führen ausschliesslich jene Operationen durch, die durch das kryptografische Protokoll vorgegeben sind.</dd>
+<dt>– </dt>
+<dd>Vertrauenswürdige Kommunikationskanäle halten die übertragenen Nachrichten unter Verschluss und schützen sie vor Manipulation.</dd>
+</dl>
+</dd>
+<dt>2.5 </dt>
+<dd>Anforderung an das kryptografische Protokoll: individuelle Verifizierbarkeit</dd>
+</dl>
+<p class="absatz ">Die stimmberechtigte Person erhält Beweise nach Artikel 5 Absatz 2 in Verbindung mit Artikel 6 Buchstaben a und b zur Bestätigung, dass ein Angreifer:</p>
+<dl class="man-template-absatz-struktur-1">
+<dt>– </dt>
+<dd>bis zur Registrierung als eine systemkonform abgegebene Stimme keine Teilstimme der stimmberechtigten Person verändert oder unterschlagen hat;</dd>
+<dt>– </dt>
+<dd>nicht im Namen der stimmberechtigten Person missbräuchlich eine Stimme abgegeben hat, die in der Folge als systemkonform abgegebene Stimme registriert und gezählt worden ist.</dd>
+<dt>2.6 </dt>
+<dd>Anforderung an das kryptografische Protokoll: universelle Verifizierbarkeit</dd>
+</dl>
+<p class="absatz ">Die Prüferinnen und Prüfer erhalten Beweise nach Artikel 5 Absatz 3 Buchstabe a in Verbindung mit Artikel 6 Buchstaben a und c zur Bestätigung, dass ein Angreifer:</p>
+<dl class="man-template-absatz-struktur-1">
+<dt>– </dt>
+<dd>nachdem die Stimmen als systemkonform abgegeben registriert worden sind, bis zur Berechnung des Ergebnisses keine Teilstimmen verändert oder unterschlagen hat;</dd>
+<dt>– </dt>
+<dd>keine nicht systemkonform abgegebenen Stimmen oder Teilstimmen eingefügt hat, die bei der Berechnung des Ergebnisses berücksichtigt wurden.</dd>
+<dt>2.7 </dt>
+<dd>Anforderungen an das kryptografische Protokoll: Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</dd>
+<dt>2.7.1 </dt>
+<dd>Es muss sichergestellt sein, dass ein Angreifer weder das Stimmgeheimnis brechen noch Teilergebnisse vorzeitig erheben kann, ohne zusätzlich die stimmberechtigten Personen oder deren Benutzerplattformen unter seine Kontrolle zu bringen.</dd>
+<dt>2.7.2 </dt>
+<dd>Es besteht keine Pflicht, Angriffe zu verhindern, durch die die Anzahl der ausgezählten Stimmen so beschränkt wird, dass alle Teilstimmen für eine Abstimmungsfrage, Liste oder kandidierende Person gleich lauten.</dd>
+<dt>2.7.3 </dt>
+<dd>Es muss sichergestellt sein, dass ein Angreifer die Benutzerplattformen nicht unbemerkt unter seine Kontrolle bringen kann, indem er die Software für die Benutzerplattformen auf dem Server manipuliert. Die stimmende Person muss die Möglichkeit haben zu prüfen, ob ihre Benutzerplattform vom Server die korrekte Software mit den korrekten Parametern, insbesondere dem öffentlichen Schlüssel zur Verschlüsselung der Stimme, erhalten hat.</dd>
+<dt>2.8 </dt>
+<dd>Anforderung an das kryptografische Protokoll: wirksame Authentisierung</dd>
+</dl>
+<p class="absatz ">Es muss sichergestellt sein, dass ein Angreifer keine Stimme systemkonform abgeben kann, ohne die entsprechenden stimmberechtigten Personen unter seine Kontrolle zu bringen.</p>
+<dl class="man-template-absatz-struktur-1">
+<dt>2.9 </dt>
+<dd>Aufzählung der vertrauenswürdigen und nicht vertrauenswürdigen Systemteilnehmenden</dd>
+<dt>2.9.1 </dt>
+<dd>Für die Stichhaltigkeit der Beweise nach Ziffer 2.5</dd>
+<dt>2.9.1.1 </dt>
+<dd>Die folgenden Systemteilnehmenden gelten als nicht vertrauenswürdig:<dl>
+<dt>– </dt>
+<dd>Benutzerplattform</dd>
+<dt>– </dt>
+<dd>NV-System</dd>
+<dt>– </dt>
+<dd>drei von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche drei es sich handelt</dd>
+<dt>– </dt>
+<dd>ein signifikanter Anteil der stimmberechtigten Personen</dd>
+<dt>– </dt>
+<dd>Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>technische Hilfsmittel der Prüferinnen und Prüfer</dd>
+</dl>
+</dd>
+<dt>2.9.1.2 </dt>
+<dd>Die folgenden Systemteilnehmenden dürfen als vertrauenswürdig gelten:<dl>
+<dt>– </dt>
+<dd>Setup-Komponente</dd>
+<dt>– </dt>
+<dd>Druckkomponente</dd>
+<dt>– </dt>
+<dd>eine von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche es sich dabei handelt</dd>
+</dl>
+</dd>
+<dt>2.9.2 </dt>
+<dd>Für die Stichhaltigkeit der Beweise nach Ziffer 2.6</dd>
+<dt>2.9.2.1 </dt>
+<dd>Die folgenden Systemteilnehmenden gelten als nicht vertrauenswürdig:<dl>
+<dt>– </dt>
+<dd>Benutzerplattform</dd>
+<dt>– </dt>
+<dd>NV-System</dd>
+<dt>– </dt>
+<dd>drei von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche drei es sich handelt</dd>
+<dt>– </dt>
+<dd>ein signifikanter Anteil der stimmberechtigten Personen</dd>
+<dt>– </dt>
+<dd>Setup-Komponente</dd>
+<dt>– </dt>
+<dd>Druckkomponente</dd>
+</dl>
+</dd>
+<dt>2.9.2.2 </dt>
+<dd>Die folgenden Systemteilnehmenden dürfen als vertrauenswürdig gelten:<dl>
+<dt>– </dt>
+<dd>eine von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche es sich dabei handelt</dd>
+<dt>– </dt>
+<dd>eine Prüferin oder ein Prüfer einer Gruppe, wobei offengelassen werden muss, um welche oder welchen es sich dabei handelt</dd>
+<dt>– </dt>
+<dd>ein technisches Hilfsmittel einer vertrauenswürdigen Prüferin oder eines vertrauenswürdigen Prüfers, wobei offengelassen werden muss, um welches es sich dabei handelt</dd>
+</dl>
+</dd>
+<dt>2.9.3 </dt>
+<dd>Für die Wahrung des Stimmgeheimnisses und den Ausschluss von vorzeitigen Teilergebnissen nach Ziffer 2.7</dd>
+<dt>2.9.3.1 </dt>
+<dd>Die folgenden Systemteilnehmenden gelten als nicht vertrauenswürdig:<dl>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>NV-System</dd>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>drei von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche drei es sich handelt</dd>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>ein signifikanter Anteil der stimmberechtigten Personen</dd>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>Prüferinnen und Prüfer</dd>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>technische Hilfsmittel der Prüferinnen und Prüfer</dd>
+</dl>
+</dd>
+<dt>2.9.3.2 </dt>
+<dd>Die folgenden Systemteilnehmenden dürfen als vertrauenswürdig gelten:<dl>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>Setup-Komponente</dd>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>Druckkomponente</dd>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>Benutzerplattform</dd>
+<dt>
+<b>–</b><b> </b>
+</dt>
+<dd>
+<b></b>eine von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche es sich dabei handelt</dd>
+</dl>
+</dd>
+<dt>2.9.3.3 </dt>
+<dd>Wird eine gesamte Gruppe von Kontrollkomponenten bei einem privaten Systembetreiber eingesetzt, so gilt keine dieser Kontrollkomponenten als vertrauenswürdig.</dd>
+<dt>2.9.4 </dt>
+<dd>Für die Wirksamkeit der Authentisierung nach Ziffer 2.8</dd>
+<dt>2.9.4.1 </dt>
+<dd>Die folgenden Systemteilnehmenden gelten als nicht vertrauenswürdig:<dl>
+<dt>– </dt>
+<dd>NV-System</dd>
+<dt>– </dt>
+<dd>drei von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche drei es sich handelt</dd>
+<dt>– </dt>
+<dd>ein signifikanter Anteil der stimmberechtigten Personen</dd>
+<dt>– </dt>
+<dd>Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>technische Hilfsmittel der Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>Benutzerplattform</dd>
+</dl>
+</dd>
+<dt>2.9.4.2 </dt>
+<dd>Die folgenden Systemteilnehmenden dürfen als vertrauenswürdig gelten:<dl>
+<dt>– </dt>
+<dd>Setup-Komponente</dd>
+<dt>– </dt>
+<dd>Druckkomponente</dd>
+<dt>– </dt>
+<dd>eine von vier Kontrollkomponenten pro Gruppe, wobei offengelassen werden muss, um welche es sich dabei handelt</dd>
+</dl>
+</dd>
+<dt>2.10 </dt>
+<dd>Aufzählung der vertrauenswürdigen und nicht vertrauenswürdigen Kommunikationskanäle</dd>
+<dt>2.10.1 </dt>
+<dd>Die folgenden Kommunikationskanäle gelten als nicht vertrauenswürdig:<dl>
+<dt>– </dt>
+<dd>Benutzerplattform ↔ NV-System</dd>
+<dt>– </dt>
+<dd>Setup-Komponente ↔ NV-System</dd>
+<dt>– </dt>
+<dd>Kontrollkomponente ↔ NV-System</dd>
+<dt>– </dt>
+<dd>NV-System → Druckkomponente</dd>
+<dt>– </dt>
+<dd>NV-System → technisches Hilfsmittel der Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>bidirektionale Kanäle für die Kommunikation zwischen den Kontrollkomponenten</dd>
+</dl>
+</dd>
+<dt>2.10.2 </dt>
+<dd>Die folgenden Kommunikationskanäle dürfen als vertrauenswürdig gelten:<dl>
+<dt>– </dt>
+<dd>stimmberechtigte / stimmende Person ↔ Benutzerplattform</dd>
+<dt>– </dt>
+<dd>technisches Hilfsmittel der Prüferinnen und Prüfer ↔ Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>Setup-Komponente → technisches Hilfsmittel der Prüferinnen und Prüfer</dd>
+<dt>– </dt>
+<dd>Druckkomponente → stimmberechtigte / stimmende Person</dd>
+</dl>
+</dd>
+<dt>2.11 </dt>
+<dd>Zusätzliche Anforderungen an die Stichhaltigkeit der Beweise</dd>
+<dt>2.11.1 </dt>
+<dd>Die Wahrscheinlichkeit für einen Angreifer, einen Beweis nach Ziffer 2.5 fälschen zu können, wenn er eine Teilstimme verändert, eine Teilstimme unterschlägt oder in fremdem Namen eine Stimme abgibt, darf höchstens 0.1 Prozent betragen.</dd>
+<dt>2.11.2 </dt>
+<dd>Die Wahrscheinlichkeit für einen Angreifer, einen Beweis nach Ziffer 2.6 fälschen zu können, wenn er durch Verändern und Unterschlagen von systemkonform abgegebenen Stimmen sowie durch Einfügen von nicht systemkonform abgegebenen Stimmen bewirkt, dass das berechnete Ergebnis um 0.1 Prozent vom korrekten Ergebnis abweicht, darf pro Vorlage, Listenwahl oder Kandidatenwahl höchstens 1 Prozent betragen.</dd>
+<dt>2.11.3 </dt>
+<dd>Ist die Wahrscheinlichkeit für einen Angreifer einen Beweis nach Ziffer 2.6 fälschen zu können, nicht im kryptografischen Sinn vernachlässigbar<sup><a href="#fn-d7e1135" id="fnbck-d7e1135">3</a></sup>, so muss die Erfolgswahrscheinlichkeit durch mehrmaliges Auszählen beliebig reduziert werden können, indem die Prüferinnen und Prüfer zu jeder Auszählung einen zusätzlichen, unabhängigen Beweis nach Ziffer 2.6 erhalten.</dd>
+<dt>2.12 </dt>
+<dd>Funktionale Anforderungen an den Prozess der Stimmabgabe mit Auswirkungen auf das kryptografische Protokoll</dd>
+<dt>2.12.1 </dt>
+<dd>Mit den Authentisierungsmerkmalen, die einer stimmberechtigten Person zugewiesen sind, kann nur eine Stimme abgegeben werden.</dd>
+<dt>2.12.2 </dt>
+<dd>Die stimmende Person gibt ihre Stimme in die Benutzerplattform ein.</dd>
+<dt>2.12.3 </dt>
+<dd>Die stimmende Person kann die Stimme bis zur Willensbekundung, sie abgeben zu wollen, verändern und anhand einer Übersicht prüfen.</dd>
+<dt>2.12.4 </dt>
+<dd>Nachdem die stimmende Person die Möglichkeit hatte, die Stimme anhand der Übersicht zu prüfen, gibt sie in die Benutzerplattform ein, dass sie die Stimme in der eingegebenen Form abgeben will.</dd>
+<dt>2.12.5 </dt>
+<dd>Die Beweise für die korrekte Stimmabgabe nach Ziffer 2.5 müssen sich in mindestens zwei sequenzielle Teilbeweise gliedern. Jede als Teilbeweis dargestellte Anzeige muss einen echten Beitrag an die Stichhaltigkeit des Beweises nach Ziffer 2.5 bilden.</dd>
+<dt>2.12.6 </dt>
+<dd>Die Benutzerplattform zeigt der stimmenden Person den ersten Teilbeweis an, nachdem diese in die Benutzerplattform eingegeben hat, dass sie die Stimme abgeben will.</dd>
+<dt>2.12.7 </dt>
+<dd>Die Benutzerplattform zeigt der stimmenden Person den nachfolgenden Teilbeweis erst dann an, wenn diese die Korrektheit des vorherigen Teilbeweises durch eine Eingabe in die Benutzerplattform bestätigt hat.</dd>
+<dt>2.12.8 </dt>
+<dd>Indem die stimmende Person die Korrektheit des vorletzten Teilbeweises bestätigt, bekundet sie den Willen, die Stimme definitiv abgeben zu wollen.</dd>
+<dt>2.12.9 </dt>
+<dd>Die Gruppe von Kontrollkomponenten registriert die Stimme als systemkonform abgegeben, wenn sie die Bestätigung, die Stimme definitiv abgeben zu wollen, erhalten hat.</dd>
+<dt>2.12.10 </dt>
+<dd>Hat die stimmende Person den letzten Teilbeweis mit positivem Ergebnis geprüft, so ist die Stimmabgabe abgeschlossen. Der letzte Teilbeweis soll besonders leicht zu prüfen sein, indem sich die Prüfung möglichst auf die korrekte Anzeige eines einzigen Codes oder einer anderen einfachen Anzeige beschränkt.</dd>
+<dt>2.12.11 </dt>
+<dd>Werden Stimmdaten importiert, so ist eine Setup-Komponente oder eine Druckkomponente ab jenem Zeitpunkt nicht mehr als vertrauenswürdig zu betrachten.</dd>
+<dt>2.13 </dt>
+<dd>Anforderungen an die Definition und die Beschreibung des kryptografischen Protokolls</dd>
+<dt>2.13.1 </dt>
+<dd>Wo möglich werden Bausteine verwendet, die weltweit verbreitet sind und vertieft durch kompetente Personen geprüft wurden. Als Massgabe können Standards, Referenzprojekte sowie wissenschaftliche Publikationen beigezogen werden. Abweichungen und Zweifelsfälle müssen im Rahmen der Risikobeurteilung nach Artikel 4 gesondert behandelt werden.</dd>
+<dt>2.13.2 </dt>
+<dd>Handlungsanweisungen dürfen nicht unterspezifiziert sein. Die einzelnen Handlungsanweisungen müssen die Umsetzungsmöglichkeiten so weit eingrenzen, dass jede Umsetzung, die die Anweisung zulässt, auch mit der Erfüllung der Anforderungen an das kryptografische Protokoll konform ist.</dd>
+<dt>2.13.3 </dt>
+<dd>Für die Verteilung von elektronischen Zertifikaten unter den Systemteilnehmenden dürfen vertrauenswürdige Kanäle angenommen werden. Es gilt Ziffer 3.8.</dd>
+<dt>2.14 </dt>
+<dd>Konformitätsbeweise über die Erfüllung der Anforderungen an das kryptografische Protokoll</dd>
+<dt>2.14.1 </dt>
+<dd>Ein symbolischer und ein kryptografischer Konformitätsbeweis müssen belegen, dass das kryptografische Protokoll die Anforderungen in Ziffern 2.1–2.12 erfüllt.</dd>
+<dt>2.14.2 </dt>
+<dd>Die Konformitätsbeweise müssen direkt auf die Protokollbeschreibung Bezug nehmen, die als Grundlage für die Systementwicklung dient.</dd>
+<dt>2.14.3 </dt>
+<dd>Die Konformitätsbeweise dürfen bezüglich kryptografischer Grundkomponenten unter allgemein akzeptierten Sicherheitsannahmen und -konstruktionen geführt werden (beispielsweise «random oracle model», «decisional Diffie-Hellman assumption», «Fiat-Shamir heuristic»).</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e1135"><sup><a href="#fnbck-d7e1135">3</a></sup><sup></sup> Dies entspricht etwa der Wahrscheinlichkeit, einen verschlüsselten Wert, der mit einem als sicher geltenden Algorithmus und entsprechender Parametrisierung verschlüsselt wurde, ohne Kenntnis des Schlüssels entschlüsseln zu können.</p></div>
+</div></section><section id="annex_u1/lvl_u1/lvl_3"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_3">3. Anforderungen an vertrauenswürdige Komponenten nach Ziffer 2 und an deren Betrieb</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>3.1 </dt>
+<dd>Der Betrieb der Setup-Komponente und mindestens einer Kontrollkomponente der Gruppe, die einen Teil des Schlüssels zur Entschlüsselung der Stimmen enthält, gehört in die direkte Zuständigkeit des Kantons und muss in dessen Infrastruktur erfolgen. Die Auslagerung an einen privaten Systembetreiber ist unzulässig.</dd>
+<dt>3.2 </dt>
+<dd>Für die Wahl von Zufallswerten namentlich für Setup-Komponenten und Kontrollkomponenten ist die Verwendung von genügend Entropie sicherzustellen.</dd>
+<dt>3.3 </dt>
+<dd>Prüferinnen und Prüfer müssen die Beweise nach Ziffer 2.6 mindestens einmal prüfen und dazu ein technisches Hilfsmittel nach Ziffer 2 einsetzen.</dd>
+<dt>3.4 </dt>
+<dd>Die betrieblichen Anforderungen für Setup-Komponenten nach Ziffer 3 gelten auch für technische Hilfsmittel der Prüferinnen und Prüfer. Die Prüferinnen und Prüfer können im Rahmen ihrer Verantwortung, die durch das kantonale Recht festgelegt wird, Abweichungen vorsehen.</dd>
+<dt>3.5 </dt>
+<dd>Der Kanton kann mit Ausnahme der unter den Ziffern 3.1 und 3.3 genannten Komponenten den Betrieb beliebiger Teile des Systems, einschliesslich der Kontrollkomponenten sowie der Druckkomponente, an private Dienstleister delegieren. Ein privater Betreiber der Druckkomponente darf ausschliesslich betriebliche Aufgaben wahrnehmen, die für die Aufbereitung, Verpackung und Zustellung eine Voraussetzung bilden.</dd>
+<dt>3.6 </dt>
+<dd>Vertrauenswürdige Komponenten (Setup-Komponenten, Druckkomponenten, technische Hilfsmittel der Prüferinnen und Prüfer sowie Kontrollkomponenten) müssen in einem beobachtbaren Prozess aufgesetzt, aktualisiert, konfiguriert und abgesichert werden.</dd>
+<dt>3.7 </dt>
+<dd>Vor der Installation einer Software ist für sämtliche Programme anhand einer offiziellen vertrauenswürdigen Grundlage zu prüfen, ob es sich bei den Dateien um die korrekte und unverfälschte Version handelt.</dd>
+<dt>3.8 </dt>
+<dd>Bei der Installation elektronischer Zertifikate anderer Systemteilnehmender muss die Authentizität gewährleistet sein. Dazu ist ein manueller Prozess vorzusehen, bei dem Personen die elektronischen Zertifikate via einen physischen Datenträger nach Ziffer 3.13 von einer Maschine zur anderen bringen.</dd>
+<dt>3.9 </dt>
+<dd>Der Zeitpunkt für die Aktualisierung der gesamten Software von vertrauenswürdigen Komponenten ist so zu wählen, dass die dadurch erwarteten Vorteile gegenüber den möglichen Gefahren überwiegen.</dd>
+<dt>3.10 </dt>
+<dd>Setup-Komponenten, Druckkomponenten und technische Hilfsmittel der Prüferinnen und Prüfer, die in irgendeiner Form an der Bearbeitung von kritischen Daten beteiligt sind, müssen während der gesamten Rechenzeit und bis zur Löschung allfälliger kritischer Daten oder bis zur sicheren Aufbewahrung im Vieraugenprinzip physisch überwacht werden. Sie dürfen höchstens über sichtbare physische Kabel untereinander verbunden sein, damit bis zur Vernichtung der vertraulichen Daten möglichst ersichtlich ist, dass keine weiteren Maschinen auf sie zugreifen können.</dd>
+<dt>3.11 </dt>
+<dd>Für die Installation oder die Aktualisierung von Software dürfen vertrauenswürdige Komponenten nicht mit dem Internet verbunden werden.</dd>
+<dt>3.12 </dt>
+<dd>Im Grundsatz müssen kritische Daten nach ihrer Verwendung vernichtet werden. Beim Vorliegen guter Gründe ist als Alternative auch eine sichere Aufbewahrung des Datenträgers erlaubt.</dd>
+<dt>3.13 </dt>
+<dd>Datenträger für den Datenaustausch oder die Aufbewahrung von Daten, wie USB-Sticks, müssen nach dem Aufspielen der Daten in die vertrauenswürdige Komponente entfernt werden und dürfen vor der Vernichtung der Daten nur dann wiederverwendet werden, wenn sich auf der vertrauenswürdigen Komponente vor dem Aufspielen der Daten keine kritischen Daten befunden haben.</dd>
+<dt></dt>
+<dd>Datenträger für den Datenaustausch müssen vor der Verwendung mithilfe einer Komponente, die entsprechend den Anforderungen an vertrauenswürdige Komponenten betrieben wird, neu formatiert und allfällige Daten darauf müssen vernichtet werden.</dd>
+<dt>3.14 </dt>
+<dd>Es darf kein logischer Zugriff auf oder physischer Zugang zu vertrauenswürdigen Komponenten oder Datenträgern mit kritischen Daten möglich sein, ohne dass eine andere Person dies bemerkt, beispielsweise indem sie für die Gewährung des Zugriffs mitwirken muss (strenges Vieraugenprinzip).</dd>
+<dt>3.15 </dt>
+<dd>Ein geglückter unerlaubter Zugriff auf eine Kontrollkomponente soll möglichst keinen Vorteil beim Versuch verschaffen, auf eine weitere Kontrollkomponente unbemerkt zuzugreifen. Zusätzlich zu den übrigen Anforderungen nach Ziffer 3 gelten dahingehend die folgenden Anforderungen:<dl>
+<dt>− </dt>
+<dd>Hat eine Person einen physischen oder logischen Zugriff auf eine Kontrollkomponente, so darf sie keinen Zugriff auf eine andere Kontrollkomponente haben.</dd>
+<dt>− </dt>
+<dd>Die Hardware, die Betriebssysteme und die Überwachungssysteme der Kontrollkomponenten sollen sich möglichst unterscheiden.</dd>
+<dt>− </dt>
+<dd>Die Kontrollkomponenten sollen an unterschiedliche lokale Netzwerke angeschlossen sein.</dd>
+<dt>− </dt>
+<dd>Eine Kontrollkomponente muss durch ein physisches Gerät realisiert werden. Die Virtualisierung über mehrere physische Geräte ist nicht zulässig.</dd>
+</dl>
+</dd>
+<dt>3.16 </dt>
+<dd>Kontrollkomponenten müssen darauf ausgerichtet sein, unerlaubte Zugriffe zu erkennen und die verantwortlichen Personen zu alarmieren. Die verantwortlichen Personen sollen externe Überwachungsmassnahmen vorsehen, wie beispielsweise die Überwachung und die manipulationsresistente Protokollierung des Netzverkehrs oder die physische Überwachung mit Kameras, die ihrer Kontrolle unterliegen. Die verantwortlichen Personen müssen als besonders vertrauenswürdig und zuverlässig gelten.</dd>
+<dt>3.17 </dt>
+<dd>Vertrauenswürdige Komponenten dürfen ausschliesslich die vorgesehenen Operationen durchführen.</dd>
+<dt>3.18 </dt>
+<dd>Die Software des technischen Hilfsmittels der Prüferinnen und Prüfer muss von einem anderen Systementwickler bezogen werden als jenem, der den grössten Teil der Software der übrigen Systembestandteile entwickelt hat. Die Publikation der Software des technischen Hilfsmittels unter einer Lizenz, die die Kriterien nach Open Source Software<sup><a href="#fn-d7e1279" id="fnbck-d7e1279">4</a></sup> erfüllt, kann eine Ausnahme begründen. Bringen Prüferinnen und Prüfer mehrere technische Hilfsmittel zum Einsatz, so gilt diese Bestimmung für mindestens eines der Hilfsmittel.</dd>
+<dt>3.19 </dt>
+<dd>Alle Abläufe im Umgang mit vertrauenswürdigen Komponenten müssen schriftlich und für die betroffenen Personen leicht verständlich dokumentiert sein.</dd>
+<dt>3.20 </dt>
+<dd>Jeder Zugriff und jede Verwendung einer vertrauenswürdigen Komponente oder eines Datenträgers mit kritischen Daten müssen protokolliert werden.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e1279"><sup><a href="#fnbck-d7e1279">4</a></sup><sup></sup> vgl. dazu die Definition im Praxis-Leitfaden Open Source Software in der Bundesverwaltung, Version 1.0 vom 19.12.2019, Kap. 1; beziehbar bei: Schweizerische Bundeskanzlei, CH-3003 Bern; www.bk.admin.ch &gt; Digitale Transformation und IKT Lenkung &gt; Bundesarchitektur &gt; Open Source Software (OSS).</p></div>
+</div></section><section id="annex_u1/lvl_u1/lvl_4"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_4">4. Stimmvorgang</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>4.1 </dt>
+<dd>Die stimmende Person erklärt, dass sie die Regeln der elektronischen Stimmabgabe und ihre Verantwortlichkeit zur Kenntnis genommen hat.</dd>
+<dt>4.2 </dt>
+<dd>Die stimmende Person wird, bevor sie ihre Stimme abgibt, darauf aufmerksam gemacht, dass sie damit am Urnengang teilnimmt, wie wenn sie brieflich oder persönlich an der Urne abstimmen würde. Die stimmende Person kann ihre Stimme erst abgeben, nachdem sie bestätigt hat, dies zur Kenntnis genommen zu haben.</dd>
+<dt>4.3 </dt>
+<dd>Die stimmende Person wird bei der Stimmabgabe aufgefordert, die Beweise nach Ziffer 2.5 anhand der Verifizierungsreferenz zu prüfen und allfällige Zweifel an deren Korrektheit beim Kanton zu melden.</dd>
+<dt>4.4 </dt>
+<dd>Vor der definitiven elektronischen Stimmabgabe kann die stimmberechtigte Person ihre Stimme weiterhin über einen konventionellen Stimmkanal abgeben.</dd>
+<dt>4.5 </dt>
+<dd>Das clientseitige System, wie es sich der stimmenden Person präsentiert, beeinflusst diese nicht in ihrer Entscheidungsfindung.</dd>
+<dt>4.6 </dt>
+<dd>Die Benutzerführung verleitet nicht zu einer übereilten oder unüberlegten Stimmabgabe.</dd>
+<dt>4.7 </dt>
+<dd>Das System bietet der stimmenden Person keine Funktion zum Ausdrucken oder Abspeichern der Stimme.</dd>
+<dt>4.8 </dt>
+<dd>Der stimmenden Person wird nach Abschluss der Stimmabgabe keinerlei Information zum Inhalt der abgegebenen verschlüsselten Stimme angezeigt.</dd>
+<dt>4.9 </dt>
+<dd>Einer stimmberechtigten Person, die keine Stimme abgeben kann, weil Drittpersonen unter missbräuchlicher Verwendung ihres Stimmmaterials eine Stimme abgegeben haben, kann der Kanton die Stimmabgabe weiterhin ermöglichen, indem er die missbräuchlich abgegebene Stimme für nichtig erklärt. Das Stimmgeheimnis nach Ziffer 2.7 ist zu wahren.</dd>
+<dt>4.10 </dt>
+<dd>Für eine stimmberechtigte Person mit einer Behinderung dürfen Erleichterungen zur Überprüfung der Beweise vorgesehen werden. Ausschliesslich in einem solchen Fall darf von den Anforderungen nach Ziffer 2.9.1 abgewichen werden.</dd>
+<dt>4.11 </dt>
+<dd>Solange das System keine Bestätigung der definitiven elektronischen Stimmabgabe registriert hat, kann eine stimmberechtigte Person ihre Stimme weiterhin über einen konventionellen Stimmkanal abgeben.</dd>
+<dt>4.12 </dt>
+<dd>Die Verwendung eines von der elektronischen Stimmabgabe unabhängigen Authentisierungsmittels ist erlaubt. Auswirkungen auf die Integrität der Stimmrechtsprüfung sowie die Wahrung des Stimmgeheimnisses sind im Rahmen der Risikobeurteilung vertieft zu prüfen.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_5"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_5">5. Vorbereitung des Urnengangs</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>5.1 </dt>
+<dd>Werden die Stimmregisterdaten aus einem Drittsystem importiert, das sich ausserhalb der Kontrolle des Kantons befindet, so müssen die Daten verschlüsselt und signiert werden. Die Signatur muss bei Erhalt solcher Daten überprüft werden. Für die Zustellung an die Druckerei gehen die Bestimmungen nach Ziffer 7 vor.</dd>
+<dt>5.2 </dt>
+<dd>Die Daten, die für die Prüfung der Beweise nach Ziffer 2.6 notwendig sind, werden an die Prüferinnen und Prüfer übergeben.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_6"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_6">6. Anforderungen an die Stimmrechtsausweise</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>6.1 </dt>
+<dd>Die Stimmrechtsausweise sind nach Möglichkeit so auszugestalten, dass sie Stimmberechtigten mit einer Behinderung einen barrierefreien Zugang zur elektronischen Stimmabgabe erlauben.</dd>
+<dt>6.2 </dt>
+<dd>Sicherheitselemente auf dem Stimmrechtsausweis (z. B. Rubbelfelder) dürfen nur verwendet werden, wenn ein Nachweis vorliegt, dass die verdeckte Information gut vor unerlaubtem Lesen geschützt ist.</dd>
+<dt>6.3 </dt>
+<dd>Wird auf die Verwendung von Sicherheitselementen zum Schutz vertraulicher Informationen auf dem Stimmrechtausweis verzichtet, so müssen Organisationsabläufe zur Gewährleistung der Sicherheit vorhanden sein.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_7"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_7">7. Anforderungen an Druckereien</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>7.1 </dt>
+<dd>Die Druckdaten zur Produktion der Stimmrechtsausweise werden verschlüsselt und signiert zugestellt. Alternativ kann auch ein Datenträger mit den entsprechenden Daten persönlich überbracht werden. In diesem Fall erfolgt die Übergabe des Datenträgers an die Druckerei, einschliesslich des Transports, durch zwei Personen und wird von diesen gemeinsam überwacht (Vieraugenprinzip).</dd>
+<dt>7.2 </dt>
+<dd>Die Verschlüsselung muss den Anforderungen aus dem eCH-Standard 0014<sup><a href="#fn-d7e1362" id="fnbck-d7e1362">5</a></sup>, Kapitel 7.5 genügen. Bei symmetrischer Verschlüsselung wird das Geheimelement zur Entschlüsselung den Verantwortlichen der Druckerei auf einem sicheren Zweitweg zugestellt.</dd>
+<dt>7.3 </dt>
+<dd>Die Verantwortlichen der Druckerei, die den Datenträger entgegennehmen, unterschreiben eine Empfangsbestätigung.</dd>
+<dt>7.4 </dt>
+<dd>Für den Datenträger mit den Druckdaten, die Komponente, auf der die kritischen Daten entschlüsselt werden, sowie alle Komponenten, die die kritischen Daten verarbeiten, gelten die Bestimmungen nach Ziffer 3 an die Druckkomponente.</dd>
+<dt>7.5 </dt>
+<dd>Die Verantwortlichen der Druckerei nehmen eine Materialmengenkontrolle vor.</dd>
+<dt>7.6 </dt>
+<dd>Nach dem Drucken der Stimmrechtsausweise vernichtet die Druckerei die erhaltenen Daten.</dd>
+<dt>7.7 </dt>
+<dd>Nimmt die Druckerei auch die Verpackung und den Versand der Stimmrechtsausweise vor, so sind diese unverzüglich nach dem Druck zusammen mit dem Stimmmaterial zu verpacken.</dd>
+<dt>7.8 </dt>
+<dd>Die Vertrauenswürdigkeit des Kanals zwischen der Druckerei und den stimmberechtigten Personen darf nur dann als gegeben erachtet werden, wenn die nach kantonalem Recht zuständigen Stellen das verpackte Stimmmaterial den stimmberechtigten Personen brieflich zustellen oder die persönliche Übergabe sicherstellen.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e1362"><sup><a href="#fnbck-d7e1362">5</a></sup><sup></sup> eCH-0014: Standards und Architekturen für eGovernment Anwendungen Schweiz (SAGA.ch), Version 9.0 vom 09.12.2019; der Standard kann kostenlos bezogen und  eingesehen werden beim Verein eCH, Mainaustrasse 30, Postfach, 8034 Zürich, www.ech.ch.</p></div>
+</div></section><section id="annex_u1/lvl_u1/lvl_8"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_8">8. Informationen und Anleitungen</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>8.1 </dt>
+<dd>Die auf kantonaler Ebene verantwortliche Stelle erstellt ein Konzept zur Information der Bürgerinnen und Bürger über die elektronische Stimmabgabe.</dd>
+<dt>8.2 </dt>
+<dd>Das Konzept gewährleistet, dass die Informationen von den zuständigen Gremien autorisiert werden.</dd>
+<dt>8.3 </dt>
+<dd>Auf dem Internet finden sich Ratschläge und Anleitungen zur Stimmabgabe sowie Informationen zur Verantwortlichkeit der stimmberechtigten Personen. Diese wirken einer überstürzten oder unüberlegten Handlungsweise entgegen.</dd>
+<dt>8.4 </dt>
+<dd>Den stimmberechtigten Personen werden die Verifizierbarkeit, weitere Sicherheitsmassnahmen sowie das Vorgehen bei Anomalien auf zugängliche Weise erklärt.</dd>
+<dt>8.5 </dt>
+<dd>Den stimmberechtigten Personen wird erklärt, worauf sie achten müssen, damit sie ihre Stimme sicher abgeben können.</dd>
+<dt>8.6 </dt>
+<dd>Den stimmberechtigten Personen wird erklärt, wie die Stimme in der zur Stimmeingabe verwendeten Benutzerplattform nach der Stimmabgabe auf allen Speichern gelöscht werden kann.</dd>
+<dt>8.7 </dt>
+<dd>Die stimmberechtigten Personen können bei Fragen zur elektronischen Stimmabgabe Unterstützung anfordern.</dd>
+<dt>8.8 </dt>
+<dd>Die stimmberechtigten Personen werden aufgerufen, falsch angezeigte Beweise nach Ziffer 2.5, wie Prüfcodes, oder weitere Prüfungen mit negativem Ergebnis bei der auf kantonaler Ebene verantwortlichen Stelle zu melden. Dieser Aufruf wird auch mit dem Stimmmaterial verbreitet.</dd>
+<dt>8.9 </dt>
+<dd>Die stimmberechtigten Personen werden aufgerufen, das Stimmmaterial mit den Sicherheitselementen, die in Erfüllung von Ziffer 2.5 stehen, bis zur definitiven Stimmabgabe oder bis zum Abschluss des Urnengangs unter Verschluss zu halten.</dd>
+<dt>8.10 </dt>
+<dd>Die stimmberechtigten Personen erhalten die nötigen Angaben, um die Authentizität der zur Stimmabgabe benutzten Internetseite, des Servers und der Software zu kontrollieren. Die Aussagekraft einer erfolgreichen Kontrolle muss durch den Einsatz kryptografischer Mittel gemäss besten Praktiken unterstützt werden.</dd>
+<dt>8.11 </dt>
+<dd>Die für die sichere Stimmabgabe wesentlichen Informationen werden mit dem Stimmmaterial verschickt. Den stimmberechtigten Personen wird erklärt, dass sie sich im Zweifelsfall an die Informationen des Stimmmaterials halten sollen und nicht an die Informationen, die auf der Benutzerplattform angezeigt werden.</dd>
+<dt>8.12 </dt>
+<dd>Den stimmberechtigten Personen wird erklärt, durch welche Vorkehrungen die Wahrung des Stimmgeheimnisses sichergestellt ist.</dd>
+<dt>8.13 </dt>
+<dd>Bekannte Mängel und der mit ihnen verbundene Handlungsbedarf werden transparent kommuniziert.</dd>
+<dt>8.14 </dt>
+<dd>Die Prüferinnen und Prüfer werden zu Prozessen, denen die Korrektheit des Ergebnisses, die Wahrung des Stimmgeheimnisses und den Ausschluss von vorzeitigen Teilergebnissen unterliegen (beispielsweise Schlüsselgenerierung, Druck des Stimmmaterials, Entschlüsselung und Auszählung), angemessen informiert und geschult. Sie sind in der Lage, die Vorgänge und ihre Bedeutung in den Kernpunkten zu verstehen.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_9"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_9">9. Öffnen und Schliessen des elektronischen Stimmkanals</a>
+</h3>
+<div class="collapseable"><p class="absatz ">Der elektronische Stimmkanal steht nur im erlaubten Zeitraum zur Verfügung.</p></div></section><section id="annex_u1/lvl_u1/lvl_10"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_10">10. Konformitätskontrolle und Ablage endgültig abgegebener Stimmen</a>
+</h3>
+<div class="collapseable"><p class="absatz ">Eine nicht systemkonform abgegebene Stimme wird nicht in der elektronischen Urne abgelegt.</p></div></section><section id="annex_u1/lvl_u1/lvl_11"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_11">11. Auszählung der elektronischen Urne</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>11.1 </dt>
+<dd>Die Entschlüsselung der Stimmen und deren Auszählung dürfen frühestens am Abstimmungs- oder Wahlsonntag beginnen.</dd>
+<dt>11.2 </dt>
+<dd>Der Kanton führt die Entschlüsselung und die Auszählung in der eigenen Infrastruktur durch.</dd>
+<dt>11.3 </dt>
+<dd>Der Kanton sorgt für die Protokollierung der Entschlüsselung der Stimmen und deren Auszählung. Die Freigabe des Protokolls erfolgt durch die auf kantonaler Ebene verantwortliche Stelle.</dd>
+<dt>11.4 </dt>
+<dd>Von der Entschlüsselung der Stimmen bis zur Übermittlung des Ergebnisses des Urnengangs erfolgt jeder Zugriff auf das System oder auf eine seiner Komponenten durch mindestens zwei Personen gemeinsam; er wird schriftlich aufgezeichnet und muss von den Prüferinnen und Prüfern kontrolliert werden können.</dd>
+<dt>11.5 </dt>
+<dd>Werden die Ergebnisdaten an ein Drittsystem übermittelt, das sich ausserhalb der Kontrolle des Kantons befindet, werden die Daten verschlüsselt und signiert.</dd>
+<dt>11.6<b> </b>
+</dt>
+<dd>
+<b></b>Das System ermöglicht es, dass anhand des Stimmrechtsausweises festgestellt werden kann, ob jemand eine elektronische Stimme abgegeben hat.</dd>
+<dt>11.7<b> </b>
+</dt>
+<dd>
+<b></b>Bei der Entschlüsselung und Auszählung sind Prüferinnen und Prüfer anwesend. Die Kantone können zusätzlich Prüfarbeiten aus der Ferne ermöglichen.</dd>
+<dt>11.8 </dt>
+<dd>Sind Komponenten, die zur Auszählung der Stimmen verwendet werden, nach Ziffer 2.4 nicht vertrauenswürdig, so gelten für diese dieselben Anforderungen wie für Setup-Komponenten nach Ziffer 3.</dd>
+<dt>11.9 </dt>
+<dd>Die Prüferinnen und Prüfer nehmen bei der Prüfung der Beweise nach Ziffer 2.6 ihre Verantwortung nach Massgabe des kantonalen Rechts wahr.</dd>
+<dt>11.10 </dt>
+<dd>Die auf kantonaler Ebene verantwortliche Stelle unterbreitet den Prüferinnen und Prüfern sämtliche relevanten Indikatoren für die Korrektheit des Ergebnisses. Dazu gehören nebst den Beweisen nach Ziffer 2.6 insbesondere auch die Zahl und die Art von Anomalien, die durch stimmberechtigte Personen beim Kanton gemeldet wurden.</dd>
+<dt>11.11 </dt>
+<dd>Der Kanton antizipiert allfällige Anomalien und erstellt dahingehend in Absprache mit den betroffenen Stellen einen Notfallplan, der das jeweilige Vorgehen festlegt. Er schafft Transparenz gegenüber der Öffentlichkeit.</dd>
+<dt>11.12 </dt>
+<dd>Zur Plausibilisierung des Ergebnisses sollen statistische Methoden eingesetzt werden, soweit sie verfügbar sind und soweit die Datenbasis dies erlaubt.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_12"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_12">12. Vertrauliche Daten</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>12.1 </dt>
+<dd>Es ist sichergestellt, dass weder Mitarbeitende noch externe Personen Daten kennen, die einen Bezug zwischen der Identität der stimmenden Person und ihrer Stimme zulassen.</dd>
+<dt>12.2 </dt>
+<dd>Es ist sichergestellt, dass weder Mitarbeitende noch externe Personen vor dem Zeitpunkt der Entschlüsselung der Stimmen Daten kennen, die die vorzeitige Erhebung von Teilergebnissen erlauben.</dd>
+<dt>12.3 </dt>
+<dd>Der Kanton darf seinen Teil des Schlüssels zur Entschlüsselung der Stimmen, der ihm nach Ziffer 3.1 auf der von ihm betriebenen Kontrollkomponente vorliegt, nicht an private Unternehmen weiterleiten.</dd>
+<dt>12.4 </dt>
+<dd>Der Kanton behandelt die Ergebnisse des Urnengangs zwischen dem Zeitpunkt der Entschlüsselung der Stimmen und dem Zeitpunkt der Publikation vertraulich.</dd>
+<dt>12.5 </dt>
+<dd>Der Kanton sorgt dafür, dass Daten vertraulich behandelt werden, die es erlauben festzustellen, ob eine stimmberechtigte Person auf dem elektronischen Weg eine Stimme abgegeben hat.</dd>
+<dt>12.6 </dt>
+<dd>Der Kanton behandelt die einzelnen Stimmen nach der Auszählung vertraulich.</dd>
+<dt>12.7 </dt>
+<dd>Der Kanton sorgt dafür, dass Abstimmungs- und Wahlergebnisse kleiner Wahlkreise vertraulich behandelt werden.</dd>
+<dt>12.8 </dt>
+<dd>Nach der Erwahrung werden gemäss einem vorgegebenen und dokumentierten Prozess sämtliche Daten vernichtet, die im Rahmen des elektronischen Urnengangs angefallen sind, in Bezug zu den einzelnen eingegangenen Stimmen stehen und als vertraulich klassifiziert sind.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_13"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_13">13. Bedrohungen</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>13.1 </dt>
+<dd>Die in den Ziffern 13.3–13.40 aufgelisteten Bedrohungen sind allgemeiner Art und bilden eine Grundlage, die zu ergänzen ist. Sie beziehen sich auf die Sicherheitsziele und sind bei der Identifizierung von Risiken zu berücksichtigen. In Abhängigkeit der identifizierten Schwachstellen des Systems und bei der Risikobeurteilung der verschiedenen Stellen ist die Liste entsprechend der konkreten Konstellation und in Abhängigkeit der spezifischen Bedrohung zu konkretisieren und zu ergänzen.</dd>
+<dt>13.2 </dt>
+<dd>Als mögliche Bedrohung gelten:<dl>
+<dt>– </dt>
+<dd>versehentlich oder absichtlich verursachte Bedrohungen, die von internen oder externen Akteurinnen und Akteuren ausgehen, die elektronische oder physische Mittel einsetzen;</dd>
+<dt>– </dt>
+<dd>Bedrohungen, die auf eine Fehlfunktion des Systems oder der systemunterstützenden Elemente zurückzuführen sind.</dd>
+</dl>
+</dd>
+</dl>
+<p></p>
+<div class="table"><table border="1">
+<tr>
+<th class=" man-text-align-left "><p class="man-template-tab-kpf "></p></th>
+<th class=" man-text-align-left "><p class="man-template-tab-kpf ">Beschreibung</p></th>
+<th class=" man-text-align-left "><p class="man-template-tab-kpf ">Betroffenes Sicherheitsziel (nach Art. 4 Abs. 3)</p></th>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.3</p></td>
+<td><p class="man-template-tab-krpr ">Malware verändert die Stimme auf der Benutzerplattform. </p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses </p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.4</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer leitet die Stimme mittels Domain-Name-Server-Spoofing (DNS-Spoofing)<sup><a href="#fn-d7e1562" id="fnbck-d7e1562">6</a></sup> um. </p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr "></p></td>
+<td><p class="man-template-tab-krpr "></p></td>
+<td><p class="man-template-tab-krpr "></p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.5</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer verändert die Stimme mit einer Man-in-the-<br>middle-Technik (MITM<sup><a href="#fn-d7e1587" id="fnbck-d7e1587">7</a></sup>-Technik). </p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.6</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer schickt mittels MITM bösartig veränderte Daten, die für die Stimmabgabe notwendig sind und aus dem Online-System stammen (z. B. Javascript-Datei).</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.7</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer manipuliert die Software, diese speichert die Stimmen nicht.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.8</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer verändert, löscht oder vervielfacht die Stimmen.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.9</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer fügt Stimmen ein.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.10</p></td>
+<td><p class="man-template-tab-krpr ">Eine feindliche Organisation dringt in das System ein mit dem Ziel, das <br>Ergebnis zu fälschen.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses </p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.11</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer kopiert Stimmunterlagen und benutzt sie.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.12</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer nutzt Social-Engineering-Methoden, um die Aufmerksamkeit der stimmenden Person an den Sicherheitsvorkehrungen vorbeizulenken (individuelle Verifizierbarkeit).</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.13</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer dringt elektronisch, physisch oder mittels Social Engineering in die Infrastruktur des Kantons ein und manipuliert die Setup-Komponente oder entwendet sicherheitsrelevante Daten.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.14</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer dringt elektronisch, physisch oder mittels Social Engineering in die Infrastruktur der Druckerei ein und entnimmt die Codes der Stimmrechtsausweise.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.15</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer dringt elektronisch, physisch oder mittels Social Engineering in die Infrastruktur der Post ein und entwendet Stimmrechtsausweise.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.16</p></td>
+<td><p class="man-template-tab-krpr ">In der individuellen Verifizierbarkeit tritt ein Fehler auf. </p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.17</p></td>
+<td><p class="man-template-tab-krpr ">In der universellen Verifizierbarkeit tritt ein Fehler auf. </p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.18</p></td>
+<td><p class="man-template-tab-krpr ">Ein technisches Hilfsmittel der Prüferinnen und Prüfer weist einen Fehler auf. </p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.19</p></td>
+<td><p class="man-template-tab-krpr ">Eine Backdoor<sup><a href="#fn-d7e1736" id="fnbck-d7e1736">8</a></sup> wird über eine Softwareabhängigkeit in das System eingeführt und von einem externen Angreifer ausgenutzt, um auf das System zuzugreifen.</p></td>
+<td><p class="man-template-tab-krpr ">Korrektheit des Ergebnisses, Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen, Erreichbarkeit und Funktionsfähigkeit des Stimmkanals, Schutz der für die stimmberechtigten Personen bestimmten Informationen vor Manipulationen, keine missbräuchliche Verwendung von Beweisen zum Stimmverhalten</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.20</p></td>
+<td><p class="man-template-tab-krpr ">Malware auf der Benutzerplattform schickt die Stimme an eine feindliche Organisation.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen </p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.21</p></td>
+<td><p class="man-template-tab-krpr ">Die Stimme wird mittels DNS-Spoofing umgeleitet.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.22</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer liest die Stimme mittels MITM. </p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.23</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer benutzt den Schlüssel und entschlüsselt nicht-anonyme Stimmen.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.24</p></td>
+<td><p class="man-template-tab-krpr ">Bei der Prüfung auf Korrektheit der Verarbeitung und der Auszählung wird das Stimmgeheimnis gebrochen.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.25</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer liest die Stimmen vorzeitig, ohne die Stimmen entschlüsseln zu müssen.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.26</p></td>
+<td><p class="man-template-tab-krpr ">Eine feindliche Organisation dringt ins System ein mit dem Ziel, das Stimmgeheimnis zu brechen oder Teilergebnisse vorzeitig zu erheben.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.27</p></td>
+<td><p class="man-template-tab-krpr ">Ein Fehler im Verschlüsselungsprozess macht diesen funktionsunfähig oder reduziert seine Wirksamkeit.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.28</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer manipuliert die Software und diese legt die Stimmen offen.</p></td>
+<td><p class="man-template-tab-krpr ">Wahrung des Stimmgeheimnisses und Ausschluss von vorzeitigen Teilergebnissen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.29</p></td>
+<td><p class="man-template-tab-krpr ">Malware auf der Benutzerplattform macht die Stimmabgabe unmöglich.</p></td>
+<td><p class="man-template-tab-krpr ">Erreichbarkeit und Funktionsfähigkeit des Stimmkanals</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.30</p></td>
+<td><p class="man-template-tab-krpr ">Eine feindliche Organisation führt einen Denial-of-Service-Angriff (DOS-Angriff)<sup><a href="#fn-d7e1853" id="fnbck-d7e1853">9</a></sup> durch.</p></td>
+<td><p class="man-template-tab-krpr ">Erreichbarkeit und Funktionsfähigkeit des Stimmkanals</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.31</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer nimmt eine fehlerhafte Konfiguration vor; es kommt nicht bis zur Auszählung.</p></td>
+<td><p class="man-template-tab-krpr ">Erreichbarkeit und Funktionsfähigkeit des Stimmkanals</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.32</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer fälscht die kryptografischen Beweise der universellen Verifizierbarkeit.</p></td>
+<td><p class="man-template-tab-krpr ">Erreichbarkeit und Funktionsfähigkeit des Stimmkanals</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.33</p></td>
+<td><p class="man-template-tab-krpr ">Ein technischer Fehler des Systems führt dazu, dass das System zum Zeitpunkt der Auszählung nicht verfügbar ist.</p></td>
+<td><p class="man-template-tab-krpr ">Erreichbarkeit und Funktionsfähigkeit des Stimmkanals</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.34</p></td>
+<td><p class="man-template-tab-krpr ">Ein technisches Hilfsmittel der Prüferinnen und Prüfer funktioniert zum Zeitpunkt der Auszählung nicht.</p></td>
+<td><p class="man-template-tab-krpr ">Erreichbarkeit und Funktionsfähigkeit des Stimmkanals</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.35</p></td>
+<td><p class="man-template-tab-krpr ">Eine feindliche Organisation dringt ins System ein mit dem Ziel, den Betrieb zu stören, die Informationen für die stimmberechtigten Personen zu manipulieren oder Beweise zum Stimmverhalten der stimmenden Personen zu stehlen.</p></td>
+<td><p class="man-template-tab-krpr ">Erreichbarkeit und Funktionsfähigkeit des Stimmkanals, Schutz der für die stimmberechtigten Personen bestimmten Informationen vor Manipulationen, keine missbräuchliche Verwendung von Beweisen zum Stimmverhalten </p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.36</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer stiehlt Adressdaten der stimmberechtigten Personen.</p></td>
+<td><p class="man-template-tab-krpr ">Schutz der persönlichen Informationen über die Stimmberechtigen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.37</p></td>
+<td><p class="man-template-tab-krpr ">Malware beeinflusst stimmberechtigte Personen bei der Meinungsbildung.</p></td>
+<td><p class="man-template-tab-krpr ">Schutz der für die stimmberechtigten Personen bestimmten Informationen vor Manipulationen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.38</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer manipuliert die Informationswebsite bzw. das Abstimmungsportal und täuscht so die stimmberechtigten Personen.</p></td>
+<td><p class="man-template-tab-krpr ">Schutz der für die stimmberechtigten Personen bestimmten Informationen vor Manipulationen</p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.39</p></td>
+<td><p class="man-template-tab-krpr ">Ein interner Angreifer schreibt stimmberechtigten Personen vor, ob und wie sie abzustimmen oder zu wählen haben. Nach der Entschlüsselung findet er in der Infrastruktur Belege, dass sich die stimmberechtigten Personen an die Instruktionen gehalten haben.</p></td>
+<td><p class="man-template-tab-krpr ">Keine missbräuchliche Verwendung von Beweisen zum Stimmverhalten </p></td>
+</tr>
+<tr>
+<td><p class="man-template-tab-krpr ">13.40</p></td>
+<td><p class="man-template-tab-krpr ">Ein externer Angreifer schreibt stimmberechtigten Personen vor, ob und wie sie abzustimmen oder zu wählen haben und verlangt von ihnen einen Beleg, dass sie sich an die Instruktionen gehalten haben.</p></td>
+<td><p class="man-template-tab-krpr ">Keine missbräuchliche Verwendung von Beweisen zum Stimmverhalten</p></td>
+</tr>
+</table></div>
+<div class="footnotes">
+<p id="fn-d7e1562"><sup><a href="#fnbck-d7e1562">6</a></sup><sup></sup> Auch DNS-Poisoning genannt. Bezeichnet einen Angriff, bei dem es gelingt, die Zuordnung zwischen einem Hostnamen und der zugehörigen IP-Adresse zu fälschen.</p>
+<p id="fn-d7e1587"><sup><a href="#fnbck-d7e1587">7</a></sup><sup></sup> Bezeichnet den Angreifer in einem Man-in-the-middle-Angriff. Es handelt sich dabei um eine Angriffsform, die in Rechnernetzen ihre Anwendung findet. Der Angreifer steht dabei entweder physisch oder logisch zwischen den beiden Kommunikationspartnern, hat dabei mit seinem System vollständige Kontrolle über den Datenverkehr zwischen zwei oder mehreren Netzwerkteilnehmerinnen und -teilnehmern und kann die Informationen nach Belieben einsehen und sogar manipulieren.</p>
+<p id="fn-d7e1736"><sup><a href="#fnbck-d7e1736">8</a></sup><sup></sup> Backdoor bezeichnet einen Teil einer Software, der es ermöglicht, unter Umgehung der normalen Zugriffssicherung Zugang zum Computer oder einer sonst geschützten Funktion eines Computerprogramms zu erlangen.</p>
+<p id="fn-d7e1853"><sup><a href="#fnbck-d7e1853">9</a></sup><sup></sup> Englisch für Dienstverweigerung. Bezeichnet in der digitalen Datenverarbeitung die Nichtverfügbarkeit eines Dienstes, der eigentlich verfügbar sein sollte.</p>
+</div>
+</div></section><section id="annex_u1/lvl_u1/lvl_14"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_14">14. Feststellung und Meldung von Sicherheitsereignissen und <br>-schwächen; Handhabung von Sicherheitsereignissen und <br>-verbesserungen</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>14.1 </dt>
+<dd>Ein Monitoringsystem der Infrastruktur erkennt die Zwischenfälle, die die Sicherheit, einschliesslich der Verfügbarkeit, des Systems gefährden könnten, und alarmiert das zuständige Personal. Das Personal behandelt Zwischenfälle gemäss vordefinierten Verfahren. Krisenszenarien und Rettungspläne dienen als Leitlinie (darin inbegriffen ist ein Plan, der gewährleistet, dass die auf den Urnengang bezogenen Aktivitäten weitergeführt werden können) und kommen bei Bedarf zur Anwendung.</dd>
+<dt></dt>
+<dd>Fehler bei der Registrierung der Stimme in den Kontrollkomponenten und in der Urne müssen erkannt werden. Dabei müssen weitere Informationen im Zusammenhang mit dem Fehler verfügbar sein, um die Ursache zu erkennen und zu beheben. Festgestellte Vorfälle sind der auf kantonaler Ebene verantwortlichen Stelle zu melden.</dd>
+<dt>14.2 </dt>
+<dd>Auf der Infrastruktur werden Protokolle erstellt, deren Erfassung, Übertragung und Speicherung gegen Manipulationen resistent sind (Systemprotokolle). Die Protokolle sind untereinander konsistent und ermöglichen bei der Untersuchung von vermuteten Manipulationen oder Fehlern die Rückverfolgung der relevanten Ereignisse. Sie dienen als Belege für die vollständige, unverfälschte und ausschliessliche Berücksichtigung systemkonform abgegebener Stimmen sowie für die Wahrung des Stimmgeheimnisses und den Ausschluss von vorzeitigen Teilergebnissen.</dd>
+<dt></dt>
+<dd>Der Inhalt der Protokolle umfasst mindestens die folgenden Ereignisse:<dl>
+<dt>– </dt>
+<dd>Start und Ende der Audit-, Identifizierungs- und Authentisierungsprozesse</dd>
+<dt>– </dt>
+<dd>Start, Neustart und Ende der Abstimmungs- oder Wahlphase</dd>
+<dt>– </dt>
+<dd>Start der Auszählung mit der Ergebnisermittlung</dd>
+<dt>– </dt>
+<dd>Durchführung und Ergebnisse allfälliger Selbsttests</dd>
+<dt>– </dt>
+<dd>festgestellte Störungen in den Elementen der IT-Infrastruktur, die die Betriebsfähigkeit beeinträchtigen</dd>
+</dl>
+</dd>
+<dt></dt>
+<dd>Von jedem Ereignis werden das Datum und die Uhrzeit, die Art des Ereignisses, der mögliche Verursacher und das Ergebnis im Sinne von Misserfolg oder Erfolg dokumentiert.</dd>
+<dt></dt>
+<dd>Die Systemprotokolle werden der auf kantonaler Ebene verantwortlichen Stelle so zur Verfügung gestellt, dass diese die Informationen interpretieren kann.</dd>
+<dt>14.3 </dt>
+<dd>Das Monitoring und die Erfassung von Systemprotokollen unterliegen einem ständigen Verbesserungsprozess. Der Verbesserungsprozess beinhaltet einen offenen Dialog zwischen den beteiligten Akteurinnen und Akteuren sowie eine regelmässige und objektive Beurteilung der Wirksamkeit der eingesetzten Instrumente und Prozesse. Die Ergebnisse dieser Evaluationen werden dabei berücksichtigt.</dd>
+<dt>14.4 </dt>
+<dd>Das Monitoring und die Erfassung von Systemprotokollen beeinträchtigen die Wirksamkeit der Massnahmen zur Wahrung des Stimmgeheimnisses in keiner Weise.</dd>
+<dt>14.5 </dt>
+<dd>Es ist gewährleistet, dass im Falle einer Panne die Stimmen und die Daten, die ein reibungsloses Funktionieren des Verfahrens bei der Auszählung der Stimmen belegen, unversehrt auf der Infrastruktur gespeichert werden.</dd>
+<dt>14.6 </dt>
+<dd>Nach einer Panne des Systems oder einem Ausfall von Kommunikations- oder Speichermedien geht das System in einen Wartungsmodus über, in dem die Möglichkeit besteht, in einen sicheren Zustand zurückzukehren. Begonnene Stimmvorgänge werden unterbrochen. Die stimmende Person kann die Stimmabgabe erst dann wieder aufnehmen, wenn sich das System wieder in einem sicheren Zustand befindet.</dd>
+<dt>14.7 </dt>
+<dd>Es ist möglich, mit Hilfe von Authentisierungsmerkmalen Kontrollstimmen abzugeben, die keiner stimmberechtigten Person zugewiesen sind. Der Inhalt dieser Kontrollstimmen wird protokolliert. Die Auszählung der Kontrollstimmen wird mit den Protokollen verglichen.</dd>
+<dt></dt>
+<dd>Es ist sichergestellt, dass die Kontrollstimmen möglichst<b> </b>ähnlich gehandhabt werden wie systemkonform abgegebene Stimmen, gleichzeitig ist sichergestellt, dass sie nicht gezählt werden.</dd>
+<dt>14.8 </dt>
+<dd>Die Verfügbarkeit der Infrastruktur wird in gewählten Zeitabständen überprüft und protokolliert.</dd>
+<dt>14.9 </dt>
+<dd>Durch einen vorgegebenen und dokumentierten Prozess werden alle Teile des Systems regelmässig aktualisiert, um bekanntgewordene Schwachstellen zu eliminieren.</dd>
+<dt>14.10 </dt>
+<dd>Die Massnahmen für das Monitoring und zur Protokollierung der Systembenutzung, der Tätigkeiten von Administratoren und zur Störungsprotokollierung werden detailliert beschrieben, umgesetzt, überwacht und überprüft.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_15"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_15">15. Einsatz von kryptografischen Massnahmen und Schlüsselverwaltung</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>15.1 </dt>
+<dd>Elektronische Zertifikate werden nach besten Praktiken verwaltet.</dd>
+<dt>15.2 </dt>
+<dd>Zur Sicherstellung der Integrität von Datensätzen, der die Korrektheit des Ergebnisses sowie die Geheimhaltung kritischer Daten unterliegt, einschliesslich der Identifikations- und Authentifizierungsdaten der Behörden, kommen wirksame kryptografische Massnahmen zum Einsatz, die dem Stand der Technik entsprechen.</dd>
+<dt>15.3 </dt>
+<dd>Zur Sicherstellung der Geheimhaltung kritischer Daten kommen in der Infrastruktur wirksame kryptografische Massnahmen zum Einsatz, die dem Stand der Technik entsprechen. Solche Daten werden auf Datenträgern immer verschlüsselt abgespeichert.</dd>
+<dt>15.4 </dt>
+<dd>Kryptografische Grundkomponenten kommen nur dann zur Anwendung, wenn die Schlüssellängen und Algorithmen den gängigen Standards entsprechen (z. B. NIST, ECRYPT, ZertES). Die elektronische Signatur erfüllt die Anforderungen an eine fortgeschrittene elektronische Signatur nach dem Bundesgesetz vom 18. März 2016<sup><a href="#fn-d7e2057" id="fnbck-d7e2057">10</a></sup> über die elektronische Signatur (ZertES). Die Verifikation der Signatur erfolgt mittels eines elektronischen Zertifikats, das von einem nach dem ZertES anerkannten Anbieter von Zertifizierungsdiensten ausgestellt wird.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e2057"><sup><a href="#fnbck-d7e2057">10</a></sup><sup></sup> <a href="https://fedlex.data.admin.ch/eli/cc/2016/752" target="_blank">SR <b>943.03</b></a></p></div>
+</div></section><section id="annex_u1/lvl_u1/lvl_16"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_16">16. Sicherer elektronischer und physischer Informationsaustausch</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>16.1 </dt>
+<dd>Sämtliche Komponenten der Infrastruktur werden in einer separaten Netzwerkzone betrieben. Diese Netzwerkzone wird durch eine angemessene Routingkontrolle gegenüber dem übrigen Netzwerk geschützt.</dd>
+<dt>16.2 </dt>
+<dd>Die elektronische Stimmabgabe ist von sämtlichen anderen Anwendungen grundsätzlich klar getrennt.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_17"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_17">17. Tests des Systems</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>17.1 </dt>
+<dd>Die Funktionen, die für die Sicherheit des Systems relevant sind (Sicherheitsfunktionen), werden getestet. Die Tests werden mit Testplänen sowie mit erwarteten und tatsächlichen Testergebnissen dokumentiert.</dd>
+<dt></dt>
+<dd>Der Testplan:<dl>
+<dt>– </dt>
+<dd>legt die auszuführenden Tests fest;</dd>
+<dt>– </dt>
+<dd>beschreibt die Szenarien für jeden Test, einschliesslich allfälliger Abhängigkeiten von den Ergebnissen anderer Tests.</dd>
+</dl>
+</dd>
+<dt></dt>
+<dd>Die erwarteten Ergebnisse müssen die Ergebnisse aufzeigen, die bei erfolgreicher Testausführung erwartet werden.</dd>
+<dt></dt>
+<dd>Die tatsächlichen Ergebnisse müssen mit den erwarteten Ergebnissen übereinstimmen.</dd>
+<dt>17.2 </dt>
+<dd>Es wird eine Analyse der Testabdeckung erstellt. Diese umfasst den Nachweis, dass:<dl>
+<dt>– </dt>
+<dd>die in der Testdokumentation definierten Tests und die funktionalen Spezifikationen der Schnittstellen übereinstimmen;</dd>
+<dt>– </dt>
+<dd>alle Schnittstellen vollständig getestet wurden.</dd>
+</dl>
+</dd>
+<dt>17.3 </dt>
+<dd>Es wird eine Analyse der Testtiefe durchgeführt. Diese umfasst den Nachweis, dass:<dl>
+<dt>– </dt>
+<dd>die in der Testdokumentation definierten Tests und die Teilsysteme, die sich auf Sicherheitsfunktionen und Module beziehen, die eine Rolle bei der Gewährleistung der Sicherheit spielen, übereinstimmen;</dd>
+<dt>– </dt>
+<dd>alle Teilsysteme, die mit den in den Spezifikationen genannten Sicherheitsfunktionen zusammenhängen, getestet wurden;</dd>
+<dt>– </dt>
+<dd>alle Module, die bei der Gewährleistung der Sicherheit eine Rolle spielen, getestet wurden.</dd>
+</dl>
+</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_18"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_18">18. Organisation der Informationssicherheit</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>18.1 </dt>
+<dd>Alle Rollen und Verantwortlichkeiten für den Betrieb des Systems werden präzise definiert, zugeordnet und kommuniziert.</dd>
+<dt>18.2 </dt>
+<dd>Die initiale Konfiguration der Infrastruktur, sei es in Bezug auf die Hardware, die Software oder die Zugriffsrechte, sowie jede Änderung müssen vorher genehmigt werden.</dd>
+<dt>18.3 </dt>
+<dd>Die Risiken im Zusammenhang mit Dritten (Auftragnehmer wie Lieferanten und Dienstleister) werden identifiziert und über angemessene vertragliche Vereinbarungen soweit nötig reduziert. Die Einhaltung der Vereinbarungen wird während ihrer Laufzeit angemessen überwacht und überprüft.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_19"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_19">19. Verwaltung der immateriellen und materiellen Ressourcen</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>19.1 </dt>
+<dd>Alle immateriellen und materiellen Ressourcen im Sinne des Begriffs Asset in der Norm ISO/IEC 27001, 2013, Information technology – Security techniques – Information security management systems – Requirements<sup><a href="#fn-d7e2142" id="fnbck-d7e2142">11</a></sup>, die im Zusammenhang mit der elektronischen Stimmabgabe relevant sind (Organisation als Ganzes, insbesondere die Organisationsprozesse und die in diesen Prozessen bearbeiteten Informationen, Datenträger, Einrichtungen zur Informationsverarbeitung der Infrastruktur und Räumlichkeiten der Infrastruktur) werden in einem Inventar erfasst. Über das Personal wird eine Liste geführt. Das Inventar und die Personalliste sind aktuell zu halten. Jeder immateriellen und materiellen Ressource wird eine Person zugewiesen, die dafür die Verantwortung übernimmt.</dd>
+<dt>19.2 </dt>
+<dd>Der zulässige Gebrauch von immateriellen und materiellen Ressourcen wird definiert.</dd>
+<dt>19.3 </dt>
+<dd>Für Informationen werden Klassifizierungsleitlinien erlassen und kommuniziert.</dd>
+<dt>19.4 </dt>
+<dd>Für die Kennzeichnung und Handhabung von Informationen werden Verfahren eingerichtet.</dd>
+</dl>
+<div class="footnotes"><p id="fn-d7e2142"><sup><a href="#fnbck-d7e2142">11</a></sup><sup></sup> Die Norm kann gegen Bezahlung eingesehen oder bezogen werden beim Zentralsekretariat der Internationalen Organisation für Normung (ISO), Chemin de Blandonnet 8, CP 401, <i>1214 </i>Vernier, www.iso.org.</p></div>
+</div></section><section id="annex_u1/lvl_u1/lvl_20"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_20">20. Vertrauenswürdigkeit des Personals</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>20.1 </dt>
+<dd>Zur Gewährleistung der Vertrauenswürdigkeit des Personals vor, während und nach Beendigung der Anstellung oder bei Rollenwechseln werden angemessene Richtlinien und Verfahren eingerichtet und kommuniziert.</dd>
+<dt>20.2 </dt>
+<dd>Für die Gewährleistung der Vertrauenswürdigkeit des Personals übernehmen die Personalverantwortlichen die volle Verantwortung.</dd>
+<dt>20.3 </dt>
+<dd>Das gesamte Personal verfügt über ein ausgeprägtes Informationssicherheitsbewusstsein. Dazu wird ein aufgabengerechtes Ausbildungs- und Trainingsprogramm eingerichtet und betrieben.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_21"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_21">21. Physische und umgebungsbezogene Sicherheit</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>21.1 </dt>
+<dd>Die Sicherheitsperimeter der verschiedenen Räumlichkeiten der Infrastruktur sind klar definiert.</dd>
+<dt>21.2 </dt>
+<dd>Für den physischen Zugang zu diesen verschiedenen Räumlichkeiten der Infrastruktur werden Zugangsberechtigungen definiert, eingerichtet und angemessen kontrolliert.</dd>
+<dt>21.3 </dt>
+<dd>Zur Gewährleistung der Sicherheit von Geräten innerhalb und ausserhalb der Räumlichkeiten der Infrastruktur werden angemessene Richtlinien und Verfahren definiert und deren Einhaltung überwacht und überprüft.</dd>
+<dt>21.4 </dt>
+<dd>Sämtliche Daten werden ausschliesslich in der Schweiz bearbeitet und insbesondere aufbewahrt.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_22"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_22">22. Management der Kommunikation und des Betriebs</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>22.1 </dt>
+<dd>Pflichten und Verantwortlichkeitsbereiche werden so aufgeteilt, dass die mit dem Betrieb und der Kommunikation verbundenen Risiken personellen Ursprungs auf Restrisiken reduziert werden, die mit den Risikoakzeptanzkriterien kompatibel sind.</dd>
+<dt>22.2 </dt>
+<dd>Zum Schutz vor Schadsoftware werden angemessene Massnahmen getroffen.</dd>
+<dt>22.3 </dt>
+<dd>Es wird ein detaillierter Plan für die Datensicherung erstellt und umgesetzt. Die korrekte Funktion der Datensicherung wird regelmässig überprüft.</dd>
+<dt>22.4 </dt>
+<dd>Es werden angemessene Massnahmen zum Schutz des Netzwerks vor Bedrohungen, die in der Risikobeurteilung nach Artikel 4 in Verbindung mit Ziffer 13 ausgewiesen werden, und zur Sicherheit von Netzwerkservices definiert und umgesetzt.</dd>
+<dt>22.5 </dt>
+<dd>Die Verfahren zur Handhabung von Wechseldatenträgern und zur Entsorgung von Datenträgern werden detailliert geregelt.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_23"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_23">23. Zuteilung, Verwaltung und Entzug von Zugangs- und Zugriffsrechten</a>
+</h3>
+<div class="collapseable"><dl class="man-template-absatz-struktur-1">
+<dt>23.1 </dt>
+<dd>Es ist gewährleistet, dass während des Urnengangs jede nachträgliche Änderung von Zugangs- und Zugriffsrechten nur mit der Zustimmung der auf kantonaler Ebene verantwortlichen Stelle erfolgt.</dd>
+<dt>23.2 </dt>
+<dd>Der Zugang zu und der Zugriff auf die Infrastruktur und die Software werden auf der Basis einer Risikobeurteilung detailliert geregelt und dokumentiert. In Hochrisikobereichen sowie für alle manuellen Operationen im Zusammenhang mit der elektronischen Urne (z. B. Öffnung des Stimmkanals, Schliessung des Stimmkanals, Start der Auszählung) gilt das Vieraugenprinzip.</dd>
+<dt></dt>
+<dd>Manuelle Operationen im Zusammenhang mit der elektronischen Urne (z. B. Öffnung des Stimmkanals, Schliessung des Stimmkanals, Start der Auszählung) werden explizit authentifiziert.</dd>
+<dt>23.3 </dt>
+<dd>Es ist gewährleistet, dass Informationen auf der Website zur elektronischen Stimmabgabe und diesbezügliche Informationsseiten nicht ohne Berechtigung geändert werden können.</dd>
+<dt>23.4 </dt>
+<dd>Während des Urnengangs sind sachfremde Zugriffe jeglicher Art auf die Infrastruktur ausgeschlossen.</dd>
+<dt>23.5 </dt>
+<dd>Es ist sichergestellt, dass keines der Elemente der clientseitigen Authentisierungsmerkmale bei der Zustellung systematisch abgefangen, verändert oder umgeleitet werden kann. Zur Authentisierung kommen Massnahmen und Technologien zum Einsatz, die das Risiko des systematischen Missbrauchs durch Dritte hinreichend minimieren.</dd>
+</dl></div></section><section id="annex_u1/lvl_u1/lvl_24"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_24">24. Entwicklung und Wartung von Informationssystemen</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>24.1 </dt>
+<dd>Entwicklung</dd>
+<dt>24.1.1 </dt>
+<dd>Es wird ein Lebenszyklusmodell definiert. Das Lebenszyklusmodell:<dl>
+<dt>– </dt>
+<dd>wird für die Entwicklung und Wartung der Software verwendet;</dd>
+<dt>– </dt>
+<dd>sieht die notwendigen Kontrollen bei der Entwicklung und Wartung der Software vor;</dd>
+<dt>– </dt>
+<dd>wird dokumentiert.</dd>
+</dl>
+</dd>
+<dt>24.1.2 </dt>
+<dd>Es wird eine Liste der eingesetzten Entwicklungswerkzeuge sowie der Konfigurationsoptionen, die für den Einsatz der einzelnen Entwicklungswerkzeuge gewählt wurden, erstellt.</dd>
+<dt>24.1.3 </dt>
+<dd>Die Dokumentation der Entwicklungswerkzeuge umfasst:<dl>
+<dt>– </dt>
+<dd>eine Definition des Entwicklungswerkzeugs;</dd>
+<dt>– </dt>
+<dd>eine Beschreibung aller Konventionen und Richtlinien, die bei der Implementierung des Entwicklungswerkzeugs verwendet werden;</dd>
+<dt>– </dt>
+<dd>eine eindeutige Beschreibung der Bedeutung aller Konfigurationsoptionen für die Anwendung des Entwicklungswerkzeugs.</dd>
+</dl>
+</dd>
+<dt>24.1.4 </dt>
+<dd>Es wird festgelegt, welche Implementierungsstandards angewendet werden.</dd>
+<dt>24.1.5 </dt>
+<dd>Die Software wird so spezifiziert und implementiert, dass die Sicherheitsfunktionen nicht umgangen werden können.</dd>
+<dt>24.1.6 </dt>
+<dd>Die Sicherheitsfunktionen werden so spezifiziert und implementiert, dass sie vor Manipulation geschützt sind.</dd>
+<dt>24.1.7 </dt>
+<dd>Die Sicherheitsarchitektur der Software wird dokumentiert. Die Dokumentation:<dl>
+<dt>– </dt>
+<dd>weist einen Detaillierungsgrad auf, der der Beschreibung der Sicherheitsfunktionen entspricht;</dd>
+<dt>– </dt>
+<dd>beschreibt die Sicherheitsdomänen, auf die sich die Sicherheitsfunktionen richten;</dd>
+<dt>– </dt>
+<dd>beschreibt, wie die Initialisierungsprozesse gesichert werden;</dd>
+<dt>– </dt>
+<dd>weist die Erfüllung der Ziffern 24.1.5 und 24.1.6 nach.</dd>
+</dl>
+</dd>
+<dt>24.1.8 </dt>
+<dd>Die funktionalen Spezifikationen werden dokumentiert. Die Dokumentation:<dl>
+<dt>– </dt>
+<dd>bildet die gesamte Software ab;</dd>
+<dt>– </dt>
+<dd>beschreibt den Zweck und die Anwendung aller Schnittstellen;</dd>
+<dt>– </dt>
+<dd>identifiziert und beschreibt alle Parameter, die mit den Schnittstellen verbunden sind;</dd>
+<dt>– </dt>
+<dd>beschreibt alle Aktionen, die mit Schnittstellen verbunden sind;</dd>
+<dt>– </dt>
+<dd>beschreibt alle direkten Fehlermeldungen, die durch den Aufruf der einzelnen Schnittstellen entstehen können.</dd>
+</dl>
+</dd>
+<dt>24.1.9 </dt>
+<dd>Die Nachvollziehbarkeit zwischen funktionalen Spezifikationen und Sicherheitsanforderungen wird bis auf die Ebene der Schnittstellen sichergestellt.</dd>
+<dt>24.1.10 </dt>
+<dd>Alle Sicherheitsfunktionen sind im Quellcode implementiert.</dd>
+<dt>24.1.11 </dt>
+<dd>Die Nachvollziehbarkeit zwischen dem gesamten Quellcode und den Spezifikationen der Sicherheitsfunktionen ist sichergestellt und deren Übereinstimmung ist ersichtlich.</dd>
+<dt>24.1.12 </dt>
+<dd>Die Sicherheitsfunktionen werden so konzipiert und implementiert, dass sie gut strukturiert sind. Die interne Struktur wird beschrieben und enthält eine Begründung, die:<dl>
+<dt>– </dt>
+<dd>die Merkmale angibt, die zur Beurteilung von «gut strukturiert» und von «komplex» verwendet werden;</dd>
+<dt>– </dt>
+<dd>aufzeigt, dass alle Sicherheitsfunktionen gut strukturiert und nicht zu komplex sind.</dd>
+</dl>
+</dd>
+<dt>24.1.13 </dt>
+<dd>Die Spezifikationen umfassen folgende Aspekte:<dl>
+<dt>– </dt>
+<dd>eine Beschreibung der Struktur der Software in Form von Teilsystemen;</dd>
+<dt>– </dt>
+<dd>eine Beschreibung der Sicherheitsfunktionen als Module sowie für jedes Modul die Zielsetzung und eine Beschreibung, wie das Modul zu den anderen Modulen in Beziehung steht; die Beschreibung der sicherheitsrelevanten Module umfasst auch die verfügbaren Schnittstellen, die Rückgabewerte dieser Schnittstellen und die Schnittstellen der anderen Module, die sie zur Interaktion mit ihnen verwenden;</dd>
+<dt>– </dt>
+<dd>eine Beschreibung aller Teilsysteme, die mit den Sicherheitsfunktionen zusammenhängen einschliesslich der möglichen Wechselwirkungen untereinander;</dd>
+<dt>– </dt>
+<dd>eine übersichtliche Darstellung der mit Sicherheitsfunktionen verbundenen Teilsysteme für den Nachweis, dass alle Schnittstellen dem in der Spezifikation beschriebenen Verhalten entsprechen; die Darstellung muss einen Detaillierungsgrad mindestens bis zu den Modulen aufweisen.</dd>
+</dl>
+</dd>
+<dt>24.1.14 </dt>
+<dd>Die Software wird mit einer eindeutigen Kennzeichnung versehen.</dd>
+<dt>24.1.15 </dt>
+<dd>Die Dokumentation des Konfigurationsmanagements enthält:<dl>
+<dt>– </dt>
+<dd>eine Beschreibung, wie Konfigurationselemente identifiziert werden;</dd>
+<dt>– </dt>
+<dd>einen Konfigurationsmanagementplan, der beschreibt, wie das Konfigurationsmanagementsystem bei der Entwicklung der Software eingesetzt wird und welche Verfahren für die Übernahme von Änderungen oder neuen Elementen angewendet werden;</dd>
+<dt>– </dt>
+<dd>einen Nachweis, dass die Verfahren für die Übernahme eine angemessene Prüfung der Änderungen für alle Konfigurationselemente vorsehen.</dd>
+</dl>
+</dd>
+<dt>24.1.16 </dt>
+<dd>Das Konfigurationsmanagementsystem:<dl>
+<dt>– </dt>
+<dd>identifiziert alle Konfigurationselemente eindeutig;</dd>
+<dt>– </dt>
+<dd>stellt automatisierte Massnahmen bereit, damit nur autorisierte Änderungen an Konfigurationselementen vorgenommen werden;</dd>
+<dt>– </dt>
+<dd>unterstützt die Entwicklung der Software durch automatisierte Verfahren;</dd>
+<dt>– </dt>
+<dd>stellt sicher, dass die Person, die für die Abnahme des Konfigurationselements verantwortlich ist, nicht dieselbe Person ist, die es entwickelt hat;</dd>
+<dt>– </dt>
+<dd>identifiziert die Konfigurationselemente, aus denen sich die Sicherheitsfunktionen zusammensetzen;</dd>
+<dt>– </dt>
+<dd>unterstützt die Prüfung aller Änderungen an der Software mit automatisierten Verfahren, einschliesslich der Protokollierung des Verfassers sowie des Datums und der Uhrzeit der Änderung;</dd>
+<dt>– </dt>
+<dd>stellt ein automatisiertes Verfahren zur Identifizierung aller Konfigurationselemente bereit, die von einer Änderung an einem bestimmten Konfigurationselement betroffen sind;</dd>
+<dt>– </dt>
+<dd>kann die Version des Quellcodes identifizieren, auf dessen Basis die Software generiert wird.</dd>
+</dl>
+</dd>
+<dt>24.1.17 </dt>
+<dd>Alle Konfigurationselemente werden im Konfigurationsmanagementsystem inventarisiert.</dd>
+<dt>24.1.18 </dt>
+<dd>Das Konfigurationsmanagementsystem wird in Übereinstimmung mit dem Konfigurationsmanagementplan verwendet.</dd>
+<dt>24.1.19 </dt>
+<dd>Es wird eine Konfigurationsliste erstellt, die die folgenden Elemente enthält:<dl>
+<dt>– </dt>
+<dd>die Software;</dd>
+<dt>– </dt>
+<dd>Nachweise der erforderlichen Überprüfungen zur Einhaltung der Sicherheit;</dd>
+<dt>– </dt>
+<dd>die Teile, aus denen die Software besteht;</dd>
+<dt>– </dt>
+<dd>den Quellcode;</dd>
+<dt>– </dt>
+<dd>die Commit-History<sup><a href="#fn-d7e2413" id="fnbck-d7e2413">12</a></sup>;</dd>
+<dt>– </dt>
+<dd>Berichte über Sicherheitsmängel und über den Stand der Behebung.</dd>
+</dl>
+</dd>
+<dt></dt>
+<dd>Für jedes Element, das für Sicherheitsfunktionen relevant ist, wird die Entwicklerin oder der Entwickler genannt. Jedes Element wird eindeutig identifiziert.</dd>
+<dt>24.1.20 </dt>
+<dd>Die Dokumentation zur Sicherheit der Softwareentwicklung umfasst:<dl>
+<dt>– </dt>
+<dd>die Beschreibung der physischen, verfahrenstechnischen, personellen und sonstigen Sicherheitsmassnahmen, die zum Schutz und zur Integrität der Ausgestaltung und der Implementierung der Software in ihrer Entwicklungsumgebung erforderlich sind;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass die Sicherheitsmassnahmen das erforderliche Schutzniveau bieten, um die Integrität der Software zu wahren.</dd>
+</dl>
+</dd>
+<dt>24.2 </dt>
+<dd>Betrieb</dd>
+<dt>24.2.1 </dt>
+<dd>Es wird ein Betriebshandbuch erstellt, das für jede Benutzerrolle folgende Aspekte enthält:<dl>
+<dt>– </dt>
+<dd>eine Beschreibung der Funktionen, auf die die Benutzerin oder der Benutzer zugreifen kann, und der Berechtigungen, die in einer sicheren Umgebung kontrolliert werden müssen, einschliesslich entsprechender Warnungen;</dd>
+<dt>– </dt>
+<dd>eine Beschreibung, wie die verfügbaren Schnittstellen auf sichere Weise genutzt werden können;</dd>
+<dt>– </dt>
+<dd>eine Beschreibung der verfügbaren Funktionen und Schnittstellen, insbesondere aller Sicherheitsparameter, die unter der Kontrolle der Benutzerin oder des Benutzers stehen unter Hervorhebung der für die Sicherheit relevanten Werte;</dd>
+<dt>– </dt>
+<dd>eine präzise Darstellung aller Typen von Sicherheitsereignissen in Bezug auf die auszuführenden, für die Benutzerin oder den Benutzer zugänglichen Funktionen, einschliesslich der Anpassungen der Sicherheitseigenschaften von Elementen, die der Kontrolle der Sicherheitsfunktionen unterliegen;</dd>
+<dt>– </dt>
+<dd>eine Beschreibung der Sicherheitsmassnahmen, die umzusetzen sind, um die betrieblichen Sicherheitsziele zu erreichen.</dd>
+</dl>
+</dd>
+<dt>24.2.2 </dt>
+<dd>Das Betriebshandbuch zeigt alle möglichen Betriebsarten der Software auf, dies einschliesslich der Wiederaufnahme des Betriebs nach der Entdeckung von Fehlern sowie die Beschreibung der Folgen und Auswirkungen von Fehlern auf die Aufrechterhaltung des sicheren Betriebs.</dd>
+<dt>24.2.3 </dt>
+<dd>Das Betriebshandbuch ist präzise und zweckmässig.</dd>
+<dt>24.3 </dt>
+<dd>Zuverlässige und nachvollziehbare Kompilierung und zuverlässiges und nachvollziehbares Deployment</dd>
+<dt>24.3.1 </dt>
+<dd>Der Vorbereitungsprozess beschreibt alle Schritte, die notwendig sind für:<dl>
+<dt>– </dt>
+<dd>eine sichere Abnahme der Systembestandteile in Übereinstimmung mit dem Verfahren für die Bereitstellung;</dd>
+<dt>– </dt>
+<dd>eine sichere Aufbereitung der Betriebsumgebung in Übereinstimmung mit den betrieblichen Sicherheitszielen;</dd>
+<dt>– </dt>
+<dd>eine sichere Installation der Software in der Betriebsumgebung.</dd>
+</dl>
+</dd>
+<dt>24.3.2 </dt>
+<dd>Die Bereitstellung der Software oder von Teilen des Systems wird dokumentiert und umfasst alle Prozesse, die zur Aufrechterhaltung der Sicherheit bei der Bereitstellung der Software erforderlich sind.</dd>
+<dt>24.3.3 </dt>
+<dd>Es wird eine zuverlässige und überprüfbare Kompilierung mit angemessenen Sicherheitsmassnahmen durchgeführt, die sicherstellt, dass der ausführbare Code eine überprüfbare und getreue Darstellung des Quellcodes ist, der einer öffentlichen Kontrolle und unabhängigen Überprüfungen unterzogen wurde. Die Kompilierung erlaubt es, eine Beweiskette für die Überprüfung der Software anzulegen, und umfasst insbesondere:<dl>
+<dt>– </dt>
+<dd>den Nachweis, dass die Kompilierumgebung so ausgestaltet ist, wie sie auf der öffentlichen Plattform beschrieben ist (Gesamtheit der Werkzeuge mit der jeweiligen Version, Betriebssystem und allfälligen Konfigurationen); allfällige Abweichungen sind zu dokumentieren und zu begründen;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass die Software gemäss den auf der öffentlichen Plattform verfügbaren Anweisungen kompiliert wurde; wird bei der Kompilierung ein Mangel in den Instruktionen festgestellt, so ist dieser zu protokollieren und die Dokumentation anschliessend anzupassen;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass der zur öffentlichen Kontrolle vorgelegte und geprüfte Quellcode tatsächlich derjenige ist, der zur Kompilierung verwendet wurde;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass keine anderen als die in den Instruktionen vorgesehenen Elemente eingeführt wurden;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass alle kryptografischen Signaturen der Abhängigkeiten gegen eine bewährte, öffentliche und vertrauenswürdige Referenz verifiziert wurden;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass eine Analyse der Schwachstellen in Bezug auf Abhängigkeiten durchgeführt wurde und dass, sofern für die Software relevante Schwachstellen vorhanden sind, diese die Software nicht angreifbar machen;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass die allenfalls eingeführten Parameter das System nicht angreifbar machen.</dd>
+</dl>
+</dd>
+<dt>24.3.4 </dt>
+<dd>Es wird ein zuverlässiges und überprüfbares Deployment mit angemessenen Sicherheitsmassnahmen durchgeführt, das sicherstellt, dass:<dl>
+<dt>1. </dt>
+<dd>der produktiv eingesetzte Code eine überprüfbare und getreue Darstellung des Quellcodes ist, der einer öffentlichen Kontrolle und unabhängigen Überprüfungen unterzogen wurde; und</dd>
+<dt>2. </dt>
+<dd>dass die Produktionsumgebung mit derjenigen übereinstimmt, die der öffentlichen Kontrolle und unabhängigen Überprüfungen unterzogen wurde.</dd>
+</dl>
+</dd>
+<dt></dt>
+<dd>Das Deployment erlaubt es, eine Beweiskette für die Überprüfung der Software anzulegen, und umfasst insbesondere:<dl>
+<dt>– </dt>
+<dd>den Nachweis, dass die Produktionsumgebung mit derjenigen übereinstimmt, die der öffentlichen Kontrolle und unabhängigen Überprüfungen unterzogen wurde; allfällige Abweichungen (Firmware-Version, Konfigurationsdateien usw.) sind zu dokumentieren und zu begründen;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass die in der Produktionsumgebung eingesetzte Software tatsächlich diejenige ist, die im zuverlässigen und überprüfbaren Kompilierungsverfahren erstellt wurde;</dd>
+<dt>– </dt>
+<dd>den Nachweis, dass die allenfalls eingeführten Parameter das System nicht angreifbar machen.</dd>
+</dl>
+</dd>
+<dt>24.3.5 </dt>
+<dd>Die Qualität der Nachweise der zuverlässigen und überprüfbaren Kompilierung und des zuverlässigen und überprüfbaren Deployments wird durch die Anwesenheit von mindestens zwei Zeuginnen oder Zeugen verschiedener Institutionen oder durch technische Verfahren zur Feststellung des Wahrheitsgehalts nach dem Stand der wissenschaftlichen Erkenntnisse und Erfahrungen bestätigt.</dd>
+<dt>24.3.6 </dt>
+<dd>Die Nachweiskette der zuverlässigen und überprüfbaren Kompilierung und des zuverlässigen und überprüfbaren Deployments wird öffentlich zugänglich gemacht.</dd>
+<dt>24.4 </dt>
+<dd>Systematische Behebung von Mängeln</dd>
+<dt>24.4.1 </dt>
+<dd>Es werden Prozesse zur Behebung von Mängeln definiert. Die Prozesse umfassen:<dl>
+<dt>– </dt>
+<dd>eine Dokumentation dieser Prozesse, insbesondere im Hinblick auf die Rückverfolgbarkeit von Mängeln für alle Versionen der Software sowie der Methoden, die verwendet werden, damit die Systembenutzerinnen und -benutzer über die Informationen über die Mängel, die Korrekturen und zu möglichen Korrekturmassnahmen verfügen;</dd>
+<dt>– </dt>
+<dd>die Pflicht, die Art und die Auswirkungen aller Sicherheitsmängel, Informationen zum Stand der Arbeiten zur Lösungsfindung sowie die beschlossenen Korrekturmassnahmen zu beschreiben;</dd>
+<dt>– </dt>
+<dd>eine Beschreibung der Instrumente, mit denen die Systembenutzerinnen und -benutzer die Möglichkeit erhalten, den Softwareentwicklerinnen und -entwicklern Berichte und Anfragen zu vermuteten Mängeln in der Software bekanntzumachen;</dd>
+<dt>– </dt>
+<dd>ein Verfahren, das eine zeitnahe Reaktion und ein automatischer Versand von Berichten über Sicherheitsmängel und entsprechenden Korrekturen an registrierte Systembenutzerinnen und -benutzer, die vom Mangel betroffen sein könnten, erfordert.</dd>
+</dl>
+</dd>
+<dt>24.4.2 </dt>
+<dd>Es wird ein Prozess für die Behandlung der gemeldeten Mängel definiert:<dl>
+<dt>– </dt>
+<dd>Dieser Prozess stellt sicher, dass alle gemeldeten und bestätigten Mängel behoben werden und dass die Prozesse zur Behebung den Systembenutzerinnen und -benutzern mitgeteilt werden.</dd>
+<dt>– </dt>
+<dd>Er sieht Vorkehrungen vor, die sicherstellen, dass eine Behebung von Sicherheitsmängeln keine neuen Sicherheitsmängel nach sich zieht.</dd>
+</dl>
+</dd>
+<dt>24.4.3 </dt>
+<dd>Es werden Richtlinien für die Einreichung und die Behebung von Mängeln definiert. Diese umfassen:<dl>
+<dt>– </dt>
+<dd>eine Anleitung, wie Systembenutzerinnen und -benutzer vermutete Sicherheitsmängel an die Entwicklerin oder den Entwickler melden können;</dd>
+<dt>– </dt>
+<dd>eine Anleitung, wie sich Systembenutzerinnen und -benutzer bei der Entwicklerin oder beim Entwickler registrieren können, um Berichte über Sicherheitsmängel und die Behebungen zu erhalten;</dd>
+<dt>– </dt>
+<dd>die Angabe von spezifischen Kontaktstellen für alle Berichte und Anfragen zu Sicherheitsfragen, die die Software betreffen.</dd>
+</dl>
+</dd>
+<dt>24.5 </dt>
+<dd>Qualitätssicherung</dd>
+</dl>
+<p class="absatz " msg:wcstyle02-2="loose pPr/widowControl" xmlns:msg="urn:com:c-moria:legi4ch:xslt:message">Es wird regelmässig und objektiv geprüft, ob die durchgeführten Abläufe und die dazugehörenden Arbeitsprodukte mit der Beschreibung der umzusetzenden Abläufe, Normen und Prozesse übereinstimmen. Abweichungen werden bis zu ihrer Behebung weiterverfolgt.</p>
+<div class="footnotes"><p id="fn-d7e2413"><sup><a href="#fnbck-d7e2413">12</a></sup><sup></sup> Die Commit-History besteht aus einer geordneten Liste aller Änderungen an einem Repository sowie der Begründung für die Änderung.</p></div>
+</div></section><section id="annex_u1/lvl_u1/lvl_25"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_25">25 Qualität Quellcode und Dokumentation</a>
+</h3>
+<div class="collapseable">
+<p class="absatz " msg:wcstyle02-2="loose pPr/widowControl" xmlns:msg="urn:com:c-moria:legi4ch:xslt:message">Der Quellcode und die Dokumentation erfüllen mindestens die folgenden Qualitätskriterien:</p>
+<dl class="man-template-absatz-struktur-1">
+<dt>25.1 </dt>
+<dd>Nachvollziehbarkeit</dd>
+<dt>25.1.1 </dt>
+<dd>Unter Nachvollziehbarkeit wird die Stringenz von den Anforderungen bis hin zur Implementierung verstanden.</dd>
+<dt>25.1.2 </dt>
+<dd>Alle Anforderungen an das kryptografische Protokoll sind über sämtliche Arbeitsergebnisse im Zusammenhang mit dem Softwareentwicklungsprozess hinweg nachvollziehbar.</dd>
+<dt>25.1.3 </dt>
+<dd>Für die Verbindung zwischen den rechtlichen Anforderungen und dem kryptografischen Protokoll, den Spezifikationen sowie der Dokumentation der Architektur gibt es eine Beschreibung.</dd>
+<dt>25.2 </dt>
+<dd>Vollständigkeit</dd>
+<dt>25.2.1 </dt>
+<dd>Unter Vollständigkeit wird die vollständige Umsetzung der geforderten Funktionen verstanden.</dd>
+<dt>25.2.2 </dt>
+<dd>Die Software enthält keine mehrdeutigen Verweise (Input, Funktion, Output). Wird dasselbe Element referenziert, wird dazu immer die gleiche Bezeichnung verwendet.</dd>
+<dt>25.2.3 </dt>
+<dd>Alle referenzierten Daten und alle verwendeten Funktionen sind in den Spezifikationen definiert.</dd>
+<dt>25.2.4 </dt>
+<dd>Es werden alle in den Spezifikationen definierten Funktionen verwendet.</dd>
+<dt>25.2.5 </dt>
+<dd>Für jeden Entscheidungspunkt (z. B. bedingte Ausführung) sind die möglichen Alternativen in den Spezifikationen definiert.</dd>
+<dt>25.2.6 </dt>
+<dd>Alle Parameter sind in den Spezifikationen definiert und validiert (keine implizite Parameterübergabe).</dd>
+<dt>25.2.7 </dt>
+<dd>Alle schwerwiegenden, gemeldeten Fehler werden behoben, bevor mit dem nächsten Schritt im Entwicklungszyklus fortgefahren wird.</dd>
+<dt>25.2.8 </dt>
+<dd>Das kryptografische Protokoll, die Spezifikation, das Design und der Quellcode sind aufeinander abgestimmt.</dd>
+<dt>25.3 </dt>
+<dd>Kohärenz</dd>
+<dt>25.3.1 </dt>
+<dd>Unter Kohärenz wird die Verwendung einheitlicher Verfahren und Notationen bei der Konzeption und der Implementierung verstanden.</dd>
+<dt>25.3.2 </dt>
+<dd>Die Darstellungen in der Dokumentation entsprechen einer Konvention, die die Softwareentwicklerin oder der Softwareentwickler erstellt hat.</dd>
+<dt>25.3.3 </dt>
+<dd>Die Funktionen und die Variablen entsprechen einer Namenskonvention, die die Softwareentwicklerin oder der Softwareentwickler erstellt hat.</dd>
+<dt>25.3.4 </dt>
+<dd>Input und Output von Funktionen werden nach einer Konvention behandelt, die die Softwareentwicklerin oder der Softwareentwickler erstellt hat.</dd>
+<dt>25.3.5 </dt>
+<dd>Fehler werden nach einer Konvention behandelt, die die Softwareentwicklerin oder der Softwareentwickler erstellt hat.</dd>
+<dt>25.3.6 </dt>
+<dd>Die verwendeten Variablentypen sind kohärent.</dd>
+<dt>25.4 </dt>
+<dd>Einheitlichkeit der Kommunikation</dd>
+<dt>25.4.1 </dt>
+<dd>Unter Einheitlichkeit der Kommunikation wird die Verwendung von standardisierten Protokollen und Schnittstellenroutinen verstanden.</dd>
+<dt>25.4.2 </dt>
+<dd>Die Regeln für die Kommunikation mit anderen Systemen sind definiert.</dd>
+<dt>25.4.3 </dt>
+<dd>Die Kommunikation basiert auf standardisierten Kommunikations-methoden.</dd>
+<dt>25.5 </dt>
+<dd>Einheitlichkeit der Daten</dd>
+<dt>25.5.1 </dt>
+<dd>Unter Einheitlichkeit der Daten wird die Eigenschaft, die die Verwendung einer standardisierten Darstellung der Daten ermöglicht, verstanden.</dd>
+<dt>25.5.2 </dt>
+<dd>Die Standarddarstellung der Daten für die Kommunikation mit anderen Systemen wird formell festgelegt.</dd>
+<dt>25.5.3 </dt>
+<dd>Für Konvertierungen zwischen den verschiedenen Darstellungen werden Standards festgelegt.</dd>
+<dt>25.5.4 </dt>
+<dd>Die Konvertierungsfunktionen sollten in einem Modul zentralisiert werden.</dd>
+<dt>25.6 </dt>
+<dd>Erlernbarkeit</dd>
+<dt>25.6.1 </dt>
+<dd>Unter Erlernbarkeit wird die Eigenschaft der Software, die es den Benutzerinnen und Benutzern ermöglicht, sich die Bedienung der Software leicht anzueignen, verstanden.</dd>
+<dt>25.6.2 </dt>
+<dd>Personen, die das System betreiben und anwenden, werden geschult und mit der notwendigen Dokumentation bedient.</dd>
+<dt>25.6.3 </dt>
+<dd>Die Schulung beinhaltet die Möglichkeit, an einem dafür vorgesehenen System zu trainieren.</dd>
+<dt>25.6.4 </dt>
+<dd>Hilfestellungen zur Bedienung sind leicht zugänglich.</dd>
+<dt>25.7 </dt>
+<dd>Bedienbarkeit</dd>
+<dt>25.7.1 </dt>
+<dd>Unter Bedienbarkeit wird die Nutzungsqualität bei der Interaktion mit dem System verstanden.</dd>
+<dt>25.7.2 </dt>
+<dd>Die Software ist benutzerfreundlich. Die Benutzerführung richtet sich nach allgemein bekannten Schemen.</dd>
+<dt>25.7.3 </dt>
+<dd>Das clientseitige System, wie es sich der stimmenden Person präsentiert, entspricht mit Ausnahme der Anforderungen an alternative Kommunikationsformen in Kapitel 2.4<b> </b>dem Accessibility Standard eCH-0059<sup><a href="#fn-d7e2712" id="fnbck-d7e2712">13</a></sup>. Die Kantone sorgen dafür, dass dies durch eine fachkompetente Stelle belegt wird.</dd>
+<dt>25.8 </dt>
+<dd>Fehlertoleranz</dd>
+<dt>25.8.1 </dt>
+<dd>Mit der Fehlertoleranz wird die Weiterführung des Betriebs unter Ausnahmebedingungen ermöglicht.</dd>
+<dt>25.8.2 </dt>
+<dd>Fehler werden erkannt und behandelt, damit das Programm ohne Unterbrechung weiterlaufen kann.</dd>
+<dt>25.8.3 </dt>
+<dd>Die Fehlerbehandlung, einschliesslich der Erfassung im Protokoll, erfolgt auf derjenigen Ebene, die für die Weiterführung des Betriebs am relevantesten ist. Ein Fehler, der in einer Ebene nicht bearbeitet werden kann, wird in die nächsthöhere Ebene übertragen.</dd>
+<dt>25.8.4 </dt>
+<dd>Für die Inputparameter werden Gültigkeitsbedingungen definiert.</dd>
+<dt>25.8.5 </dt>
+<dd>Alle Inputparameter werden vor Beginn der Ausführung überprüft.</dd>
+<dt>25.9 </dt>
+<dd>Modularität</dd>
+<dt>25.9.1 </dt>
+<dd>Unter Modularität wird die Eigenschaft der Software, die eine Struktur von hochgradig unabhängigen Modulen bietet, verstanden.</dd>
+<dt>25.9.2 </dt>
+<dd>Die Aufgabe der einzelnen Module wird klar definiert.</dd>
+<dt>25.9.3 </dt>
+<dd>Die Aufgabe der einzelnen Module sollte eng und fokussiert sein. Die Aufgaben zweier Module sollten sich nicht überschneiden.</dd>
+<dt>25.9.4 </dt>
+<dd>Die Module teilen keine Daten über einen gemeinsamen volatilen Speicher (z. B. globale Variable).</dd>
+<dt>25.10 </dt>
+<dd>Einfachheit</dd>
+<dt>25.10.1 </dt>
+<dd>Unter Einfachheit wird die Implementierung der Funktionen auf die verständlichste Art verstanden. Im Allgemeinen bedeutet dies, dass Praktiken vermieden werden, die die Komplexität erhöhen.</dd>
+<dt>25.10.2 </dt>
+<dd>Im Design wird ein Top-Down-Ansatz (hierarchische Struktur) gewählt.</dd>
+<dt>25.10.3 </dt>
+<dd>Das Design sieht keine Verdoppelung von Funktionen zwischen den Modulen vor.</dd>
+<dt>25.10.4 </dt>
+<dd>Das Design sieht keine globalen Daten vor, d. h. keine Daten, die von allen verwendet werden können, ohne als Parameter übergeben zu werden.</dd>
+<dt>25.10.5 </dt>
+<dd>Komplizierte boolesche Kombinationen im Quellcode werden so weit als möglich vermieden.</dd>
+<dt>25.10.6 </dt>
+<dd>Im Quellcode werden keine Variablen für andere als die ursprünglich vorgesehenen Zwecke wiederverwendet.</dd>
+<dt>25.10.7 </dt>
+<dd>Im Quellcode wird die Anzahl von Verschachtelungen so weit wie möglich beschränkt.</dd>
+<dt>25.10.8 </dt>
+<dd>Die zyklomatische und kognitive Komplexität im Quellcode wird so weit wie möglich beschränkt.</dd>
+<dt>25.11 </dt>
+<dd>Prägnanz</dd>
+<dt>25.11.1 </dt>
+<dd>Unter Prägnanz wird die Implementierung der Funktionen mit einem Minimum an Instruktionen im Quellcode verstanden.</dd>
+<dt>25.11.2 </dt>
+<dd>Die Software enthält keine überflüssigen Abschnitte im Quellcode (sogenannter «Dead Code»).</dd>
+<dt>25.11.3 </dt>
+<dd>Der Quellcode enthält keine überflüssigen Variablen.</dd>
+<dt>25.11.4 </dt>
+<dd>Der Quellcode sollte keine Wiederholungen enthalten.</dd>
+<dt>25.12 </dt>
+<dd>Verständlichkeit</dd>
+<dt>25.12.1 </dt>
+<dd>Unter Verständlichkeit wird der Umstand verstanden, dass die Adressatinnen und Adressaten die Zielsetzung, die Annahmen, die Einschränkungen, den Input und Output, die Komponenten und den Status der Software erkennen können.</dd>
+<dt>25.12.2 </dt>
+<dd>Klassen, Funktionen und komplexe Verarbeitungsschritte werden im Quellcode nach einer von der Softwareentwicklerin oder dem Softwareentwickler festgelegten Konvention kommentiert.</dd>
+<dt>25.12.3 </dt>
+<dd>Variablen und Funktionen werden mit aussagekräftigen Namen bezeichnet.</dd>
+<dt>25.12.4 </dt>
+<dd>Eine Anweisung sollte nur eine einzige Zeile umfassen, sofern die Lesbarkeit nicht durch die Verteilung auf mehrere Zeilen erhöht wird. Mehrere Anweisungen pro Zeile sind zu vermeiden.</dd>
+<dt>25.13 </dt>
+<dd>Instrumentierung</dd>
+<dt>25.13.1 </dt>
+<dd>Unter Instrumentierung wird eine Eigenschaft der Software, die es erlaubt, ihre Nutzung zu messen oder Fehler zu erkennen, verstanden.</dd>
+<dt>25.13.2 </dt>
+<dd>Die Unit-Tests<sup><a href="#fn-d7e2821" id="fnbck-d7e2821">14</a></sup> decken alle möglichen Pfade und die Grenzen zwischen zulässigen und unzulässigen Werten der Inputparameter ab.</dd>
+<dt>25.13.3 </dt>
+<dd>Die Integrationstests decken alle Module ab.</dd>
+<dt>25.13.4 </dt>
+<dd>Die Softwaretestszenarien decken alle Module ab.</dd>
+<dt>25.13.5 </dt>
+<dd>Fehler und notwendige Informationen werden in Logs protokolliert.</dd>
+</dl>
+<div class="footnotes">
+<p id="fn-d7e2712"><sup><a href="#fnbck-d7e2712">13</a></sup><sup></sup> eCH-0059: Accessibility Standard Version 3.0 vom 25.06.2020; der Standard kann kostenlos bezogen und eingesehen werden beim Verein eCH, Mainaustrasse 30, Postfach, 8034 Zürich, www.ech.ch.</p>
+<p id="fn-d7e2821"><sup><a href="#fnbck-d7e2821">14</a></sup><sup></sup> Bei einem Unit-Test testet die Entwicklerin oder der Entwickler ein Modul unabhängig vom Rest des Programms, um sicherzustellen, dass das Modul die funktionalen Spezifikationen erfüllt und unter allen Umständen korrekt funktioniert. Diese Überprüfung wird bei kritischen Anwendungen als unerlässlich angesehen.</p>
+</div>
+</div></section><section id="annex_u1/lvl_u1/lvl_26"><h3 class="heading" role="heading" aria-level="3">
+<span class="display-icon"></span><span class="external-link-icon"></span><a href="#annex_u1/lvl_u1/lvl_26">26. Prüfkriterien für die Systeme und ihren Betrieb</a>
+</h3>
+<div class="collapseable">
+<dl class="man-template-absatz-struktur-1">
+<dt>26.1 </dt>
+<dd>Prüfung des kryptografischen Protokolls (Art. 10 Abs. 1 Bst. a)</dd>
+<dt>26.1.1 </dt>
+<dd>Gegenstand: Es wird geprüft:<dl>
+<dt>– </dt>
+<dd>ob die Anforderungen in Artikel 5 in Verbindung mit den Artikeln 6–8 und Ziffer 2 des Anhangs erfüllt sind; diese Beurteilung erfolgt insbesondere anhand der kryptografischen und symbolischen Konformitätsbeweise;</dd>
+<dt>– </dt>
+<dd>ob und inwiefern sich das kryptografische Protokoll auf existierende und bewährte Protokolle und Bausteine abstützt;</dd>
+<dt>– </dt>
+<dd>welche Vertiefungen und Verbesserungen zu einer Stärkung der Sicherheit beitragen könnten.</dd>
+</dl>
+</dd>
+<dt>26.1.2 </dt>
+<dd>Zuständigkeiten: Die Prüfung erfolgt durch Expertinnen und Experten aus der Kryptografie. Die Bundeskanzlei gibt die Prüfung in Auftrag und kontrolliert die auftragsgemässe Erfüllung.</dd>
+<dt>26.1.3 </dt>
+<dd>Zeitpunkt der Prüfung:<dl>
+<dt>– </dt>
+<dd>Eine komplette Überprüfung erfolgt vor der ersten Inbetriebnahme.</dd>
+<dt>– </dt>
+<dd>Die Prüfung wird nach zwei bis drei Jahren erneut durchgeführt.</dd>
+<dt>– </dt>
+<dd>Die Prüfung findet erneut statt:<dl>
+<dt>– </dt>
+<dd>bei jeder Änderung des kryptografischen Protokolls; und</dd>
+<dt>– </dt>
+<dd>bei relevanten neuen Erkenntnissen der Forschung bezüglich der Sicherheit von verwendeten kryptografischen Elementen und der Bedrohungslage.</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>26.2 </dt>
+<dd>Prüfung der Software des Systems (Art. 10 Abs. 1 Bst. b)</dd>
+<dt>26.2.1 </dt>
+<dd>Gegenstand: Es wird geprüft:<dl>
+<dt>– </dt>
+<dd>ob das nach Ziffer 26.1 geprüfte kryptografische Protokoll umgesetzt ist; die korrekte Umsetzung von Funktionen vertrauenswürdiger Komponenten wird besonders eingehend geprüft;</dd>
+<dt>– </dt>
+<dd>ob die Software des Systems die Anforderungen dieser Verordnung erfüllt und die vorgegebenen Zielsetzungen adäquat unterstützt;</dd>
+<dt>– </dt>
+<dd>ob das clientseitige System, wie es sich der stimmenden Person präsentiert, gemäss Ziffer 25.7.3 mit dem Standard eCH-0059 konform ist; die Prüfung kann sich auf ein gültiges Zertifikat oder einen gültigen Prüfbericht stützen, das von einer von der Bundeskanzlei anerkannten Institution ausgestellt wurde und die Konformität mit dem Standard belegt.</dd>
+</dl>
+</dd>
+<dt>26.2.2 </dt>
+<dd>Zuständigkeiten: Die Prüfung erfolgt durch Expertinnen und Experten aus der Kryptografie und der Softwareentwicklung. Die Prüfung wird von der Bundeskanzlei in Auftrag gegeben.</dd>
+<dt>26.2.3 </dt>
+<dd>Zeitpunkt der Prüfung:<dl>
+<dt>– </dt>
+<dd>Eine komplette Überprüfung erfolgt vor der ersten Inbetriebnahme.</dd>
+<dt>– </dt>
+<dd>Die Prüfung wird nach zwei bis drei Jahren erneut durchgeführt.</dd>
+<dt>– </dt>
+<dd>Die Prüfung findet bei jeder wesentlichen Änderung erneut statt, insbesondere:<dl>
+<dt>– </dt>
+<dd>nach jeder Änderung am kryptografischen Protokoll;</dd>
+<dt>– </dt>
+<dd>bei jeder Änderung am Quellcode der Funktionen, deren Vertrauenswürdigkeit für die Stichhaltigkeit der im Rahmen der Verifizierbarkeit vorgesehenen Beweise massgeblich sind;</dd>
+<dt>– </dt>
+<dd>bei relevanten neuen Erkenntnissen der Forschung bezüglich der Sicherheit von verwendeten kryptografischen Elementen und der Bedrohungslage;</dd>
+<dt>– </dt>
+<dd>beim Verzicht oder bei wesentlichen Anpassungen an Mechanismen, die dem sicheren Einsatz von vertrauenswürdigen Komponenten nach Ziffer 2 dienen.</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>26.3 </dt>
+<dd>Prüfung der Sicherheit von Infrastruktur und Betrieb (Art. 10 Abs. 1 Bst. c)</dd>
+<dt>26.3.1 </dt>
+<dd>Gegenstand: Es wird geprüft, ob:<dl>
+<dt>– </dt>
+<dd>das System und sein Betrieb beim Kanton, beim Systembetreiber und bei der Druckerei die Anforderungen dieser Verordnung erfüllen und die vorgegebenen Zielsetzungen adäquat unterstützen;</dd>
+<dt>– </dt>
+<dd>die Basiskomponenten, wie die Software, die dem sicheren und unabhängigen Einsatz von Kontrollkomponenten dient, die eingesetzten Betriebssysteme oder die eingesetzten Server erwiesenermassen besten Standards entsprechen.</dd>
+</dl>
+</dd>
+<dt>26.3.2 </dt>
+<dd>Zuständigkeiten: Die Prüfung erfolgt durch Expertinnen und Experten aus der Kryptografie und dem Betrieb von hochsicheren Systemen. Die Prüfung wird von der Bundeskanzlei in Auftrag gegeben.</dd>
+<dt>26.3.3 </dt>
+<dd>Zeitpunkt der Prüfung:<dl>
+<dt>– </dt>
+<dd>Eine komplette Überprüfung erfolgt vor der ersten Inbetriebnahme.</dd>
+<dt>– </dt>
+<dd>Die Prüfung wird nach zwei bis drei Jahren erneut durchgeführt.</dd>
+<dt>– </dt>
+<dd>Die Prüfung findet bei jeder wesentlichen Änderung erneut statt, insbesondere:<dl>
+<dt>– </dt>
+<dd>nach einer Änderung am kryptografischen Protokoll;</dd>
+<dt>– </dt>
+<dd>beim Verzicht auf oder bei wesentlichen Anpassungen an Mechanismen, die dem sicheren Einsatz von vertrauenswürdigen Komponenten nach Ziffer 2 dienen;</dd>
+<dt>– </dt>
+<dd>bei einer wesentlichen Änderung der Prozesse oder der Infrastruktur.</dd>
+</dl>
+</dd>
+<dt>– </dt>
+<dd>Werden neue Versionen von Basiskomponenten eingesetzt (neue Server, Patches zum Betriebssystem oder zur Software, die dem sicheren und unabhängigen Einsatz von vertrauenswürdigen Komponenten nach Ziffer 2 dienen), muss keine neue Kontrolle erfolgen, sofern die Basiskomponenten weiterhin erwiesenermassen besten Standards entsprechen.</dd>
+</dl>
+</dd>
+<dt>26.4 </dt>
+<dd>Prüfung des Schutzes gegen Versuche, in die Infrastruktur einzudringen (Art. 10 Abs. 1 Bst. d)</dd>
+<dt>26.4.1 </dt>
+<dd>Gegenstand: Es wird geprüft, ob es den Expertinnen und Experten im Auftrag der Bundeskanzlei gelingt, im Rahmen eines Tests in die Infrastruktur des Online-Systems einzudringen und sich Zugang zu wichtigen Daten zu verschaffen oder die Kontrolle über wichtige Funktionen zu übernehmen.</dd>
+<dt></dt>
+<dd>Die Tests werden auf der Grundlage von potenziellen Schwachstellen durchgeführt, die nach einer methodischen Analyse der öffentlich zugänglichen Unterlagen, insbesondere nach Artikel 11, entdeckt wurden.</dd>
+<dt>26.4.2 </dt>
+<dd>Zuständigkeiten: Die Prüfung erfolgt durch Sicherheitsexpertinnen und <br>-experten. Die Prüfung wird von der Bundeskanzlei in Auftrag gegeben.</dd>
+<dt>26.4.3 </dt>
+<dd>Zeitpunkt der Prüfung:<dl>
+<dt>– </dt>
+<dd>Eine komplette Überprüfung erfolgt vor der ersten Inbetriebnahme.</dd>
+<dt>– </dt>
+<dd>Die Prüfung wird nach zwei bis drei Jahren erneut durchgeführt.</dd>
+<dt>– </dt>
+<dd>Die Prüfung findet bei jeder wesentlichen Änderung der Infrastruktur erneut statt.</dd>
+<dt>– </dt>
+<dd>Die Prüfung findet bei relevanten neuen Erkenntnissen bezüglich der Sicherheit der eingesetzten Betriebsmittel und der Bedrohungslage statt.</dd>
+</dl>
+</dd>
+<dt>26.5 </dt>
+<dd>Prüfung des Informationssicherheitsmanagement-Systems (Art. 10 Abs. 2)</dd>
+<dt>26.5.1 </dt>
+<dd>Gegenstand: Es wird geprüft, ob das ISMS des Systembetreibers mit der Norm ISO/IEC 27001, 2013, Information technology – Security techniques – Information security management systems – Requirements konform ist. Der Geltungsbereich des ISMS umfasst alle Organisationseinheiten des Systembetreibers, die rechtlich, administrativ und betrieblich für das System verantwortlich sind.</dd>
+<dt>26.5.2 </dt>
+<dd>Zuständigkeiten: Die Zertifizierungsstelle ist durch die Schweizerische Akkreditierungsstelle für die Durchführung von Audits nach der Norm ISO/IEC 27001, 2013, Information technology – Security techniques – Information security management systems – Requirements akkreditiert. Die Prüfung wird vom Kanton oder vom Systembetreiber in Auftrag gegeben; der Kanton sorgt für die Durchführung der Prüfung.</dd>
+<dt>26.5.3 </dt>
+<dd>Dauer der Gültigkeit eines Belegs: Wiederholungsaudits werden in den durch die Norm ISO/IEC 27001, 2013, Information technology – Security techniques – Information security management systems – Requirements festgelegten Abständen durchgeführt. Ein gültiges Zertifikat und die entsprechende «Statement of Applicability» liegt bei jedem Einsatz des Systems vor. Wird eine neue Version des Standards ISO/IEC 27001, 2013, Information technology – Security techniques – Information security management systems – Requirements publiziert, so ist spätestens nach Ablauf der Übergangsfrist der Nachweis einer gültigen Zertifizierung des ISMS nach der neuen Version zu erbringen. Der Geltungsbereich des ISMS darf dabei nicht reduziert werden.</dd>
+</dl>
+<p class="abstand1seite "></p>
+</div></section>
+</div></section>
+</div></section></div>
+</div></body>
+</html>
